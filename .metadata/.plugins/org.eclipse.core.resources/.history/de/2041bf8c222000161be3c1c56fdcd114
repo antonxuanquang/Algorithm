@@ -1,0 +1,29 @@
+
+public class Five {
+	public static void main(String args[]) {
+		System.out.println(isOneAway("pale", "ple"));
+		System.out.println(isOneAway("pales", "pale"));
+		System.out.println(isOneAway("pale", "bale"));
+		System.out.println(isOneAway("psale", "pale"));
+		System.out.println(isOneAway("pale", "bake"));
+		System.out.println(isOneAway("bale", "able"));
+	}
+
+	private static boolean isOneAway(String left, String right) {
+		int left_length = left.length();
+		int right_length = right.length();
+		
+		if (Math.abs(left_length - right_length) > 1) return false;
+		
+		int shorter = Math.min(left_length, right_length);
+		int longer = Math.max(left_length, right_length);
+		
+		int left_counter = 0;
+		int right_counter = 0;
+		
+		for (int i = 0; i < shorter; i++) {
+			if ()
+		}
+		
+	}
+}

@@ -1,0 +1,19 @@
+
+public class Three {
+	public static void main(String args[]) {
+		System.out.println(URLify("This is a test   ", "This is a test   ".length()));
+	}
+
+	private static String URLify(String string, int length) {
+		// TODO Auto-generated method stub
+		System.out.println(length);
+		char [] char_array = new char[length];
+		int counter = 0; 
+		while (counter < length) {
+			
+			
+			counter++;
+		}
+		return char_array.toString();
+	}
+}

@@ -1,0 +1,12 @@
+
+public class Three {
+	public static void main(String args[]) {
+		System.out.println(URLify("This is a test   ", "This is a test   ".length()));
+	}
+
+	private static boolean URLify(String string, int length) {
+		// TODO Auto-generated method stub
+		System.out.println(length);
+		return false;
+	}
+}

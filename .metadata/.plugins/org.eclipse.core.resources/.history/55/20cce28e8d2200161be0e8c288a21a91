@@ -1,0 +1,11 @@
+
+public class Nine {
+	public static void main(String[] args) {
+		System.out.println(isRotated("waterbottle", "tlewaterbot"));
+	}
+
+	private static boolean isRotated(String string, String string2) {
+		return false;
+		
+	}
+}

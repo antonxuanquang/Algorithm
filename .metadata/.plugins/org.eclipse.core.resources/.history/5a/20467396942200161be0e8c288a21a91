@@ -1,0 +1,16 @@
+
+public class One {
+	/*
+	 * 
+	 * Write code to remove duplicates from an unsorted linked list.
+	 * Follow up: How would you solve this problem if a temporary buffer is not allowed?
+	 * 
+	 */
+	
+	public static void main(String args[]) {
+		LinkedListNode linkedListNode = new LinkedListNode();
+	}
+	
+}
+
+

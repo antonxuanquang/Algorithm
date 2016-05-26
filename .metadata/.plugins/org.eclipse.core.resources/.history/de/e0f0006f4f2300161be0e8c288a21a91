@@ -1,0 +1,48 @@
+
+public class Two {
+	/*
+	 * 
+	 * Implement an algorithm to find the k-th to last element of a singly linked list.
+	 * 
+	 */
+	
+	public static void main(String args[]) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(5);
+		linkedList.addToTail(2);
+		linkedList.addToTail(3);
+		linkedList.addToTail(4);
+		
+		System.out.println(linkedList);
+		System.out.println(printKthToLastElement(linkedList.head, 3));
+		System.out.println(linkedList);
+	}
+
+	private static String printKthToLastElement(Node head, int k) {
+		Node current = head;
+		while (current != null) {
+			int counter = 0;
+			Node runner = current;
+			for (counter = 0; counter <= k && runner != null; counter++) {
+				runner = runner.next;
+			}
+			if (runner == null) {
+				StringBuilder stringBuilder = new StringBuilder(current.data);
+				for (counter = 0; counter <= k && current != null; counter++) {
+					stringBuilder.append(" -> " + current.data);
+					current = current.next;
+				}
+				return stringBuilder.toString();
+			}
+			current = current.next;
+		}
+		return "";		
+	}
+	
+	
+}

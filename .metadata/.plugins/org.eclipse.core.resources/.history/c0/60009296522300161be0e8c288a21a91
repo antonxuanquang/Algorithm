@@ -1,0 +1,98 @@
+
+public class Two {
+	/*
+	 * 
+	 * Implement an algorithm to find the k-th to last element of a singly linked list.
+	 * 
+	 */
+	
+	public static void main(String args[]) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(5);
+		linkedList.addToTail(2);
+		linkedList.addToTail(3);
+		linkedList.addToTail(4);
+		
+		System.out.println(linkedList);
+		System.out.println(printKthToLastElement(linkedList.head, 6));
+		System.out.println(printKthToLastElement2(linkedList.head, 4));
+		System.out.println(printKthToLastElement3(linkedList.head, 4));
+	}
+
+	
+	/*
+	 * 
+	 * My 1st answer: iterative approach; O(n.k) where n = size of linked list and k is the input
+	 * 
+	 */
+	private static String printKthToLastElement(Node head, int k) {
+		System.out.println("from printKthToLastElement ver 1.0");
+		Node current = head;
+		while (current != null) {
+			int counter = 0;
+			Node runner = current;
+			for (counter = 0; counter <= k && runner != null; counter++) {
+				runner = runner.next;
+			}
+			if (runner == null) {
+				return printfromKthNode(current, k);
+			}
+			current = current.next;
+		}
+		return "";		
+	}
+	
+	
+	private static String printfromKthNode(Node current, int k) {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append(current.data);
+		for (int counter = 0; counter <= k && current.next != null; counter++) {
+			stringBuilder.append(" -> " + current.next.data);
+			current = current.next;
+		}
+		return stringBuilder.toString();
+	}
+
+
+	/*
+	 * 
+	 * My 2nd answer: O(n); iterative approach
+	 * 
+	 */
+	private static String printKthToLastElement2(Node head, int k) {
+		System.out.println("from printKthToLastElement ver 2.0");
+		Node current = head;
+		Node frontier = current;
+		for (int i = 0; i < k && frontier.next != null; i++) {
+			frontier = frontier.next;
+		}
+		
+		// if k is bigger or exactly equal to length
+		if (frontier.next == null) 
+			return printfromKthNode(current, k);
+		
+		while (frontier.next != null) {
+			frontier = frontier.next;
+			current = current.next;
+		}
+		return printfromKthNode(current, k);		
+	}
+	
+	/*
+	 * 
+	 * Book's answer: O(n) time complexity; O(n) space complexity; recursive approach
+	 * 
+	 */
+	private static int printKthToLastElement3(Node head, int k) {
+		if (head == null) return 0;
+		
+		int index = printKthToLastElement3(head.next, k) + 1;
+		if (index == k) System.out.println(k + "th element to last node is " + head.data);
+		return index;
+	}
+}

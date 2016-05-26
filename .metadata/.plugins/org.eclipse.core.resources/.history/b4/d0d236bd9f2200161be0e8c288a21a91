@@ -1,0 +1,77 @@
+import java.util.HashSet;
+import java.util.Hashtable;
+
+
+public class One {
+	/*
+	 * 
+	 * Write code to remove duplicates from an unsorted linked list.
+	 * Follow up: How would you solve this problem if a temporary buffer is not allowed?
+	 * 
+	 */
+	
+	public static void main(String args[]) {
+		LinkedListNode linkedListNode = new LinkedListNode();
+		linkedListNode.addToTail(3);
+		linkedListNode.addToTail(6);
+		linkedListNode.addToTail(3);
+		linkedListNode.addToTail(3);
+		linkedListNode.addToTail(6);
+		linkedListNode.addToTail(5);
+		linkedListNode.addToTail(2);
+		linkedListNode.addToTail(3);
+		linkedListNode.addToTail(4);
+		
+		System.out.println(linkedListNode);
+//		removeDup(linkedListNode.head);
+		removeDupWithoutBuff(linkedListNode.head);
+		System.out.println(linkedListNode);
+	}
+	
+	
+	/*
+	 * 
+	 * Answer with buffer, i.e. the HashSet containing unique data
+	 * 
+	 */
+	static void removeDup(Node head) {
+		HashSet set = new HashSet();
+		
+		Node runnerNode = head;
+		Node preNode = null;
+		while (runnerNode != null) {
+			if (set.contains(new Integer(runnerNode.data))) {
+				preNode.next = runnerNode.next;
+			} else {
+				set.add(new Integer(runnerNode.data));
+				preNode = runnerNode;
+			}
+			runnerNode = runnerNode.next;
+		}
+	}
+	
+	/*
+	 * 
+	 * Answer without buffer
+	 * 
+	 */
+	static void removeDupWithoutBuff(Node head) {
+		Node runnerNode = head;
+		Node preNode = null;
+		while (runnerNode != null) {
+			Node searchNode = head;
+			while (searchNode != runnerNode) {
+				if (searchNode.data == runnerNode.data) {
+					runnerNode = runnerNode.next.next;
+					break;
+				}
+				searchNode = searchNode.next;
+			}
+			preNode = runnerNode;
+			runnerNode = runnerNode.next;
+		}
+	}
+	
+}
+
+

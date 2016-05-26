@@ -1,0 +1,41 @@
+
+public class LinkedListNode {
+	Node head;
+	
+	public LinkedListNode() {}
+	
+	public LinkedListNode(Node node){
+		head = node;
+	}
+	
+	void addToTail(int d) {
+		Node end = new Node(d);		
+		if (head == null) head = end;
+		
+		Node node = head;
+		System.out.println("test");
+		while (node.next != null) {
+			node = node.next;
+		}
+		node.next = end;
+	}
+	
+	public String toString() {
+		StringBuilder stringBuilder = new StringBuilder();
+		Node head = this.head;
+		
+		if (head == null) throw new NullPointerException("You have a null linked list");
+		
+		Node runnerNode = head.next;
+		
+		stringBuilder.append(head.data);
+		
+		while (runnerNode != null) {
+			stringBuilder.append(" -> " + runnerNode.data);
+			System.out.println(runnerNode.data);
+			runnerNode = runnerNode.next;
+		}
+		
+		return stringBuilder.toString();
+	}
+}

@@ -1,0 +1,36 @@
+
+public class Five {
+	/*
+	 * 
+	 * You have two numbers represented by a linked list, where each node contains
+	 * a single digit. The digits are stored in reverse order, such that the 1's digit
+	 * digit is at the head of the list. Write a function that adds the two numbers
+	 * and returns the sum as a linked list.
+	 * 
+	 */
+	
+	public static void main(String args[]) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(5);
+		linkedList.addToTail(2);
+		linkedList.addToTail(3);
+		linkedList.addToTail(4);
+		
+		SinglyLinkedList linkedList2 = new SinglyLinkedList();
+		linkedList2.addToTail(4);
+		linkedList2.addToTail(1);
+		linkedList2.addToTail(5);
+		linkedList2.addToTail(1);
+		linkedList2.addToTail(2);
+		linkedList2.addToTail(3);
+		linkedList2.addToTail(7);
+		
+		System.out.println(linkedList);
+		System.out.println(linkedList2);
+	}
+}

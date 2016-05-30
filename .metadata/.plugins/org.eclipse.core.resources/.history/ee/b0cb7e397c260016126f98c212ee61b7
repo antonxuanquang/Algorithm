@@ -1,0 +1,98 @@
+
+public class Five {
+	/*
+	 * 
+	 * You have two numbers represented by a linked list, where each node contains
+	 * a single digit. The digits are stored in reverse order, such that the 1's digit
+	 * digit is at the head of the list. Write a function that adds the two numbers
+	 * and returns the sum as a linked list.
+	 * FOLLOW UP: suppose the digits are stored in forward order. Repeat the above 
+	 * algorithm
+	 * 
+	 */
+	
+	public static void main(String args[]) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		linkedList.addToTail(5);
+		linkedList.addToTail(3);
+		linkedList.addToTail(9);
+		linkedList.addToTail(9);
+		
+		SinglyLinkedList linkedList2 = new SinglyLinkedList();
+		linkedList2.addToTail(4);
+		linkedList2.addToTail(1);
+		linkedList2.addToTail(5);
+		linkedList2.addToTail(1);
+		linkedList2.addToTail(2);
+		linkedList2.addToTail(3);
+		linkedList2.addToTail(7);
+		
+		System.out.println(linkedList);
+		System.out.println(linkedList2);
+		SinglyLinkedList sum = sumTwoLinkedList(linkedList, linkedList2);
+		System.out.println(sum);
+	}
+	
+	
+	/*
+	 * 
+	 * My first approach: iterative, O(n) time complexity, O(1) space complexity;
+	 * the linked list is in reverse order
+	 * 
+	 */
+	private static SinglyLinkedList sumTwoLinkedList(SinglyLinkedList linkedList, 
+													SinglyLinkedList linkedList2) {
+		return sumTwoLinkedList(linkedList.head, linkedList2.head);
+	}
+
+	private static SinglyLinkedList sumTwoLinkedList(Node head, Node head2) {
+		SinglyLinkedList sum = new SinglyLinkedList();
+		Node runner1 = head;
+		Node runner2 = head2;
+		int carry = 0;
+		int digit = 0;
+		while (runner1 != null || runner2 != null) {
+			if (runner1 == null) {
+				addToTailWithCarryBit(sum, runner2, carry);
+				// return sum
+				return sum;
+			} else if (runner2 == null) {
+				addToTailWithCarryBit(sum, runner1, carry);
+				// return sum
+				return sum;
+			} else {
+				int temp = runner1.data + runner2.data + carry;
+				carry = temp / 10;
+				digit = temp % 10;
+				sum.addToTail(digit);
+				runner1 = runner1.next;
+				runner2 = runner2.next;
+			}
+		}
+		return sum;
+	}
+	
+	private static void addToTailWithCarryBit(SinglyLinkedList sum,
+			Node runner, int carry) {
+		// add runner to tail of sum
+		if (carry == 0) sum.addToTail(runner);
+		else {
+			// add carry bit if needed
+			while (runner != null) {
+				int temp = runner.data + carry;
+				carry = temp / 10;
+				int digit = temp % 10;
+				sum.addToTail(digit);
+				runner = runner.next;
+			}
+			if (carry != 0) sum.addToTail(carry);
+		}
+	}
+	
+	
+}

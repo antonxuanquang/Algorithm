@@ -1,6 +1,7 @@
 
 public class SinglyLinkedList {
 	Node head = null;
+	Node tail = null;
 	
 	public SinglyLinkedList () {}
 		
@@ -9,18 +10,26 @@ public class SinglyLinkedList {
 	}
 	
 	void addToTail(int d) {
-		Node end = new Node(d);
+		Node n = new Node(d);
 		if (head == null) {
-			head = end;
+			head = n;
+			tail = n;
 			return;
 		}
-		
-		Node node = head;
-		while (node.next != null) {
-			node = node.next;
+		tail.next = n;
+		tail = n;
+	}
+	
+	void addToTail(Node n) {
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
 		}
-
-		node.next = end;
+		tail.next = n;
+		while (tail.next != null) {
+			tail = tail.next;
+		}
 	}
 	
 	public String toString() {
@@ -39,5 +48,9 @@ public class SinglyLinkedList {
 		}
 		
 		return stringBuilder.toString();
+	}
+	
+	public void debug() {
+		System.out.println(this);
 	}
 }

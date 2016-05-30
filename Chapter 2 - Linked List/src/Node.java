@@ -7,4 +7,8 @@ public class Node {
 	public Node (int d) {
 		data = d;
 	}
+	
+	public void debug() {
+		System.out.println(new SinglyLinkedList(this));
+	}
 }

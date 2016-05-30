@@ -2,11 +2,42 @@
 public class SinglyLinkedList {
 	Node head = null;
 	Node tail = null;
+	int length = 0;
 	
 	public SinglyLinkedList () {}
 		
 	public SinglyLinkedList(Node node){
 		head = node;
+		tail = node;
+		while (tail.next != null) {
+			tail = tail.next;
+		}
+		length++;
+	}
+	
+	void addToHead(int d) {
+		Node n = new Node(d);
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
+		}
+		n.next = head;
+		head = n;
+		
+		length++;
+	}
+	
+	void addToHead(Node n) {
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
+		}
+		n.next = head;
+		head = n;
+		
+		length++;
 	}
 	
 	void addToTail(int d) {
@@ -18,6 +49,8 @@ public class SinglyLinkedList {
 		}
 		tail.next = n;
 		tail = n;
+		
+		length++;
 	}
 	
 	void addToTail(Node n) {
@@ -30,6 +63,8 @@ public class SinglyLinkedList {
 		while (tail.next != null) {
 			tail = tail.next;
 		}
+		
+		length++;
 	}
 	
 	public String toString() {

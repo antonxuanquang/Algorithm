@@ -1,0 +1,56 @@
+
+public class SinglyLinkedList {
+	Node head = null;
+	Node tail = null;
+	
+	public SinglyLinkedList () {}
+		
+	public SinglyLinkedList(Node node){
+		head = node;
+	}
+	
+	void addToTail(int d) {
+		Node n = new Node(d);
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
+		}
+		tail.next = n;
+		tail = n;
+	}
+	
+	void addToTail(Node n) {
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
+		}
+		tail.next = n;
+		while (tail.next != null) {
+			tail = tail.next;
+		}
+	}
+	
+	public String toString() {
+		StringBuilder stringBuilder = new StringBuilder();
+		Node head = this.head;
+		
+		if (head == null) throw new NullPointerException("You have a null linked list");
+		
+		Node runnerNode = head.next;
+		
+		stringBuilder.append(head.data);
+		
+		while (runnerNode != null) {
+			stringBuilder.append(" -> " + runnerNode.data);
+			runnerNode = runnerNode.next;
+		}
+		
+		return stringBuilder.toString();
+	}
+	
+	public void debug() {
+		System.out.println(this);
+	}
+}

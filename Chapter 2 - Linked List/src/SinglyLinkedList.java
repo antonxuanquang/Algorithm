@@ -10,6 +10,7 @@ public class SinglyLinkedList {
 		head = node;
 		tail = node;
 		while (tail.next != null) {
+			length++;
 			tail = tail.next;
 		}
 		length++;
@@ -61,6 +62,7 @@ public class SinglyLinkedList {
 		}
 		tail.next = n;
 		while (tail.next != null) {
+			length++;
 			tail = tail.next;
 		}
 		

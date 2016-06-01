@@ -41,8 +41,8 @@ public class Five {
 	
 	/*
 	 * 
-	 * The linked list is in reverse order: iterative, O(n) time complexity, 
-	 * O(1) space complexity;
+	 * The linked list is in reverse order: iterative, O(n) time complexity with 
+	 * n = length of longer link, O(1) space complexity;
 	 * 
 	 */
 	private static SinglyLinkedList sumTwoLinkedList(SinglyLinkedList linkedList, 

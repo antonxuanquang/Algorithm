@@ -13,7 +13,7 @@ public class Six {
 		linkedList.addToTail(4);
 		linkedList.addToTail(6);
 		linkedList.addToTail(3);
-//		linkedList.addToTail(0);
+		linkedList.addToTail(0);
 		linkedList.addToTail(3);
 		linkedList.addToTail(6);
 		linkedList.addToTail(4);
@@ -49,5 +49,17 @@ public class Six {
 		
 		return true;
 	}
+	
+	/*
+	 * 
+	 * Book's approach: recursive, O(n) time complexity, O(n/2) space complexity
+	 * 
+	 */
+	private static boolean isPalindrome2(Node head) {
+		
+		
+		return true;
+	}
+	
 	
 }

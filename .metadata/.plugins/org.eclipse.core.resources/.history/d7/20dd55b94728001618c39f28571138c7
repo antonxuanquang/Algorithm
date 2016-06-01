@@ -1,0 +1,79 @@
+
+public class Seven {
+	/*
+	 * 
+	 * Given two (singly) linked lists, determine if the two lists intersect.
+	 * Return the intersecting node. NOte that the intersection is defined 
+	 * based on reference, not value. That is, if the k-th node of the first 
+	 * linked list is the exact same node (by reference) as the j-th node of
+	 * the second linked list, the they are intersecting.
+	 * 
+	 */
+	public static void main(String[] args) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(9);
+		linkedList.addToTail(9);
+		linkedList.addToTail(6);
+		Node intersectedNode = new Node(3);
+		linkedList.addToTail(intersectedNode);
+		linkedList.addToTail(6);
+		linkedList.addToTail(5);
+		linkedList.addToTail(3);
+		linkedList.addToTail(2);
+		linkedList.addToTail(5);
+		
+		SinglyLinkedList linkedList2 = new SinglyLinkedList();
+		linkedList2.addToTail(5);
+		linkedList2.addToTail(3);
+		linkedList2.addToTail(2);
+		linkedList2.addToTail(8);
+		linkedList2.addToTail(2);
+		linkedList2.addToTail(1);
+		linkedList2.addToTail(intersectedNode);
+		
+		linkedList.debug();
+		linkedList2.debug();
+		
+		System.out.println(linkedList.length);
+		System.out.println(linkedList2.length);
+		
+		System.out.println(isIntersected(linkedList, linkedList2));
+		
+	}
+
+	/*
+	 * 
+	 * First approach: recursive, O(n) time, O(n) space
+	 * 
+	 */
+	private static boolean isIntersected(SinglyLinkedList link1, SinglyLinkedList link2) {
+		int l1 = link1.length;
+		int l2 = link2.length;
+		
+		Node runner1 = link1.head;
+		Node runner2 = link2.head;
+		
+		if (l1 > l2) 		skips(runner1, l1 - l2);
+		else if (l2 > l1) 	skips(runner2, l2 - l1);
+		
+		
+		
+		while (runner1 != null && runner2 != null) {
+			
+			if (runner1 == runner2) return true;
+			
+			runner1 = runner1.next;
+			runner2 = runner2.next;
+		}
+		
+		return false;
+	}
+
+	private static void skips(Node runner, int difference) {
+		System.out.println(runner.data);
+		for (int i = 0; i < difference; i++) 
+			runner = runner.next;
+	}
+	
+	
+}

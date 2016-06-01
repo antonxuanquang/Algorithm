@@ -13,7 +13,7 @@ public class Six {
 		linkedList.addToTail(4);
 		linkedList.addToTail(6);
 		linkedList.addToTail(3);
-//		linkedList.addToTail(0);
+		linkedList.addToTail(0);
 		linkedList.addToTail(3);
 		linkedList.addToTail(6);
 		linkedList.addToTail(4);
@@ -24,11 +24,6 @@ public class Six {
 		
 	}
 	
-	/*
-	 * 
-	 * Book's approach: iterative, O(n) time complexity, O(n/2) space complexity
-	 * 
-	 */
 	private static boolean isPalindrome(Node head) {
 		Node runner = head;
 		Node faster = runner;
@@ -40,14 +35,7 @@ public class Six {
 		}
 		
 		// skip the middle node if length is odd
-		if (faster != null) runner = runner.next;
-		
-		while (runner != null) {
-			if (stack.pop() != runner.data) return false;
-			runner = runner.next;
-		}
-		
-		return true;
+		if (runner != null) runner = runner.next;
 	}
 	
 }

@@ -10,7 +10,7 @@ public class Six {
 	public static void main(String[] args) {
 		SinglyLinkedList linkedList = new SinglyLinkedList();
 		linkedList.addToTail(9);
-		linkedList.addToTail(4);
+		linkedList.addToTail(2);
 		linkedList.addToTail(6);
 		linkedList.addToTail(3);
 //		linkedList.addToTail(0);
@@ -24,11 +24,6 @@ public class Six {
 		
 	}
 	
-	/*
-	 * 
-	 * Book's approach: iterative, O(n) time complexity, O(n/2) space complexity
-	 * 
-	 */
 	private static boolean isPalindrome(Node head) {
 		Node runner = head;
 		Node faster = runner;

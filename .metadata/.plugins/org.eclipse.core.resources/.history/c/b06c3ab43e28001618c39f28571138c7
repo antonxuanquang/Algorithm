@@ -24,11 +24,6 @@ public class Six {
 		
 	}
 	
-	/*
-	 * 
-	 * Book's approach: iterative, O(n) time complexity, O(n/2) space complexity
-	 * 
-	 */
 	private static boolean isPalindrome(Node head) {
 		Node runner = head;
 		Node faster = runner;

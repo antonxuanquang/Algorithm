@@ -1,0 +1,84 @@
+import java.util.HashSet;
+
+
+public class Eight {
+	/*
+	 * 
+	 * Given a circular linked list, implement an algorithm that returns
+	 * the node at the beginning of the loop. DEFINITION: a (corrupt) linked 
+	 * list in which a node's next pointer points to an earlier node, so as
+	 * to make a loop in the linked list
+	 * 
+	 */
+	public static void main(String[] argsStrings) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(1);
+		linkedList.addToTail(9);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		Node node  = new Node(555);
+		linkedList.addToTail(node);
+		linkedList.addToTail(3);
+		linkedList.addToTail(9);
+		Node node2 = new Node(4);
+		linkedList.addToTail(node2);
+		node2.next = node;
+		
+//		linkedList.debug();
+		System.out.println(isCircular(linkedList.head));
+	}
+
+	
+	/*
+	 * 
+	 * First Approach: Iterative, using HashSet, O(n) time complexity,
+	 * O(n) space complexity
+	 * 
+	 */
+	private static Node isCircular(Node head) {
+		
+		HashSet<Node> table = new HashSet<Node>();
+		Node runner = head;
+		while (runner != null) {
+			if (table.contains(runner)) return runner;
+			table.add(runner);
+			runner = runner.next;
+		}
+		
+		return null;
+	}
+	
+	/*
+	 * 
+	 * Book's Answer: Iterative, using Slower and Faster runner, O(n)
+	 * time complexity, O(1) space complexity
+	 * 
+	 */
+	
+	private static Node isCircular2(Node head) {
+		Node slower = head;
+		Node faster = head;
+		
+		// check if linked list is circular or not
+		while (faster != null && faster.next != null) {
+			if (slower == faster) break;
+			slower = slower.next;
+			faster = faster.next.next;
+		}
+		
+		// linked list is null terminated
+		if (faster == null || faster.next == null)
+			return null;
+		
+		slower = head;
+		while (slower != faster) {
+			slower = slower.next;
+			faster = faster.next;
+		}
+		
+		return faster;		
+	}
+	
+	
+}

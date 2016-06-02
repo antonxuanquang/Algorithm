@@ -1,0 +1,26 @@
+
+public class Eight {
+	/*
+	 * 
+	 * Given a circular linked list, implement an algorithm that returns
+	 * the node at the beginning of the loop. DEFINITION: a (corrupt) linked 
+	 * list in which a node's next pointer points to an earlier node, so as
+	 * to make a loop in the linked list
+	 * 
+	 */
+	public static void main(String[] argsStrings) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(1);
+		linkedList.addToTail(9);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		Node node  = new Node(5);
+		linkedList.addToTail(node);
+		linkedList.addToTail(3);
+		linkedList.addToTail(9);
+		linkedList.addToTail(2);
+		
+		linkedList.debug();
+	}
+}

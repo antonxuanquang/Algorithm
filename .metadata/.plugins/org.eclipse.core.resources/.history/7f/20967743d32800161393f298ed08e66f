@@ -1,0 +1,53 @@
+import java.util.HashSet;
+
+
+public class Eight {
+	/*
+	 * 
+	 * Given a circular linked list, implement an algorithm that returns
+	 * the node at the beginning of the loop. DEFINITION: a (corrupt) linked 
+	 * list in which a node's next pointer points to an earlier node, so as
+	 * to make a loop in the linked list
+	 * 
+	 */
+	public static void main(String[] argsStrings) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addToTail(1);
+		linkedList.addToTail(9);
+		linkedList.addToTail(6);
+		linkedList.addToTail(3);
+		linkedList.addToTail(6);
+		Node node  = new Node(555);
+		linkedList.addToTail(node);
+		linkedList.addToTail(3);
+		linkedList.addToTail(9);
+		Node node2 = new Node(4);
+		linkedList.addToTail(node2);
+		node2.next = node;
+		
+//		linkedList.debug();
+		System.out.println(isCircular(linkedList.head).data);
+	}
+
+	
+	/*
+	 * 
+	 * First Approach: Iterative, using HashSet, O(n) time complexity,
+	 * O(n) space complexityss
+	 * 
+	 */
+	private static Node isCircular(Node head) {
+		
+		HashSet<Node> table = new HashSet<Node>();
+		Node runner = head;
+		while (runner != null) {
+			if (table.contains(runner)) return runner;
+			table.add(runner);
+			runner = runner.next;
+		}
+		
+		return null;
+	}
+	
+	
+}

@@ -18,7 +18,15 @@ public class SinglyLinkedList {
 	
 	void addToHead(int d) {
 		Node n = new Node(d);
-		addToHead(n);
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
+		}
+		n.next = head;
+		head = n;
+		
+		length++;
 	}
 	
 	void addToHead(Node n) {
@@ -35,7 +43,15 @@ public class SinglyLinkedList {
 	
 	void addToTail(int d) {
 		Node n = new Node(d);
-		addToTail(n);
+		if (head == null) {
+			head = n;
+			tail = n;
+			return;
+		}
+		tail.next = n;
+		tail = n;
+		
+		length++;
 	}
 	
 	void addToTail(Node n) {

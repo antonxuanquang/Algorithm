@@ -43,7 +43,7 @@ public class Seven {
 
 	/*
 	 * 
-	 * First approach: recursive, O(a + b) time, O(1) space
+	 * First approach: recursive, O(a + b) time, O(n) space
 	 * 
 	 */
 	private static Node isIntersected(SinglyLinkedList link1, SinglyLinkedList link2) {

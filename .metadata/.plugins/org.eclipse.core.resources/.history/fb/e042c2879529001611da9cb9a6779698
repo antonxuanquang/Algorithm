@@ -61,8 +61,7 @@ public class Two {
 
 	/*
 	 * 
-	 * My 2nd answer: O(n) time complexity, O(1) space complexity; 
-	 * iterative approach
+	 * My 2nd answer: O(n); iterative approach
 	 * 
 	 */
 	private static String printKthToLastElement2(Node head, int k) {

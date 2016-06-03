@@ -35,15 +35,15 @@ public class One {
 	 * 
 	 */
 	static void removeDup(Node head) {
-		HashSet<Integer> set = new HashSet<Integer>();
+		HashSet set = new HashSet();
 		
 		Node runnerNode = head;
 		Node preNode = null;
 		while (runnerNode != null) {
-			if (set.contains(runnerNode.data)) {
+			if (set.contains(new Integer(runnerNode.data))) {
 				preNode.next = runnerNode.next;
 			} else {
-				set.add(runnerNode.data);
+				set.add(new Integer(runnerNode.data));
 				preNode = runnerNode;
 			}
 			runnerNode = runnerNode.next;
@@ -52,8 +52,7 @@ public class One {
 	
 	/*
 	 * 
-	 * Book's answer: without buffer, O(n^2) time complexity, 
-	 * O(1) space complexity
+	 * Book's answer: without buffer
 	 * 
 	 */
 	static void removeDupWithoutBuff(Node head) {

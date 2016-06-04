@@ -1,0 +1,20 @@
+import java.util.EmptyStackException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+
+public class One {
+	/*
+	 * 
+	 * Three in One: Describe how you could use a single array to implement three stacks
+	 * 
+	 */
+	
+	
+	public static void main (String[] args) {
+		MultiStack stack = new MultiStack(3, 100);
+		stack.push(3, 2);
+		
+		
+	}
+}

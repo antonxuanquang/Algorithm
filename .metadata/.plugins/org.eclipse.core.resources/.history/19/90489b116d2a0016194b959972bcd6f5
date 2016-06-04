@@ -1,0 +1,83 @@
+import java.util.EmptyStackException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+import MyStack.StackNode;
+
+
+public class One {
+	/*
+	 * 
+	 * Three in One: Describe how you could use a single array to implement three stacks
+	 * 
+	 */
+	private class ThreeInOneStack<T> implements Iterable<T> {
+		
+		// the index of head
+		int alpha;
+		int beta;
+		int gamma;
+		
+		// this keep track of how many slot has been used
+		int usedSlot;
+		
+		int [] stack;
+		
+		private class ThreeInOneStackNode<T> {
+			private T data;
+			private int next;
+			
+			public ThreeInOneStackNode (T data) {
+				this.data = data;
+			}
+		}
+		
+		public ThreeInOneStack (int length) {
+			stack = new int [length];
+		}
+		
+		public ThreeInOneStack () {
+			
+		}
+		
+		public T alphaPop() {
+			
+		}
+		
+		public void alphaPush (T item) {
+			
+		}
+		
+		public T alphaPeek() {
+			
+		}
+		
+		public boolean isAlphaEmpty() {
+			
+		}
+		
+		
+		public Iterator<T> iterator() {
+			return new ThreeInOneIterator();
+		}
+		
+		private class ThreeInOneIterator<T> implements Iterator<T> {
+			
+			
+			public ThreeInOneIterator () {
+			}
+
+	        public boolean hasNext() {
+	        	return false;
+	        }
+
+	        public T next() {
+	        	return null;
+	        }
+			
+			
+		}
+	}
+	
+	
+}

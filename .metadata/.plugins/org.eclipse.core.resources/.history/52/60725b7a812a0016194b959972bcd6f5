@@ -1,0 +1,223 @@
+import java.util.EmptyStackException;
+import java.util.NoSuchElementException;
+
+public class MultiStack {
+	
+
+/*
+ * 
+ * This is the first approach, haven't finish yet. It was too complicated
+ * I will implement a simpler verion of stack, without 
+ * 
+	// the index of head
+	private int alpha = -1;
+	private int beta = -1;
+	private int gamma = -1;
+
+	// this keep track of how many slot has been used
+	private int usedSlot = 0;
+
+	// this keep track of previous slot has just used
+	private int previouSlot;
+
+	// this array stores all three smaller stacks inside
+	private ThreeInOneStackNode [] stack = new ThreeInOneStackNode[1];
+
+	private class ThreeInOneStackNode {
+		private int data;
+		private int next;
+
+		public ThreeInOneStackNode(int data) {
+			this.data = data;
+			next = -1;
+		}
+	}
+
+	private void resize(int max) {
+		ThreeInOneStackNode[] temp = new ThreeInOneStackNode[max];
+		int alphaRunner = alpha;
+		int counter = 0;
+		while (stack[alphaRunner] != null) {
+			temp[counter] = stack[alphaRunner];
+			temp[counter].next = counter++; 
+			alphaRunner = stack[alphaRunner].next;
+		}
+		stack = temp;
+	}
+
+	private int nextAvailable() {
+		for (int i = 0; i < stack.length; i++) {
+			// this helps to make a wrap around index
+			int slot = (i + previouSlot) % stack.length;
+			if (stack[slot] == null) {
+				// update previousSlot
+				previouSlot = slot;
+				return slot;
+			}
+		}
+		return -1;
+	}
+
+	public int alphaPop() {
+		// when the stack is empty
+		if (alpha == -1) throw new EmptyStackException();
+
+		// data to return
+		int item = stack[alpha].data;
+
+		// save the index of next item
+		int next = stack[alpha].next;
+
+		// delete the top item
+		stack[alpha] = null;
+
+		// change top item index
+		alpha = next;
+
+		// decrement usedSlot
+		usedSlot--;
+
+		// resize the stack if needed
+		if (usedSlot > 0 && usedSlot == stack.length / 4)
+			resize(stack.length / 2);
+
+		return item;
+
+	}
+
+	public void alphaPush(int item) {
+
+		// find next available slot
+		int nextTop = nextAvailable();
+		if (nextTop == -1) {
+			System.out.println("something went wrong in getting stack next index");
+			return;
+		}
+
+		// create new item
+		ThreeInOneStackNode node = new ThreeInOneStackNode(item);
+
+		// change the top
+		node.next = alpha;
+		alpha = nextTop;
+		stack[nextTop] = node;
+
+		// increment usedSlot
+		usedSlot++;
+		// resize the stack if full
+		if (usedSlot == stack.length)
+			resize(2 * stack.length);
+	}
+
+	public int alphaPeek() {
+		return stack[alpha].data;
+	}
+
+	public boolean isAlphaEmpty() {
+		return stack[alpha] == null;
+	}
+
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+		int alphaRunner = alpha;
+		result.append(stack[alphaRunner].data);
+		while (stack[alphaRunner] != null) {
+			result.append(" -> " + stack[alphaRunner].data);
+			alphaRunner = stack[alphaRunner].next;
+		}
+		return result.toString();
+	}
+*/
+	// this array stores stacks' head index
+	private int [] stackHeads;
+	
+	// this array stores all three smaller stacks inside
+	private MultiStackNode[] stack;
+	
+	// this keep track of previous slot has just used
+	private int previouSlot = 0;
+	
+	private class MultiStackNode {
+		private int data;
+		private int next;
+
+		public MultiStackNode(int data) {
+			this.data = data;
+			next = -1;
+		}
+	}
+	
+	public MultiStack (int numberOfStack, int sizeOfStack) {
+		stackHeads = new int [numberOfStack];
+		stack = new MultiStackNode[sizeOfStack];
+		for (int i = 0; i < numberOfStack; i++) 
+			stackHeads[i] = -1;
+		for (int i = 0; i < sizeOfStack; i++) 
+			stack[i] = null;
+	}
+	
+	private int nextAvailable() {
+		for (int i = 0; i < stack.length; i++) {
+			// this helps to make a wrap around index
+			int slot = (i + previouSlot) % stack.length;
+			if (stack[slot] == null) {
+				// update previousSlot
+				previouSlot = slot;
+				return slot;
+			}
+		}
+		return -1;
+	}
+	
+	public void push(int item, int stackNumber) {
+		// invalid stack number
+		if (stackNumber >= stackHeads.length) throw new NullPointerException();
+		
+		// the stack is full
+		int nextSlot = nextAvailable();
+		if (nextSlot == -1) throw new NoSuchElementException();
+		
+		// add node to the head
+		MultiStackNode node = new MultiStackNode(item);
+		stack[nextSlot] = node;
+		node.next = stackHeads[stackNumber];
+		
+		// change head index of stackNumber
+		stackHeads[stackNumber] = nextSlot;
+	}
+	
+	public int peek(int stackNumber) {
+		// invalid stack number
+		if (stackNumber >= stackHeads.length) throw new NullPointerException();
+		return stack[stackHeads[stackNumber]].data;
+	}
+	
+	
+	public int pop(int stackNumber) {
+		// invalid stack number
+		if (stackNumber >= stackHeads.length) throw new NullPointerException();
+		
+		// stack is empty
+		if (isEmpty(stackNumber)) throw new NoSuchElementException();
+		
+		// save the result first
+		int result = stack[stackHeads[stackNumber]].data;
+		
+		// save the old head index
+		int oldHead = stackHeads[stackNumber];
+		
+		// change new head index
+		stackHeads[stackNumber] = stack[oldHead].next;
+		
+		// nullify the old head
+		stack[oldHead] = null;
+		
+		return result;
+	}
+	
+	public boolean isEmpty(int stackNumber) {
+		// invalid stack number
+		if (stackNumber >= stackHeads.length) throw new NullPointerException();
+		return stackHeads[stackNumber] == -1;
+	}
+}

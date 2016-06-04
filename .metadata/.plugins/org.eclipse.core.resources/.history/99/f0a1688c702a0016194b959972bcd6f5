@@ -1,0 +1,116 @@
+import java.util.EmptyStackException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+
+public class One {
+	/*
+	 * 
+	 * Three in One: Describe how you could use a single array to implement three stacks
+	 * 
+	 */
+	private class ThreeInOneStack<T> {
+		
+		// the index of head
+		int alpha;
+		int beta;
+		int gamma;
+		
+		// this keep track of how many slot has been used
+		int usedSlot = 0;
+		
+		// this keep track of previous slot has just used
+		int previouSlot;
+		
+		// this array stores all three smaller stacks inside
+		ThreeInOneStackNode<T> [] stack;
+		
+		private class ThreeInOneStackNode<T> {
+			private T data;
+			private int next;
+			
+			public ThreeInOneStackNode (T data) {
+				this.data = data;
+			}
+		}
+		
+		
+		public ThreeInOneStack (int length) {
+			stack = (ThreeInOneStackNode<T> [])new Object [length];
+		}
+		
+		public ThreeInOneStack () {
+			stack = (ThreeInOneStackNode<T> []) new Object [1];
+		}
+		
+		private void resize(int max) {
+			ThreeInOneStackNode<T> [] temp = (ThreeInOneStackNode<T> []) new Object [1];
+			for (int i = 0; i < stack.length; i++)
+				temp[i] = stack[i];
+			stack = temp;
+		}
+		
+		private int nextAvailable() {
+			for (int i = 0; i < stack.length; i++) {
+				// this helps to make a wrap around index
+				int slot = (i + previouSlot) % stack.length;
+				if (stack[slot] == null) {
+					//update previousSlot
+					previouSlot = slot;
+					return slot;
+				}
+			}
+			return -1;
+		}
+		
+		
+		
+		public T alphaPop() {
+			// when the stack is empty
+			if (stack[alpha] == null) throw new EmptyStackException();
+			
+			// data to return
+			T item = stack[alpha].data;
+			
+			// save the index of next item
+			int next = stack[alpha].next;
+			
+			// delete the top item
+			stack[alpha] = null;
+			
+			// change top item index
+			alpha = next;
+			
+			// decrement usedSlot
+			usedSlot--;
+			
+			// resize the stack if needed
+			if (usedSlot > 0 && usedSlot == stack.length/4) resize(stack.length/2);
+			
+			return item;
+			
+		}
+		
+		public void alphaPush (T item) {
+			ThreeInOneStackNode<T> node = new ThreeInOneStackNode<T>(item);
+			node.next = alpha;
+			// resize the stack if full
+			if (usedSlot == stack.length) resize(2*stack.length);
+		}
+		
+		public T alphaPeek() {
+			return null;
+		}
+		
+		public boolean isAlphaEmpty() {
+			return false;
+		}
+		
+		
+		public String toString () {
+			return null;
+		}
+	}
+	
+	
+}

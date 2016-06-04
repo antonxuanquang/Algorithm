@@ -1,0 +1,128 @@
+import java.util.EmptyStackException;
+
+public class ThreeInOneStack<T> {
+
+	// the index of head
+	private int alpha;
+	private int beta;
+	private int gamma;
+
+	// this keep track of how many slot has been used
+	private int usedSlot = 0;
+
+	// this keep track of previous slot has just used
+	private int previouSlot;
+
+	// this array stores all three smaller stacks inside
+	private ThreeInOneStackNode<T>[] stack;
+
+	private class ThreeInOneStackNode<T> {
+		private T data;
+		private int next;
+
+		public ThreeInOneStackNode(T data) {
+			this.data = data;
+		}
+		public ThreeInOneStackNode() {}
+	}
+
+	public ThreeInOneStack(int length) {
+		stack = (ThreeInOneStackNode<T> []) new Object[length];
+	}
+
+	public ThreeInOneStack() {
+		stack = (ThreeInOneStackNode<T> []) new Object[1];
+	}
+
+	private void resize(int max) {
+		ThreeInOneStackNode<T>[] temp = (ThreeInOneStackNode<T>[]) new Object[1];
+		for (int i = 0; i < stack.length; i++)
+			temp[i] = stack[i];
+		stack = temp;
+	}
+
+	private int nextAvailable() {
+		for (int i = 0; i < stack.length; i++) {
+			// this helps to make a wrap around index
+			int slot = (i + previouSlot) % stack.length;
+			if (stack[slot] == null) {
+				// update previousSlot
+				previouSlot = slot;
+				return slot;
+			}
+		}
+		return -1;
+	}
+
+	public T alphaPop() {
+		// when the stack is empty
+		if (stack[alpha] == null)
+			throw new EmptyStackException();
+
+		// data to return
+		T item = stack[alpha].data;
+
+		// save the index of next item
+		int next = stack[alpha].next;
+
+		// delete the top item
+		stack[alpha] = null;
+
+		// change top item index
+		alpha = next;
+
+		// decrement usedSlot
+		usedSlot--;
+
+		// resize the stack if needed
+		if (usedSlot > 0 && usedSlot == stack.length / 4)
+			resize(stack.length / 2);
+
+		return item;
+
+	}
+
+	public void alphaPush(T item) {
+
+		// find next available slot
+		int nextTop = nextAvailable();
+		if (nextTop == -1) {
+			System.out
+					.println("something went wrong in getting stack next index");
+			return;
+		}
+
+		// create new item
+		ThreeInOneStackNode<T> node = new ThreeInOneStackNode<T>(item);
+
+		// change the top
+		node.next = alpha;
+		alpha = nextTop;
+		stack[nextTop] = node;
+
+		// increment usedSlot
+		usedSlot++;
+		// resize the stack if full
+		if (usedSlot == stack.length)
+			resize(2 * stack.length);
+	}
+
+	public T alphaPeek() {
+		return stack[alpha].data;
+	}
+
+	public boolean isAlphaEmpty() {
+		return stack[alpha] == null;
+	}
+
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+		int alphaRunner = alpha;
+		result.append(stack[alphaRunner].data);
+		while (stack[alphaRunner] != null) {
+			result.append(" -> " + stack[alphaRunner].data);
+			alphaRunner = stack[alphaRunner].next;
+		}
+		return result.toString();
+	}
+}

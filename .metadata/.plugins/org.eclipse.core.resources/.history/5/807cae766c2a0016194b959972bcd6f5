@@ -1,0 +1,53 @@
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+
+public class One {
+	/*
+	 * 
+	 * Three in One: Describe how you could use a single array to implement three stacks
+	 * 
+	 */
+	private class ThreeInOneStack<T> implements Iterable<T> {
+		
+		// the index of head
+		int alpha;
+		int beta;
+		int gamma;
+		
+		private class ThreeInOneStackNode<T> {
+			private T data;
+			private int next;
+			
+			public ThreeInOneStackNode (T data) {
+				this.data = data;
+			}
+		}
+		
+		
+		
+		
+		public Iterator<T> iterator() {
+			return new ThreeInOneIterator();
+		}
+		
+		private class ThreeInOneIterator<T> implements Iterator<T> {
+			
+			
+			public ThreeInOneIterator () {
+			}
+
+	        public boolean hasNext() {
+	        	return false;
+	        }
+
+	        public T next() {
+	        	return null;
+	        }
+			
+			
+		}
+	}
+	
+	
+}

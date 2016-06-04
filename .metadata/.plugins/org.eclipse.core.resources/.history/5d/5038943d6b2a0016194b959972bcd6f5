@@ -1,0 +1,21 @@
+import java.util.Iterator;
+
+
+public class One {
+	/*
+	 * 
+	 * Three in One: Describe how you could use a single array to implement three stacks
+	 * 
+	 */
+	private class ThreeInOneStack<T> implements Iterable<T> {
+		
+		
+		public Iterator<T> iterator() {
+			return new ThreeInOneIterator();
+		}
+	}
+	
+	private class ThreeInOneIterator<T> implements Iterator<T> {
+		
+	}
+}

@@ -1,0 +1,34 @@
+
+public class Two {
+	/*
+	 * 
+	 * How would you design a stack which, in addition to push and 
+	 * pop, has a function min which returns the minimum element?
+	 * Push, pop and min should all operate in O(1) time. 
+	 * 
+	 */
+	
+	private class MinStack {
+		MinStackNode top;
+		
+		public int pop() {
+			// save top's data
+			int result = top.data;
+			
+			// change the top to next
+			top = top.next;
+			
+			return result;
+		}
+	}
+	
+	private class MinStackNode {
+		int data;
+		MinStackNode next;
+		
+		public MinStackNode(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+}

@@ -1,0 +1,121 @@
+import java.util.EmptyStackException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Stack;
+
+
+public class Two {
+	/*
+	 * 
+	 * How would you design a stack which, in addition to push and 
+	 * pop, has a function min which returns the minimum element?
+	 * Push, pop and min should all operate in O(1) time. 
+	 * 
+	 */
+	
+	private static class MinStack implements Iterable<Integer> {
+		MinStackNode top;
+		MinStackNode min;
+		
+		public int pop() {
+			// doesn't have anything yet
+			if (top == null) throw new EmptyStackException();
+			
+			// save top's data
+			int result = top.data;
+			
+			// change the top to next
+			top = top.next;
+			
+			return result;
+		}
+		
+		public void push(int data) {
+			MinStackNode node = new MinStackNode(data);
+			
+			// when there is no element in stack
+			if (top == null) {
+				top = node;
+				min = node;
+			
+			// when stack have something
+			} else {
+				// change min if has smaller element
+				if (node.data < min.data) min = node;
+				
+				// change top
+				node.next = top;
+				top = node;
+			}
+		}
+		
+		public int min() {
+			return min.data;
+		}
+		
+		public String toString() {
+			StringBuilder builder = new StringBuilder();
+			for (int element: this) {
+				builder.append(element + " -> ");
+			}
+			builder.append("null");
+			return builder.toString();
+		}
+		
+		public Iterator<Integer> iterator() {
+			return new MinStackIterator();
+		}
+		
+		private class MinStackIterator implements Iterator<Integer> {
+			private MinStackNode node;
+			
+			public MinStackIterator() {
+				this.node = top;
+			}
+			
+			public boolean hasNext() {
+				return node != null;
+			}
+			
+			public Integer next() {
+				if (!hasNext()) throw new NoSuchElementException();
+				int result = node.data;
+				node = node.next;
+				return result;
+			}
+		}
+	}
+	
+	private static class MinStackNode {
+		int data;
+		MinStackNode next;
+		
+		public MinStackNode(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	
+	public static void main (String[] args) {
+		MinStack stack = new MinStack();
+		stack.push(3);
+		stack.push(6);
+		stack.pop();
+		System.out.println(stack.min());
+		stack.push(1);
+		stack.pop();
+		stack.push(5);
+		stack.push(17);
+		
+		stack.push(2);
+		stack.push(3);
+		System.out.println(stack.min());
+		System.out.println(stack);
+		
+	}
+	
+	
+	
+	
+}

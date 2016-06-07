@@ -1,0 +1,29 @@
+
+public class Four {
+	
+	/*
+	 * 
+	 * Implement a MyQueue class which implements a queue using two stacks
+	 * 
+	 */
+	
+	private static class DoulbeStackQueue<T> {
+		boolean hasJustPop = false;
+		
+		public void add() {
+			
+		}
+		
+		public T remove() {
+			return null;
+		}
+		
+		public T peek() {
+			return null;
+		}
+		
+		public boolean isEmpty() {
+			return false;
+		}
+	}
+}

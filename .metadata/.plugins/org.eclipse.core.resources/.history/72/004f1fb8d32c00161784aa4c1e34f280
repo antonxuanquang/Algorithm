@@ -1,0 +1,38 @@
+import java.util.Stack;
+
+
+public class Four {
+	
+	/*
+	 * 
+	 * Implement a MyQueue class which implements a queue using two stacks
+	 * 
+	 */
+	
+	private static class DoulbeStackQueue<T> {
+		boolean hasJustPop = false;
+		Stack<T> original;
+		Stack<T> reverse;
+		
+		public DoubleStackQueue<T> () {
+			original = new Stack<T>();
+			
+		}
+		
+		public void add() {
+			
+		}
+		
+		public T remove() {
+			return null;
+		}
+		
+		public T peek() {
+			return null;
+		}
+		
+		public boolean isEmpty() {
+			return false;
+		}
+	}
+}

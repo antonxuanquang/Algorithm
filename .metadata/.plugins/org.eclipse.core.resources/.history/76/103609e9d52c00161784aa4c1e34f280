@@ -1,0 +1,82 @@
+import java.util.NoSuchElementException;
+import java.util.Stack;
+
+
+public class Four {
+	
+	/*
+	 * 
+	 * Implement a MyQueue class which implements a queue using two stacks
+	 * 
+	 */
+	
+	private static class DoublStackQueue<T> {
+		boolean hasJustPopped = false;
+		Stack<T> original = new Stack<T>();
+		Stack<T> reverse = new Stack<T>();
+		
+		public void add(T data) {
+			if (hasJustPopped) {
+				while (!reverse.isEmpty()) {
+					original.push(reverse.pop());
+				}
+			}
+			original.push(data);
+			hasJustPopped = false;
+		}
+		
+		public T remove() {
+			if (hasJustPopped) {
+				if (reverse.isEmpty()) throw new NoSuchElementException();
+				return reverse.pop();
+			} else {
+				while (!original.isEmpty()) {
+					reverse.push(original.pop());
+				}
+				if (reverse.isEmpty()) throw new NoSuchElementException();
+				hasJustPopped = true;
+				return reverse.pop();
+			}
+		}
+		
+		public T peek() {
+			if (hasJustPopped) {
+				if (reverse.isEmpty()) throw new NoSuchElementException();
+				return reverse.peek();
+			} else {
+				while (!original.isEmpty()) {
+					reverse.push(original.pop());
+				}
+				if (reverse.isEmpty()) throw new NoSuchElementException();
+				hasJustPopped = true;
+				return reverse.peek();
+			}
+		}
+		
+		public boolean isEmpty() {
+			if (hasJustPopped) 	return reverse.isEmpty();
+			else 				return original.isEmpty();
+		}
+		
+		public String toString() {
+			if (hasJustPopped) {
+				while (!reverse.isEmpty()) {
+					original.push(reverse.pop());
+				}
+			}
+			return original.toString();
+		}	
+	}
+	
+	
+	public static void main(String[] args) {
+		DoubleStackQueue queue = new DoubleStackQueue<Integer>();
+		queue.add(3);
+		
+	}
+	
+	
+	
+	
+	
+}

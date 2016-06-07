@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.Stack;
+
+
+public class Three {
+	/*
+	 * 
+	 * Implement a SetOfStacks should be composed of serveral stacks
+	 * and should create a new stack once the previous one exceeds 
+	 * capacity. SetOfStacks.push() and SetOfStacks.pop() should 
+	 * behave identically to a single stack (that is, pop() should 
+	 * return the same values as it would if there were just a single
+	 * stack). 
+	 * 
+	 */
+	
+	private static class SetOfStacks {
+		ArrayList<Stack<Integer>> stackList;
+		ArrayList<Integer> stackCapacity;
+		private final int CAPACITY;
+		
+		public SetOfStacks(int capacity) {
+			this.CAPACITY = capacity;
+			stackList = new ArrayList<Stack<Integer>>();
+			stackCapacity = new ArrayList<Integer>();
+			stackCapacity.add(0);
+		}
+		
+		public void push(int value) {
+			// change the 
+			while (stackCapacity(currentStack) == CAPACITY) {
+				currentStack++;
+			}
+			
+			
+		}
+		
+		public int pop() {
+			return Integer.MAX_VALUE;
+		}
+		
+		private int stackCapacity(int stackNumber) {
+			return stackCapacity.get(stackNumber);
+		}
+		
+	}
+}

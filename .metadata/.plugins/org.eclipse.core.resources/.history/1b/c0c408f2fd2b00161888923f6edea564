@@ -1,0 +1,17 @@
+
+public class Three {
+	/*
+	 * 
+	 * Implement a SetOfStacks should be composed of serveral stacks
+	 * and should create a new stack once the previous one exceeds 
+	 * capacity. SetOfStacks.push() and SetOfStacks.pop() should 
+	 * behave identically to a single stack (that is, pop() should 
+	 * return the same values as it would if there were just a single
+	 * stack). 
+	 * 
+	 */
+	
+	private class static SetOfStacks() {
+		
+	}
+}

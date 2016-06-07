@@ -140,31 +140,6 @@ public class Four {
 		System.out.println(queue.peek());
 		System.out.println(queue);
 		
-		DoubleStackQueue2<Integer> queue2 = new DoubleStackQueue2<Integer>();
-		queue2.add(3);
-		queue2.add(4);
-//		queue2.remove();
-//		queue2.remove();
-		queue2.add(4);
-		queue2.add(1);
-		queue2.add(7);
-//		queue2.remove();
-		queue2.add(2);
-		
-		System.out.println(queue2.peek());
-		System.out.println(queue2);
-		
-		queue2.add(2);
-		queue2.add(2);
-		queue2.add(2);
-		queue2.remove();
-		queue2.add(2);
-		queue2.remove();
-		queue2.remove();
-		
-		System.out.println(queue2.peek());
-		System.out.println(queue2);
-		
 		
 	}
 	

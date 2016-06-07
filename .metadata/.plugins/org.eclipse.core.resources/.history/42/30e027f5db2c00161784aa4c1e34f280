@@ -78,40 +78,6 @@ public class Four {
 	 * Book's answer: update old stack whenever remove or peek
 	 * 
 	 */
-	private static class DoubleStackQueue2<T> {
-		Stack<T> stackNewest, stackOldest;
-		
-		public DoubleStackQueue2() {
-			stackNewest = new Stack<T>();
-			stackOldest = new Stack<T>();
-		}
-		
-		public int size() {
-			return stackNewest.size() + stackOldest.size();
-		}
-		
-		public void add (T value) {
-			stackNewest.push(value);
-		}
-		
-		private void shiftStacks() {
-			if (stackOldest.isEmpty()) {
-				while (!stackNewest.isEmpty()) {
-					stackOldest.push(stackNewest.pop());
-				}
-			}
-		}
-		
-		public T peek() {
-			shiftStacks();
-			return stackOldest.peek();
-		}
-		
-		public T remove() {
-			shiftStacks();
-			return stackOldest.pop();
-		}
-	}
 	
 	
 	public static void main(String[] args) {
@@ -139,31 +105,6 @@ public class Four {
 		
 		System.out.println(queue.peek());
 		System.out.println(queue);
-		
-		DoubleStackQueue2<Integer> queue2 = new DoubleStackQueue2<Integer>();
-		queue2.add(3);
-		queue2.add(4);
-//		queue2.remove();
-//		queue2.remove();
-		queue2.add(4);
-		queue2.add(1);
-		queue2.add(7);
-//		queue2.remove();
-		queue2.add(2);
-		
-		System.out.println(queue2.peek());
-		System.out.println(queue2);
-		
-		queue2.add(2);
-		queue2.add(2);
-		queue2.add(2);
-		queue2.remove();
-		queue2.add(2);
-		queue2.remove();
-		queue2.remove();
-		
-		System.out.println(queue2.peek());
-		System.out.println(queue2);
 		
 		
 	}

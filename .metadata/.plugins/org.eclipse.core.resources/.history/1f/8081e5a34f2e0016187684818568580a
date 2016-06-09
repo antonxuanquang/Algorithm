@@ -1,0 +1,17 @@
+import java.util.Stack;
+
+
+public class Five {
+	
+	
+	
+	public static <T> void sortStack(Stack<T> stack) {
+		Stack<T> tempStack = new Stack<T>();
+		Stack<T> sortedStack = new Stack<T>();
+		
+		
+		
+		stack = sortedStack;
+		
+	}
+}

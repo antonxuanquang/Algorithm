@@ -1,0 +1,54 @@
+
+public class Six {
+	/*
+	 * 
+	 * Create a data structure to maintain a FIFO system and implement operations
+	 * such as enqueue, dequeueAny, dequeueDog, and dequeueCat. You may use the 
+	 * built-in LinkedList data structure 
+	 * 
+	 */
+	private static class Animal {
+		private String type;
+		private int age;
+		
+		public Animal (String type) {
+			this.type = type;
+		}
+		
+		public String type() {
+			return type;
+		}
+	}
+	
+	private static class Cat {
+		private Animal animal;
+		public Cat(int age) {
+			animal = new Animal("Cat");
+			animal.age = age;
+		}
+	}
+	
+	private static class Dog {
+		private Animal animal;
+		public Dog(int age) {
+			animal = new Animal("Dog");
+			animal.age = age;
+		}
+	}
+	
+	private static class AnimalQueue {
+		private class AnimalNode {
+			Animal animal;
+			AnimalNode next;
+			
+			public AnimalNode(Animal animal) {
+				this.animal = animal;
+			}
+		}
+		
+		Animal first;
+		Animal last;
+	}
+	
+	
+}

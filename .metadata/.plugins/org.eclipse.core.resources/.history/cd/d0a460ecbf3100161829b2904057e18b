@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import Graph.Node;
+
+
+public class DiGraph {
+	private class Node {
+		String label;
+		ArrayList<Node> adj;
+		
+		public Node(String label) {
+			this.label = label;
+			adj = new ArrayList<Node>();
+		}
+	}
+	
+	HashMap<String, Node> graph;
+	
+	public DiGraph() {
+		graph = new HashMap<String, Node>();
+	}
+	
+	public void addEdge(String vertice1, String vertice2) {
+		
+	}
+}

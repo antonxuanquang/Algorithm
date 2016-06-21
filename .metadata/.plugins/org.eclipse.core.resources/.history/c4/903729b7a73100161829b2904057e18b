@@ -1,0 +1,9 @@
+
+public class Graph {
+	private Node[] adj;
+	private int vertices;
+	
+	public Graph(int vertices) {
+		
+	}
+}

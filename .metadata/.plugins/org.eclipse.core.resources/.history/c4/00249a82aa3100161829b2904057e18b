@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Graph {
+	private class Node {
+		private String label;
+		private ArrayList<Node> children = new ArrayList<Node>();
+	}
+	
+	HashMap<String, Node> graph;
+	
+	public Graph() {
+		graph = new HashMap<String, Node>();
+	}
+	
+	public void addEdge()
+}

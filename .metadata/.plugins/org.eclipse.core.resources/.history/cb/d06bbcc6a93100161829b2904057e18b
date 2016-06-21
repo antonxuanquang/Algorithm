@@ -1,0 +1,11 @@
+
+public class Graph {
+	private Node[] adj;
+	private int vertices;
+	
+	public Graph(int vertices) {
+		for (int v = 0; v < vertices; v++) {
+			adj[v] = new Node(); 
+		}
+	}
+}

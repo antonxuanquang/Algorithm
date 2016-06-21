@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Graph {
+	private class Node {
+		String label;
+		ArrayList<Node> children;
+		
+		public Node(String label) {
+			this.label = label;
+			children = new ArrayList<Node>();
+		}
+		
+		public boolean contains(String label) {
+			for (Node node: children) {
+				if (label.equals(node.label)) return true;
+			}
+			return false;
+		}
+		
+		public void add (Node newEdge) {
+			children.add(newEdge);
+			newEdge.children.add(this);
+		}
+	}
+	
+	HashMap<String, Node> graph;
+	
+	public Graph() {
+		graph = new HashMap<String, Node>();
+	}
+	
+	public void addEdge(String vertice1, String vertice2) {
+		if (graph.containsKey(vertice1)) {
+			Node node1 = graph.get(vertice1);
+			Node node2 = new Node(vertice2);
+			if (!node1.contains(vertice2)) {
+				node1.children.add(node2);
+				graph.put(vertice2, node2);
+				node2.children.add(node1);
+			}
+		} else if (graph.containsKey(vertice2)) {
+			
+		} else {
+			
+		}
+	}
+}

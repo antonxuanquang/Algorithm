@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class DiGraph {
+	private class Node {
+		String label;
+		ArrayList<Node> adj;
+		
+		public Node(String label) {
+			this.label = label;
+			adj = new ArrayList<Node>();
+		}
+		
+		public void add (Node vertice) {
+			adj.add(vertice);
+		}
+	}
+	
+	HashMap<String, Node> graph;
+	
+	public DiGraph() {
+		graph = new HashMap<String, Node>();
+	}
+	
+	public void addEdge(String from, String to) {
+		if (graph.containsKey(from)) {
+			Node nodeFrom = graph.get(from);
+			Node nodeTo = new Node(to);
+			nodeFrom.add(nodeTo);
+		} else {
+			Node nodeFrom = graph.get(from);
+			Node nodeTo = graph.get(to);
+			nodeFrom.add(nodeTo);
+			nodeTo.add(nodeFrom);
+		}
+	}
+}

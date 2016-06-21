@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Graph {
+	private class Node {
+		String label;
+		List<Node> children = new ArrayList<Node>();
+	}
+	
+	HashMap<String, Node> graph;
+	
+	public Graph() {
+		graph = new HashMap<String, Node>();
+	}
+	
+	public void addEdge(String from, String to) {
+		if (graph.containsKey(from)) {
+			Node children = graph.get(from);Array
+		}
+	}
+}

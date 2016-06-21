@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+
+public class Node {
+	private int label;
+	private ArrayList<Node> children;
+	
+	public Node(int label) {
+		this.label = label;
+		children = new ArrayList<Node>();
+	}
+}

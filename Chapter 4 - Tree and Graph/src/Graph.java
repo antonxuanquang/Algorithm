@@ -3,27 +3,6 @@ import java.util.HashMap;
 
 
 public class Graph {
-	private class Node {
-		String label;
-		ArrayList<Node> children;
-		boolean visited = false;
-		
-		public Node(String label) {
-			this.label = label;
-			children = new ArrayList<Node>();
-		}
-		
-		public boolean contains(String label) {
-			for (Node node: children) {
-				if (label.equals(node.label)) return true;
-			}
-			return false;
-		}
-		
-		public void add (Node newVertice) {
-			children.add(newVertice);
-		}
-	}
 	
 	HashMap<String, Node> graph;
 	
@@ -71,10 +50,10 @@ public class Graph {
 	}
 	
 	private void dfsSearchRecursion(Node root) {
-		if (graph.get(root.label) == null) return;
+		if (graph.get(root.getLabel()) == null) return;
 		root.visited = true;
-		System.out.println(root.label);
-		for (Node node: root.children) {
+		System.out.println(root.getLabel());
+		for (Node node: root.getAdj()) {
 			if (!node.visited) dfsSearchRecursion(node);
 		}
 	}
@@ -83,9 +62,9 @@ public class Graph {
 		StringBuilder result = new StringBuilder();
 		for (String key: graph.keySet()) {
 			Node node = graph.get(key);
-			result.append(node.label + ":");
-			for (Node child: node.children) {
-				result.append(" " + child.label);
+			result.append(node.getLabel() + ":");
+			for (Node child: node.getAdj()) {
+				result.append(" " + child.getLabel());
 			}
 			result.append("\n");
 		}

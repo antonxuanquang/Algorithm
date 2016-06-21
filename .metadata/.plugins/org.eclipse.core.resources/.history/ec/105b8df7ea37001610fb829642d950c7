@@ -1,0 +1,14 @@
+import javax.swing.RootPaneContainer;
+
+public class One {
+	/*
+	 * 
+	 * Given a directed graph, design an algorithm to find out whether
+	 * there is a route between two nodes.
+	 * 
+	 */
+	
+	public static boolean routable(Node node1, Node node2) {
+		return false;
+	}
+}

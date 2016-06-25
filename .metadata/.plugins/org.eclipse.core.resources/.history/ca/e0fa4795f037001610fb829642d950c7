@@ -1,0 +1,9 @@
+
+public class BinarySearchTree {
+	public class Node {
+		Node left;
+		Node right;
+	}
+	
+	
+}

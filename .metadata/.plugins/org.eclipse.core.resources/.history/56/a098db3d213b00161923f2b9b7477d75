@@ -1,0 +1,50 @@
+
+public class BinarySearchTreeNode {
+	private String label;
+
+	private BinarySearchTreeNode left;
+	private BinarySearchTreeNode right;
+	
+	public BinarySearchTreeNode(String label) {
+		this.label = label;
+	}
+	
+	public void setLeft(BinarySearchTreeNode item) {
+		this.left = item; 
+	}
+
+	public BinarySearchTreeNode getLeft() {
+		return this.left; 
+	}
+
+	public void setRight(BinarySearchTreeNode item) {
+		this.right = item; 
+	}
+	
+	public BinarySearchTreeNode getRight() {
+		return this.right; 
+	}
+	
+
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
+	}
+	
+	public String infix() {
+		StringBuilder result = new StringBuilder();
+		infixTraverse(result, this);
+		return result.toString();
+	}
+	
+	private void infixTraverse(StringBuilder builder, BinarySearchTreeNode root) {
+		if (root.left != null) infixTraverse(builder, root.left);
+		builder.append(root.label);
+		if (root.right != null) infixTraverse(builder, root.right);
+	}
+	
+	
+}

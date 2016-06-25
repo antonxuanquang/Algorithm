@@ -1,0 +1,15 @@
+
+public class Two {
+	/*
+	 * 
+	 * Given a sorted (incresing order) array with unique integer elements, 
+	 * write an algorithm to create a binary search tree with minimum height
+	 * 
+	 */
+	public static BinarySearchTree buildTree(int[] input) {
+		BinarySearchTree tree = new BinarySearchTree();
+		
+		
+		return tree;
+	}
+}

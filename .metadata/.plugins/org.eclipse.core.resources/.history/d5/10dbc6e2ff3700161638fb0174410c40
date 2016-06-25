@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+
+public class Two {
+	/*
+	 * 
+	 * Given a sorted (incresing order) array with unique integer elements, 
+	 * write an algorithm to create a binary search tree with minimum height
+	 * 
+	 */
+	public static BinarySearchTreeNode buildTree(ArrayList<Integer> input) {
+		BinarySearchTreeNode tree = new BinarySearchTreeNode(null);
+		buildTree(input, tree, 0, input.size() - 1);
+		return tree;
+	}
+	
+	public static Node buildTree(ArrayList<Integer> input, Node root, int start, int end) {
+		if (start == end) return new Node("" + input.get(start));
+		root = new Node("" + input.get((start + end) / 2));
+		root.setLeft();
+	}
+}

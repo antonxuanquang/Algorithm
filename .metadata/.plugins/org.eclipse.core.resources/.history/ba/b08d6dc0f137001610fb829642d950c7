@@ -1,0 +1,41 @@
+
+public class BinarySearchTree {
+	private class Node {
+		Node left;
+		Node right;
+		
+		public void setLeft(Node item) {
+			this.left = item; 
+		}
+
+		public Node getLeft() {
+			return this.left; 
+		}
+
+		public void setRight(Node item) {
+			this.right = item; 
+		}
+		
+		public Node getRight() {
+			return this.right; 
+		}
+	}
+	
+	Node root;
+	
+	public BinarySearchTree() {
+		root = new Node();
+	}
+	
+	public String infix() {
+		StringBuilder result = new StringBuilder();
+		infixTraverse(result, root);
+		return result.toString();
+	}
+	
+	private String infixTraverse(StringBuilder builder) {
+		
+	}
+	
+	
+}

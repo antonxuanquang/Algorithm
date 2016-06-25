@@ -1,0 +1,13 @@
+
+public class BinarySearchTree {
+	public class Node {
+		Node left;
+		Node right;
+	}
+	
+	Node root;
+	
+	public BinarySearchTree() {
+		root = new Node();
+	}
+}

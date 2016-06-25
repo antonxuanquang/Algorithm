@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Three {
+	/*
+	 * 
+	 * Given a binary tree, design an algorithm which creates a linked list of
+	 * all the nodes at each depth (e.g., if you have a tree with depth D,
+	 * you'll have D linked lists)
+	 */
+	public static ArrayList<LinkedList<BinarySearchTreeNode>> createLevelLinkedList(
+			BinarySearchTreeNode root) {
+		MyQueue<BinarySearchTreeNode> currentLevel = new MyQueue<BinarySearchTreeNode>();
+		ArrayList<LinkedList<BinarySearchTreeNode>> levelLinkedLists = new ArrayList<LinkedList<BinarySearchTreeNode>>();
+		currentLevel.enqueue(root);
+		LinkedList<BinarySearchTreeNode> rootLinkedList = new LinkedList<BinarySearchTreeNode>();
+		rootLinkedList.add(root);
+		levelLinkedLists.add(rootLinkedList);
+		while (!currentLevel.isEmpty()) {
+			MyQueue<BinarySearchTreeNode> nextLevel = new MyQueue<BinarySearchTreeNode>();
+			for (BinarySearchTreeNode node : currentLevel) {
+				if (node.getLeft() != null) {
+					newLevel.add(node.getLeft());
+				}
+				if (node.getRight() != null)
+					newLevel.add(node.getRight());
+			}
+		}
+
+		return levelLinkedLists;
+	}
+
+	public static void main(String[] args) {
+		BinarySearchTreeNode a = new BinarySearchTreeNode("a");
+		BinarySearchTreeNode b = new BinarySearchTreeNode("b");
+		BinarySearchTreeNode c = new BinarySearchTreeNode("c");
+		BinarySearchTreeNode d = new BinarySearchTreeNode("d");
+		BinarySearchTreeNode e = new BinarySearchTreeNode("e");
+		BinarySearchTreeNode f = new BinarySearchTreeNode("f");
+		BinarySearchTreeNode g = new BinarySearchTreeNode("g");
+		BinarySearchTreeNode h = new BinarySearchTreeNode("h");
+
+		a.setLeft(b);
+		a.setRight(h);
+		b.setLeft(c);
+		b.setRight(d);
+		h.setLeft(e);
+		h.setRight(g);
+		e.setLeft(f);
+	}
+}

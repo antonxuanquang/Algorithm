@@ -1,8 +1,9 @@
 import java.lang.annotation.Retention;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 
-public class MyQueue<T> {
+public class MyQueue<T> implements Iterable<T> {
 	private static class QueueNode<T> {
 		private T data;
 		private QueueNode<T> next;
@@ -46,5 +47,28 @@ public class MyQueue<T> {
 	
 	public boolean isEmpty() {
 		return first == null;
+	}
+	
+	public Iterator<T> iterator() {
+		return new QueueIterator();
+	}
+	
+	private class QueueIterator implements Iterator<T> {
+		private QueueNode<T> node;
+		
+		public QueueIterator() {
+			node = first;
+		}
+		
+		public boolean hasNext() {
+			return node != null;
+		}
+		
+		public T next() {
+			if (!hasNext()) throw new NoSuchElementException();
+			T res = node.data;
+			node = node.next;
+			return res;
+		}
 	}
 }

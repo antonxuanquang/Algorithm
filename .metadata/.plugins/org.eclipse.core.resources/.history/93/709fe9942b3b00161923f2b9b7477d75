@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Three {
+	/*
+	 * 
+	 * Given a binary tree, design an algorithm which creates a linked list of
+	 * all the nodes at each depth (e.g., if you have a tree with depth D,
+	 * you'll have D linked lists)
+	 */
+	
+	
+	/*
+	 * 
+	 * My approach: create a linked list (current linked list) of first level, 
+	 * then add child node to another linked list, then, after all, point current
+	 * linked list to the newly created linked list 
+	 * 
+	 */
+	public static ArrayList<LinkedList<BinaryTreeNode>> createLevelLinkedList(
+			BinaryTreeNode root) {
+		LinkedList<BinaryTreeNode> currentLevel = new LinkedList<BinaryTreeNode>();
+		ArrayList<LinkedList<BinaryTreeNode>> levelLinkedLists = new ArrayList<LinkedList<BinaryTreeNode>>();
+		currentLevel.add(root);
+		LinkedList<BinaryTreeNode> rootLinkedList = new LinkedList<BinaryTreeNode>();
+		rootLinkedList.add(root);
+		levelLinkedLists.add(rootLinkedList);
+		while (!currentLevel.isEmpty()) {
+			LinkedList<BinaryTreeNode> newLevel = new LinkedList<BinaryTreeNode>();
+			for (BinaryTreeNode node : currentLevel) {
+				if (node.getLeft() != null) newLevel.add(node.getLeft());
+				if (node.getRight() != null) newLevel.add(node.getRight());
+			}
+			currentLevel = newLevel;
+			if (newLevel.size() > 0) levelLinkedLists.add(newLevel);
+		}
+		return levelLinkedLists;
+	}
+
+	public static void main(String[] args) {
+		BinaryTreeNode a = new BinaryTreeNode("a");
+		BinaryTreeNode b = new BinaryTreeNode("b");
+		BinaryTreeNode c = new BinaryTreeNode("c");
+		BinaryTreeNode d = new BinaryTreeNode("d");
+		BinaryTreeNode e = new BinaryTreeNode("e");
+		BinaryTreeNode f = new BinaryTreeNode("f");
+		BinaryTreeNode g = new BinaryTreeNode("g");
+		BinaryTreeNode h = new BinaryTreeNode("h");
+
+		a.setLeft(b);
+		a.setRight(h);
+		b.setLeft(c);
+		b.setRight(d);
+		h.setLeft(e);
+		h.setRight(g);
+		e.setLeft(f);
+		
+		ArrayList<LinkedList<BinaryTreeNode>> levelLinkedLists = createLevelLinkedList(a);
+		for (LinkedList<BinaryTreeNode> currentLevel: levelLinkedLists) {
+			for (BinaryTreeNode node: currentLevel) {
+				System.out.println(node.getLabel());
+			}
+			System.out.println("---------");
+		}
+		System.out.println(levelLinkedLists.size());
+	}
+}

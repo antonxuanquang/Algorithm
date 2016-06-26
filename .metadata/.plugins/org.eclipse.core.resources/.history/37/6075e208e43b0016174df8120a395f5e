@@ -1,0 +1,57 @@
+
+public class Five {
+	/*
+	 * 
+	 * Implement a function to check if a binary tree is a binary search tree
+	 * 
+	 */
+	public static boolean isBST(BinaryTreeNode root) {
+		if (root == null) return true;
+		if (root.getLeft() != null) {
+			int leftToRoot = root.getLeft().getLabel().compareTo(root.getLabel());
+			System.out.println(leftToRoot);
+			if (leftToRoot <= 0) return false;
+		}
+		if (root.getRight() != null) {
+			int rightToRoot = root.getLabel().compareTo(root.getRight().getLabel());
+			if (rightToRoot <= 0) return false;
+		}
+		return isBST(root.getLeft()) && isBST(root.getRight());
+	}
+	
+	public static void main(String[] args) {
+		BinaryTreeNode a = new BinaryTreeNode("a");
+		BinaryTreeNode b = new BinaryTreeNode("b");
+		BinaryTreeNode c = new BinaryTreeNode("c");
+		BinaryTreeNode d = new BinaryTreeNode("d");
+		BinaryTreeNode e = new BinaryTreeNode("e");
+		BinaryTreeNode f = new BinaryTreeNode("f");
+		BinaryTreeNode g = new BinaryTreeNode("g");
+		BinaryTreeNode h = new BinaryTreeNode("h");
+
+		// false case
+//		a.setLeft(b);
+//		a.setRight(h);
+//		b.setLeft(c);
+//		b.setRight(d);
+////		c.setRight(h);
+//		h.setLeft(e);
+//		h.setRight(g);
+//		e.setLeft(f);
+		
+		// true case
+//		d.setLeft(b);
+//		b.setLeft(a);
+//		b.setRight(c);
+//		
+//		d.setRight(f);
+//		f.setLeft(e);
+//		f.setRight(g);
+//		
+////		g.setRight(h);
+//		g.setLeft(h);
+		
+		
+		System.out.println(isBST(a));
+	}
+}

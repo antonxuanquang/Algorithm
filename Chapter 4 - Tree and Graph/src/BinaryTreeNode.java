@@ -52,6 +52,4 @@ public class BinaryTreeNode {
 		builder.append(root.label + "\n");
 		if (root.right != null) infixTraverse(builder, root.right);
 	}
-	
-	
 }

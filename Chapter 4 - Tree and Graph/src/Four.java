@@ -67,6 +67,7 @@ public class Four {
 		h.setRight(g);
 		e.setLeft(f);
 		
+		System.out.println(isBalanced(a));
 		System.out.println(isBalanced2(a));
 	}
 }

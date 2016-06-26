@@ -1,0 +1,13 @@
+
+public class Five {
+	/*
+	 * 
+	 * Implement a function to check if a binary tree is a binary search tree
+	 * 
+	 */
+	public static boolean isBST(BinaryTreeNode root) {
+		
+		
+		return false;
+	}
+}

@@ -1,0 +1,40 @@
+
+public class Four {
+	/*
+	 * 
+	 * Implement a function to check if a binary tree is balanced. For the purpose 
+	 * of this question, a balanced tree is defined to be a tree such that the 
+	 * heights of the two subtrees of any node never differ by more than one.
+	 */
+	
+	public boolean checkBalanced(BinaryTreeNode root) {
+		
+		
+		return false;
+	}
+	
+	private int getHeight(BinaryTreeNode root) {
+		if (root == null) return 0;
+		return 1 + Math.max(getHeight(root.getLeft()), getHeight(root.getRight()));
+	}
+	
+	public static void main(String[] args) {
+		BinaryTreeNode a = new BinaryTreeNode("a");
+		BinaryTreeNode b = new BinaryTreeNode("b");
+		BinaryTreeNode c = new BinaryTreeNode("c");
+		BinaryTreeNode d = new BinaryTreeNode("d");
+		BinaryTreeNode e = new BinaryTreeNode("e");
+		BinaryTreeNode f = new BinaryTreeNode("f");
+		BinaryTreeNode g = new BinaryTreeNode("g");
+		BinaryTreeNode h = new BinaryTreeNode("h");
+
+		a.setLeft(b);
+		a.setRight(h);
+		b.setLeft(c);
+		b.setRight(d);
+//		c.setRight(h);
+		h.setLeft(e);
+		h.setRight(g);
+		e.setLeft(f);
+	}
+}

@@ -4,6 +4,7 @@ public class Node {
 	private String label;
 	private ArrayList<Node> adj;
 	boolean visited = false;
+	boolean visiting = false;
 	
 	public Node(String label) {
 		this.label = label;
@@ -11,7 +12,7 @@ public class Node {
 	}
 	
 	public void add (Node vertice) {
-		adj.add(vertice);
+		if (!contains(vertice.getLabel())) adj.add(vertice);
 	}
 	
 	public boolean contains(String label) {

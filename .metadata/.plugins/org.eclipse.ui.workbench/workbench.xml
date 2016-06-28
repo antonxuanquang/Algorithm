@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="767" maximized="true" width="1018" x="396" y="24">
+<window height="901" width="1419" x="320" y="115">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -32,17 +32,32 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Four.java" partName="Four.java" path="/home/quang/Summer 2016/Chapter 4 - Tree and Graph/src/Four.java" title="Four.java" tooltip="Chapter 4 - Tree and Graph/src/Four.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Four.java" partName="Four.java" path="/home/quang/Summer 2016/Chapter 4 - Tree and Graph/src/Four.java" title="Four.java" tooltip="Chapter 4 - Tree and Graph/src/Four.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 4 - Tree and Graph/src/Four.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1462" selectionTopPixel="394"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2143" selectionTopPixel="531"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Three.java" partName="Three.java" path="/home/quang/Summer 2016/Chapter 4 - Tree and Graph/src/Three.java" title="Three.java" tooltip="Chapter 4 - Tree and Graph/src/Three.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 4 - Tree and Graph/src/Three.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="543" selectionOffset="2462" selectionTopPixel="881"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" partName="Five.java" path="/home/quang/Summer 2016/Chapter 4 - Tree and Graph/src/Five.java" title="Five.java" tooltip="Chapter 4 - Tree and Graph/src/Five.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 4 - Tree and Graph/src/Five.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2533" selectionTopPixel="1131"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTreeNode.java" partName="BinaryTreeNode.java" path="/home/quang/Summer 2016/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java" title="BinaryTreeNode.java" tooltip="Chapter 4 - Tree and Graph/src/BinaryTreeNode.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1191" selectionTopPixel="276"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Six.java" partName="Six.java" path="/home/quang/Summer 2016/Chapter 4 - Tree and Graph/src/Six.java" title="Six.java" tooltip="Chapter 4 - Tree and Graph/src/Six.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 4 - Tree and Graph/src/Six.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="480" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -82,8 +97,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (40 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -378,162 +392,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/Three.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/MyQueue.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/Five.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/Two.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/One.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/Four.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/Six.java"/>
 </editors>
-<item historyLabel="BinaryTreeNode.java" index="2">
-<position info="not_deleted" x="815" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1309" y="0"/>
-</item>
-<item historyLabel="Two.java" index="3">
-<position info="not_deleted" x="1445" y="19"/>
-</item>
-<item historyLabel="BinaryTreeNode.java" index="2">
-<position info="not_deleted" x="815" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1309" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1597" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1598" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1650" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1869" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1919" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1954" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2264" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2325" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2371" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="3690" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2310" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="3593" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2310" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2304" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2303" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2304" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2310" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2288" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1925" y="0"/>
-</item>
-<item historyLabel="One.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="1925" y="0"/>
-</item>
-<item historyLabel="MyQueue.java" index="1">
-<position info="not_deleted" x="156" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="702" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2505" y="500"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="702" y="0"/>
-</item>
-<item historyLabel="Three.java" index="0">
-<position info="not_deleted" x="2462" y="543"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="702" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="757" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="779" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="838" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="865" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="497" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="545" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="702" y="0"/>
-</item>
-<item historyLabel="Four.java" index="5">
+<item historyLabel="Five.java" index="0">
 <position/>
 </item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="2103" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position/>
 </item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="426" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position/>
 </item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="614" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="567" y="0"/>
 </item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="669" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="593" y="0"/>
 </item>
-<item historyLabel="Four.java" index="5">
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2672" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2442" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2458" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2475" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2495" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2511" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2528" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2568" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2568" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="267" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="415" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1295" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1138" y="0"/>
+</item>
+<item historyLabel="BinaryTreeNode.java" index="1">
+<position info="not_deleted" x="1191" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2376" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="750" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="772" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="844" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="950" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="955" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1075" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1076" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2634" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="882" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
 <position info="not_deleted" x="700" y="0"/>
 </item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="1033" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="882" y="0"/>
 </item>
-<item historyLabel="Four.java" index="5">
-<position info="not_deleted" x="1226" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1347" y="0"/>
 </item>
-<item active="true" historyLabel="Four.java" index="5">
-<position info="not_deleted" x="1435" y="0"/>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1383" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1465" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1487" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1556" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1562" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1623" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1617" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1679" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1681" y="3"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1701" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1794" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1719" y="4"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="1751" y="0"/>
+</item>
+<item historyLabel="Five.java" index="0">
+<position info="not_deleted" x="2533" y="0"/>
+</item>
+<item active="true" historyLabel="Six.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -552,6 +563,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Six.java" tooltip="Chapter 4 - Tree and Graph/src/Six.java">
+<persistable path="/Chapter 4 - Tree and Graph/src/Six.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTreeNode.java" tooltip="Chapter 4 - Tree and Graph/src/BinaryTreeNode.java">
+<persistable path="/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" tooltip="Chapter 4 - Tree and Graph/src/Five.java">
+<persistable path="/Chapter 4 - Tree and Graph/src/Five.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Three.java" tooltip="Chapter 4 - Tree and Graph/src/Three.java">
 <persistable path="/Chapter 4 - Tree and Graph/src/Three.java"/>
 </file>
@@ -587,15 +607,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Three.java" tooltip="Chapter 3 - Stack and Queue/src/Three.java">
 <persistable path="/Chapter 3 - Stack and Queue/src/Three.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreeInOneStack.java" tooltip="Chapter 3 - Stack and Queue/src/ThreeInOneStack.java">
-<persistable path="/Chapter 3 - Stack and Queue/src/ThreeInOneStack.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedList.java" tooltip="Chapter 3 - Stack and Queue/src/LinkedList.java">
-<persistable path="/Chapter 3 - Stack and Queue/src/LinkedList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="One.java" tooltip="Chapter 3 - Stack and Queue/src/One.java">
-<persistable path="/Chapter 3 - Stack and Queue/src/One.java"/>
 </file>
 </mruList>
 </workbench>

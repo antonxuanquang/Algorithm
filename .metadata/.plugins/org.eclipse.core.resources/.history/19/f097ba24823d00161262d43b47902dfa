@@ -1,0 +1,52 @@
+
+public class Eight {
+	/*
+	 * 
+	 * First Common Ancestor: Design an algorithm and write code to find the first
+	 * common ancestor of two nodes in a binary tree. Avoid storing additional 
+	 * nodes in a data structure. NOTE: this is not necessarily a binary search tree.
+	 * 
+	 */
+	
+	public static BinaryTreeNode findCommonAncestorBruteFore (
+			BinaryTreeNode root, BinaryTreeNode left, BinaryTreeNode right) {
+		boolean onLeftBranch = findBranch(root.getLeft(), left);
+		boolean onRightBranch = findBranch(root.getRight(), right);
+		System.out.println("left: " + onLeftBranch);
+		System.out.println("right: " + onRightBranch);
+//		if 		(onLeftBranch && onRightBranch) return root;
+//		else if (onLeftBranch) 					return findCommonAncestorBruteFore(root.getLeft(), left, right);
+//		else 									return findCommonAncestorBruteFore(root.getRight(), left, right);
+		return null;
+	}
+	
+	private static boolean findBranch(BinaryTreeNode root, BinaryTreeNode node) {
+		if (root == null) return false;
+		if (root == node) return true;
+		return findBranch(root.getLeft(), node) || findBranch(root.getRight(), node);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		BinaryTreeNode a = new BinaryTreeNode("a");
+		BinaryTreeNode b = new BinaryTreeNode("b");
+		BinaryTreeNode c = new BinaryTreeNode("c");
+		BinaryTreeNode d = new BinaryTreeNode("d");
+		BinaryTreeNode e = new BinaryTreeNode("e");
+		BinaryTreeNode f = new BinaryTreeNode("f");
+		BinaryTreeNode g = new BinaryTreeNode("g");
+		BinaryTreeNode h = new BinaryTreeNode("h");
+		
+		a.setLeft(b);
+		a.setRight(h);
+		b.setLeft(c);
+		b.setRight(d);
+//		c.setRight(h);
+		h.setLeft(e);
+		h.setRight(g);
+		e.setLeft(f);
+		BinaryTreeNode node = findCommonAncestorBruteFore(a, b, g);
+		System.out.println(node.getLabel());
+	}
+}

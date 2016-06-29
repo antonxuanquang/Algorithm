@@ -22,7 +22,6 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="Three.StackWithCapacity"/>
 <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
-<fullyQualifiedTypeName name="Node"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="MyQueue"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -34,6 +33,10 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="javax.swing.RootPaneContainer"/>
+<fullyQualifiedTypeName name="Node"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.lang.SecurityException"/>
+<fullyQualifiedTypeName name="java.awt.SecondaryLoop"/>
 <fullyQualifiedTypeName name="BinaryTreeNode"/>
+<fullyQualifiedTypeName name="javax.swing.RootPaneContainer"/>
 </qualifiedTypeNameHistroy>

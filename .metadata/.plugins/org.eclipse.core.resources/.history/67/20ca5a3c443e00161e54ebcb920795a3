@@ -1,0 +1,85 @@
+
+public class Eight {
+	/*
+	 * 
+	 * First Common Ancestor: Design an algorithm and write code to find the first
+	 * common ancestor of two nodes in a binary tree. Avoid storing additional 
+	 * nodes in a data structure. NOTE: this is not necessarily a binary search tree.
+	 * 
+	 */
+	
+	/*
+	 * 
+	 * Brute force approach
+	 * 
+	 */
+	public static BinaryTreeNode findCommonAncestorBruteFore (
+			BinaryTreeNode root, BinaryTreeNode left, BinaryTreeNode right) {
+		boolean onLeftBranch = findBranch(root.getLeft(), left);
+		boolean onRightBranch = findBranch(root.getRight(), right);
+		if 		(onLeftBranch && onRightBranch) return root;
+		else if (onLeftBranch) 					return findCommonAncestorBruteFore(root.getLeft(), left, right);
+		else if (onRightBranch)					return findCommonAncestorBruteFore(root.getRight(), left, right);
+		return root;
+	}
+	
+	/*
+	 * 
+	 * Optimal approach
+	 * 
+	 */
+	private static BinaryTreeNode findCommonAncestorOptimal (BinaryTreeNode root, BinaryTreeNode left, 
+			BinaryTreeNode right) {
+		return findCommonAncestorOptimal(root.getLeft(), left, right, false, false);
+	}
+	
+	private static BinaryTreeNode findCommonAncestorOptimal (BinaryTreeNode root, BinaryTreeNode left, 
+			BinaryTreeNode right, boolean onLeftBranch, boolean onRightBranch) {
+		if (!onLeftBranch && !onRightBranch) {
+			onLeftBranch = findBranch(root.getLeft(), left);
+			onRightBranch = findBranch(root.getRight(), right);
+		} else if (!onLeftBranch && onRightBranch) {
+			onLeftBranch = findBranch(root.getLeft(), left);
+			if (!onLeftBranch) onRightBranch = findBranch(root.getRight(), left);
+		} else if (onLeftBranch && !onRightBranch) {
+			onRightBranch = findBranch(root.getRight(), right);
+			if (!onRightBranch) onLeftBranch = findBranch(root.getLeft(), left);
+		}
+		if 		(onLeftBranch && onRightBranch) return root;
+		else if (onLeftBranch) 					return findCommonAncestorOptimal(root.getLeft(), left, right, onLeftBranch, onRightBranch);
+		else if (onRightBranch)					return findCommonAncestorOptimal(root.getRight(), left, right, onLeftBranch, onRightBranch);
+		return root;
+	}
+	
+	private static boolean findBranch(BinaryTreeNode root, BinaryTreeNode node) {
+		if (root == null) return false;
+		if (root == node) return true;
+		return findBranch(root.getLeft(), node) || findBranch(root.getRight(), node);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		BinaryTreeNode a = new BinaryTreeNode("a");
+		BinaryTreeNode b = new BinaryTreeNode("b");
+		BinaryTreeNode c = new BinaryTreeNode("c");
+		BinaryTreeNode d = new BinaryTreeNode("d");
+		BinaryTreeNode e = new BinaryTreeNode("e");
+		BinaryTreeNode f = new BinaryTreeNode("f");
+		BinaryTreeNode g = new BinaryTreeNode("g");
+		BinaryTreeNode h = new BinaryTreeNode("h");
+		
+		a.setLeft(b);
+		a.setRight(h);
+		b.setLeft(c);
+		b.setRight(d);
+//		c.setRight(h);
+		h.setLeft(e);
+		h.setRight(g);
+		e.setLeft(f);
+		BinaryTreeNode node = findCommonAncestorBruteFore(a, a, a);
+		BinaryTreeNode node2 = findCommonAncestorOptimal(a, g, d);
+		System.out.println(node.getLabel());
+		System.out.println(node2.getLabel());
+	}
+}

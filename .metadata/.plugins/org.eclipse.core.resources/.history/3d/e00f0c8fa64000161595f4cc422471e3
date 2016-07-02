@@ -1,0 +1,54 @@
+import javax.swing.tree.TreeNode;
+
+
+public class Eleven {
+	/*
+	 * 
+	 * Random Node: You are implementing a binary tree class from scratch which,
+	 * in addition to insert, find, and delete, has a method getRandomNode() which
+	 * returns a random node from the tree. All nodes should be equally likely 
+	 * to be chosen. Design and implement an algorithm for getRandomNode, and
+	 * explain how you would implement the rest of the methods
+	 * 
+	 */
+	
+	private static class TreeNode<T extends Comparable<T>> {
+		private T data;
+		public TreeNode left;
+		public TreeNode right;
+		private int size;
+		
+		public TreeNode(T item) {
+			data = item;
+			size = 1;
+		}
+		
+		public TreeNode(int i) {
+			int leftSize = left == null ? 0 : left.size();
+		}
+		
+		
+		
+		public void insertInOrder(T item) {
+			if (item.compareTo(data) <= 0) {
+				if (left == null) {
+					left = new TreeNode<T>(item);
+				} else {
+					left.insertInOrder(item);
+				}
+			} else {
+				if (right == null) {
+					right = new TreeNode<T>(item);
+				} else {
+					right.insertInOrder(item);
+				}
+			}
+			size++;
+		}
+		
+		public int size() { return size;}
+		public T data() { return data;}
+		
+		
+	}
+}

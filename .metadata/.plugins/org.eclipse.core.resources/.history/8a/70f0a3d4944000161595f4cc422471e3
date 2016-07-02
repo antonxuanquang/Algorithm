@@ -1,0 +1,12 @@
+import java.time.LocalDate;
+import java.time.chrono.ChronoLocalDate;
+import java.time.temporal.ChronoField;
+
+
+public class Test {
+	public static void main(String[] args) {
+		LocalDate past = LocalDate.of(1995, 4, 21);
+		LocalDate now = LocalDate.now();
+		System.out.println(past.until(now));
+	}
+}

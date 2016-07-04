@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+
+
+public class BTNode<T extends Comparable<T>> {
+	private T label;
+	private int height;
+	private BTNode left;
+	private BTNode right;
+	
+	public BTNode(T label) {
+		this.label = label;
+	}
+	
+	public void setLeft(BTNode item) {
+		this.left = item; 
+	}
+
+	public BTNode getLeft() {
+		return this.left; 
+	}
+
+	public void setRight(BTNode item) {
+		this.right = item; 
+	}
+	
+	public BTNode getRight() {
+		return this.right; 
+	}
+	
+
+	public T getLabel() {
+		return label;
+	}
+
+	public void setLabel(T label) {
+		this.label = label;
+	}
+	
+	public static int getHeight(BTNode root) {
+		if (root == null) return 0;
+		int leftHeight = getHeight(root.left);
+		int rightHeight = getHeight(root.right);
+		return 1 + Math.max(getHeight(root.left), getHeight(root.right));
+	}
+	
+	public ArrayList<T> infix() {
+		ArrayList<T> result = new ArrayList<T>();
+		infixTraverse(result, this);
+		return result;
+	}
+	
+	private void infixTraverse(ArrayList<T> builder, BTNode root) {
+		if (root.left != null) infixTraverse(builder, root.left);
+		builder.add(root.label);
+		if (root.right != null) infixTraverse(builder, root.right);
+	}
+}

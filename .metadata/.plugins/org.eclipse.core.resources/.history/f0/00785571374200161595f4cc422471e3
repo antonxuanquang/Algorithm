@@ -1,0 +1,10 @@
+
+public class BitTasks {
+	public static boolean getBit(int num, int position) {
+		return ((num & (1 << position)) != 0);
+	}
+	
+	public static int setBit(int num, int position) {
+		return (num | (1 << position));
+	}
+}

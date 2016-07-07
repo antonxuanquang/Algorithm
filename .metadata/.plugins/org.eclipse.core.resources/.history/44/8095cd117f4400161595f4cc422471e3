@@ -1,0 +1,13 @@
+
+public class ReplaceTester {
+	public static void main(String[] args) {
+		replaceTester("Missippi");
+	}
+	
+	public static void replaceTester(String input) {
+		System.out.println(input);
+		String replacedString = input.replace('i', '!');
+		replacedString = replacedString.replace('s', '$');
+		System.out.println(replacedString);
+	}
+}

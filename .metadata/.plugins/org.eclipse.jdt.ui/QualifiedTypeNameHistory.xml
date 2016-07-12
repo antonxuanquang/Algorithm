@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.awt.geom.CubicCurve2D"/>
 <fullyQualifiedTypeName name="MyStack.StackIterator"/>
 <fullyQualifiedTypeName name="MyStack"/>
@@ -44,4 +43,21 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="Ten.Result"/>
 <fullyQualifiedTypeName name="BinaryTreeNode"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="creational.factoryPattern.Circle"/>
+<fullyQualifiedTypeName name="creational.factoryPattern.Rectangle"/>
+<fullyQualifiedTypeName name="creational.factoryPattern.Triangle"/>
+<fullyQualifiedTypeName name="creational.factoryPattern.ShapeFactory"/>
+<fullyQualifiedTypeName name="creational.factoryPattern.Shape"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Color"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Red"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Green"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Circle"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Rectangle"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Triangle"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.ShapeFactory"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.ColorFactory"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.FactoryProducer"/>
+<fullyQualifiedTypeName name="creational.abstractFactoryPattern.AbstractFactory"/>
+<fullyQualifiedTypeName name="creational.singleton.SingleObject"/>
 </qualifiedTypeNameHistroy>

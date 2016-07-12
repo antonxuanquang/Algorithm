@@ -1,0 +1,8 @@
+package creational.builder;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class Meal {
+	private List<Item> items = new ArrayList<Item>();
+}

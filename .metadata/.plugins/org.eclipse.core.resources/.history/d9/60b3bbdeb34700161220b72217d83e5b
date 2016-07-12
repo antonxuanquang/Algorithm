@@ -1,0 +1,5 @@
+package structural.filter;
+
+public class CriteriaPatternDemo {
+
+}

@@ -1,0 +1,9 @@
+package creational.abstractFactoryPattern;
+
+public class Green implements Color {
+
+	public void draw() {
+		System.out.println("Inside Green::fill() method.");
+	}
+	
+}

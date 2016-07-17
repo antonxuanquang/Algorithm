@@ -1,0 +1,13 @@
+package one;
+
+public abstract class Card {
+	private Rank rank;
+	private Suit suite;
+	
+	public Card(Rank rank, Suit suite) {
+		this.rank = rank;
+		this.suite = suite;
+	}
+	
+	protected int getValue();
+}

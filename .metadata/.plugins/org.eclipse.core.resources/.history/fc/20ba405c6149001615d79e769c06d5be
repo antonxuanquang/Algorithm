@@ -1,0 +1,5 @@
+package behavioral.chainOfResposibility;
+
+public class ErrorLogger {
+
+}

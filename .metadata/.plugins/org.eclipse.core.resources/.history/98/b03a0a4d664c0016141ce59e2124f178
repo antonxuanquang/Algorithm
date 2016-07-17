@@ -1,0 +1,9 @@
+package one.BookApproach;
+
+public class FactoryProducer {
+	public static AbstractCardFactory getFactory(String type) {
+		if (type.equalsIgnoreCase("blackjack")) {
+			return new BlackJackCardFactory();
+		}
+	}
+}

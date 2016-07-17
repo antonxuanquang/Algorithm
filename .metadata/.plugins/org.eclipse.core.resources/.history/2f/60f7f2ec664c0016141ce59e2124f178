@@ -1,0 +1,21 @@
+package one.BookApproach;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import one.Card;
+
+public class Deck<T extends Card> {
+	private List<T> cards = new ArrayList<T>();
+	
+	public Deck(String type) {
+		AbstractCardFactory factory = FactoryProducer.getFactory(type);
+		for (Rank rank: Rank.values()) {
+			for (Suit suit: Suit.values()) {
+				one.BookApproach.Card card = factory.getCard(suit, rank);
+//				Card card = new Card(rank, suit);
+//				cards.add(item);
+			}
+		}
+	}
+}

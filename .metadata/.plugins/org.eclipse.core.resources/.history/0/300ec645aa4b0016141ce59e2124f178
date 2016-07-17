@@ -1,0 +1,15 @@
+package one.BookApproach;
+
+public abstract class Card {
+	
+	private Suit suit;
+	private Rank rank;
+	
+	public Card (Suit suit, Rank rank) {
+		this.suit = suit;
+		this.rank = rank;
+	}
+	
+	abstract void setRank(int ace, int jack, int queen, int king);
+	
+}

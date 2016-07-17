@@ -1,0 +1,13 @@
+package one;
+
+public class BlackJack {
+	
+	
+	public int checkHand() {
+		int sum = 0;
+		for (Card card: cardsOnHand) {
+			sum += card.getValue();
+		}
+		return sum;
+	}
+}

@@ -1,0 +1,21 @@
+package one;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BlackJack {
+	
+	private List<Hand> hands = new ArrayList<Hand>();
+	
+	public void addHand(Hand hand) {
+		hands.add(hand);
+	}
+	
+	public int checkHand(Hand hand) {
+		int sum = 0;
+		for (Card card: hand.getCards()) {
+			sum += card.getValue();
+		}
+		return sum;
+	}
+}

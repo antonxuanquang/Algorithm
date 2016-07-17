@@ -1,0 +1,6 @@
+package behavioral.visitor;
+
+public interface ComputerPartVisitor {
+	public void visit(Keyboard keyboard);
+
+}

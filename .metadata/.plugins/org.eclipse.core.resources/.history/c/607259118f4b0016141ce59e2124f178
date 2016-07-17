@@ -1,0 +1,17 @@
+package one;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DeckOfCard {
+	private List<Card> cards = new ArrayList<Card>();
+	
+	public DeckOfCard() {
+		for (Rank rank: Rank.values()) {
+			for (Suite suite: Suite.values()) {
+				Card card = new Card(rank, suite);
+				cards.add(card);
+			}
+		}
+	}
+}

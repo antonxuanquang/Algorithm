@@ -1,0 +1,20 @@
+package one.BookApproach;
+
+public class BlackJackGameDemo {
+	public static void main(String[] args) {
+		Deck deck = new DeckOfCard();
+		
+		Hand quang = new Hand("Quang");
+		Hand john = new Hand("John");
+		
+		quang.witdrawACard(deck);
+		quang.witdrawACard(deck);
+		
+		john.witdrawACard(deck);
+		john.witdrawACard(deck);
+		
+		blackJack.addHand(quang);
+		blackJack.addHand(john);
+		blackJack.checkAllHands();
+	}
+}

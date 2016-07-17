@@ -1,0 +1,21 @@
+package one;
+
+public class BlackJackGameDemo {
+	public static void main(String[] args) {
+		Deck deck = new Deck("blackjack");
+		BlackJackGame blackJack = new BlackJackGame(deck);
+		
+		Hand quang = new Hand("Quang");
+		Hand john = new Hand("John");
+		
+		quang.witdrawACard(deck);
+		quang.witdrawACard(deck);
+		
+		john.witdrawACard(deck);
+		john.witdrawACard(deck);
+		
+		blackJack.addHand(quang);
+		blackJack.addHand(john);
+		blackJack.checkAllHands();
+	}
+}

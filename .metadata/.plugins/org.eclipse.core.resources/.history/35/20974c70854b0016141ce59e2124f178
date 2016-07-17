@@ -1,0 +1,9 @@
+package one;
+
+public class BlackJackGame {
+	public static void main(String[] args) {
+		for (Enum ranEnum: Rank.values()) {
+			System.out.println(ranEnum.get);
+		}
+	}
+}

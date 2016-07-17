@@ -1,0 +1,12 @@
+package one;
+
+public enum Rank {
+	
+	private int rank;
+	
+	Two(2)
+	
+	public Rank(int rank) {
+		this.rank = rank;
+	}
+}

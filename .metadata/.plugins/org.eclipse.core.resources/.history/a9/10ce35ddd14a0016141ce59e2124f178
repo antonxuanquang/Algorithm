@@ -1,0 +1,13 @@
+package j2ee.businessDelegate;
+
+public class BusinessDelegate {
+	private BusinessLookup lookup = new BusinessLookup();
+	private BusinessService service;
+	private String servicetype;
+	
+	public BusinessDelegate(String type) {
+		service = type;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package one;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Hand {
+	private List<Card> cardsOnHand = new ArrayList<Card>();
+	
+	public void witdrawACard(DeckOfCard deck) {
+		cardsOnHand.add(deck.withdrawARandomCard());
+	}
+	
+	
+}

@@ -1,0 +1,5 @@
+package behavioral.stractegy;
+
+public interface Strategy {
+	public int doOperation();
+}

@@ -1,0 +1,16 @@
+package behavioral.interpreter;
+
+public class TerminalExression implements Expression {
+	
+	private String data;
+	
+	public TerminalExression(String data) {
+		this.data = data;
+	}
+	
+	public boolean interpret(String context) {
+		if (data.contains(context)) return true;
+		return false;
+	}
+
+}

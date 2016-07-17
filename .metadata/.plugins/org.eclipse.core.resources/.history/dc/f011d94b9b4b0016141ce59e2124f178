@@ -1,0 +1,9 @@
+package one;
+
+public class BlackJackCard extends Card {
+
+	public BlackJackCard(Rank rank, Suit suite) {
+		super(rank, suite);
+	}
+
+}

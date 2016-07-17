@@ -9,10 +9,13 @@ public class BlackJackCard extends Card {
 	@Override
 	int getValue() {
 		if (rank == Rank.ACE) return 1;
-		else if (rank == Rank.JACK 
+		if (rank == Rank.JACK 
 				|| rank == Rank.QUEEN 
 				|| rank == Rank.KING) return 10;
-		else return rank.getRank();
+		Rank.ACE.setRank(1);
+		Rank.JACK.setRank(10);
+		Rank.QUEEN.setRank(10);
+		Rank.KING.setRank(10);
 	}
 
 	

@@ -10,6 +10,8 @@ public abstract class Card {
 		this.rank = rank;
 	}
 	
-	abstract int getValue();
+	public int getValue() {
+		return rank.getRank();
+	}
 	
 }

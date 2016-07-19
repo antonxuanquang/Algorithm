@@ -1,0 +1,8 @@
+package two.secondApproach;
+
+public abstract class Employee {
+	
+	protected String name;
+	protected Rank
+	
+}

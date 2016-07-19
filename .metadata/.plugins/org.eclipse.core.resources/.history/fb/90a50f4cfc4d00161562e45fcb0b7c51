@@ -1,0 +1,16 @@
+package two;
+
+public class Director extends Employee{
+
+	public Director() { 
+		this.level = Employee.DIRECTOR;
+		this.name = "Director";
+	}
+	
+	@Override
+	void handleCall(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

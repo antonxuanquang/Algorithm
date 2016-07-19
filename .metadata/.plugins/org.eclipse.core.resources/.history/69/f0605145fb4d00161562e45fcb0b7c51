@@ -1,0 +1,25 @@
+package two;
+
+public abstract class Employee {
+	
+	public static final int RESPONDENT = 1;
+	public static final int MANAGER = 2;
+	public static final int DIRECTOR = 3;
+	
+	protected Employee nextEmployee;
+	protected int level;
+	
+	public void dispatchCall(String message, int level) {
+		if (this.level <= level) {
+			handleCall();
+		} else {
+			nextEmployee.handleCall();
+		}
+	}
+	
+	public void setNextLevel(Employee employee) {
+		this.nextEmployee = employee;
+	}
+	
+	abstract void handleCall(); 
+}

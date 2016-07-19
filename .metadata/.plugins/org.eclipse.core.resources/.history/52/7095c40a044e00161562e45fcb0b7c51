@@ -1,0 +1,18 @@
+package two.secondApproach;
+
+public abstract class Employee {
+	
+	protected String name;
+	protected Rank rank;
+	protected Employee nextEmployee;
+	
+	public void dispatchCall(Call call, CallPool pool) {
+		if (rank.getValue() >= call.getRank().getValue()) {
+			handleCall(call);
+		} else {
+			nextEmployee.dispatchCall(call, pool);
+		}
+	}
+	
+	abstract void handleCall(Call call);
+}

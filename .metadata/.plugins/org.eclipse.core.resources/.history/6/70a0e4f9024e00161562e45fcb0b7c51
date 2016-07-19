@@ -1,0 +1,4 @@
+package two.secondApproach;
+
+public abstract class Employee {
+}

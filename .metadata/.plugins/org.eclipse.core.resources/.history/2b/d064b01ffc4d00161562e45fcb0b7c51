@@ -1,0 +1,15 @@
+package two;
+
+public class ManagerEmployee extends Employee{
+	
+	public ManagerEmployee() {
+		this.level = Employee.MANAGER;
+		this.name = "Manager";
+	}
+	
+	@Override
+	void handleCall() {
+		System.out.println("Manager handle the call");
+	}
+
+}

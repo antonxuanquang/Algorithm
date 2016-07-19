@@ -5,7 +5,7 @@ public class CardFactoryProducer {
 		if (type.equalsIgnoreCase("blackjack")) {
 			return new BlackJackCardFactory();
 		} else {
-			return null;
+			throw new NoSuchFieldError();
 		}
 	}
 }

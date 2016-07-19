@@ -1,0 +1,15 @@
+package two;
+
+public class RespondentEmployee extends Employee {
+
+	public RespondentEmployee() {
+		this.level = Employee.RESPONDENT;
+		this.name = "Respondent";
+	}
+	
+	@Override
+	void handleCall(String message) {
+		System.out.println("Respondent handle the " + message);
+	}
+	
+}

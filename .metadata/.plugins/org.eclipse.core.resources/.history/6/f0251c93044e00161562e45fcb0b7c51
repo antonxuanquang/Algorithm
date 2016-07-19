@@ -1,0 +1,10 @@
+package two.secondApproach;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CallPool {
+	
+	private List<Call> respondentPool = new ArrayList<Call>();
+
+}

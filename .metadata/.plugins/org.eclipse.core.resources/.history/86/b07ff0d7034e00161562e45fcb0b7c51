@@ -1,0 +1,13 @@
+package two.secondApproach;
+
+public abstract class Employee {
+	
+	protected String name;
+	protected Rank rank;
+	
+	public void dispatchCall(Call call, CallPool pool) {
+		
+	}
+	
+	abstract void handleCall(Call call);
+}

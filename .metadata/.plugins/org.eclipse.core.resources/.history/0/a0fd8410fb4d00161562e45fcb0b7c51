@@ -1,0 +1,16 @@
+package two;
+
+public abstract class Employee {
+	
+	public static final int RESPONDENT = 1;
+	public static final int MANAGER = 2;
+	public static final int DIRECTOR = 3;
+	
+	private Employee employee;
+	
+	abstract void dispatchCall(String message);
+	
+	public void setNextLevel(Employee employee) {
+		this.employee = employee;
+	}
+}

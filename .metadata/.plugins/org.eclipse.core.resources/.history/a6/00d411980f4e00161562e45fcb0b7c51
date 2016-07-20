@@ -1,0 +1,14 @@
+package three;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CD {
+	
+	private List<CD> lists = new ArrayList<CD>();
+	
+	public CD(List<Song> songs) {
+		lsits = songs;
+	}
+
+}

@@ -1,0 +1,8 @@
+package three;
+
+public class Song {
+	private String name;
+	private String title;
+	private String author;
+
+}

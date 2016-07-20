@@ -1,0 +1,16 @@
+package three;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CDPlayer {
+	private List<CD> cds = new ArrayList<CD>();
+	private Song currentSong;
+	
+	public Song play(CD cd, String name) {
+		currentSong = cd.selectSong(name);
+		return currentSong;
+	}
+	
+	
+}

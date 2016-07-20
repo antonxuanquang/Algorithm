@@ -1,0 +1,28 @@
+package three;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CDPlayer {
+	private List<CD> cds = new ArrayList<CD>();
+	private Song currentSong;
+	private double currentBalance;
+	
+	public void play(CD cd, String name) {
+		currentSong = cd.selectSong(name);
+	}
+	
+	public Song currentSong() { 
+		return currentSong;
+	}
+	
+	public void addMoney(double money) { 
+		currentBalance += money;
+	}
+	
+	public double getBalance() {
+		return currentBalance;
+	}
+	
+	
+}

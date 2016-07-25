@@ -1,8 +1,0 @@
-package creational.abstractFactoryPattern;
-
-public class AbstractFactoryPatternDemo {
-	public static void main (String[] args) {
-		AbstractFactory colorFactory = FactoryProducer.getFactory("color");
-		AbstractFactory shapeFactory = FactoryProducer.getFactory("shape");
-	}
-}

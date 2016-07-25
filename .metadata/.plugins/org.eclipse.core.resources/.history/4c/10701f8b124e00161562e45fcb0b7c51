@@ -1,0 +1,13 @@
+package four;
+
+
+public class Car {
+	private long getInTime;
+	private long getOutTime;
+	private String ticketNumber;
+	
+	public Car() {
+		getInTime = System.currentTimeMillis();
+	}
+	
+}

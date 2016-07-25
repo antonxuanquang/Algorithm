@@ -1,0 +1,21 @@
+package four;
+
+public class Floor {
+	private int capacity;
+	private String name;
+	private Slot[] slots;
+	
+	public Floor(String name, int capacity) {
+		this.name = name;
+		this.capacity = capacity;
+		
+		slots = new Slot[capacity];
+	}
+	
+	public void parkACar(Car car) throws Exception {
+		if (capacity == 0) throw new Exception("Parking is full");
+		for (Slot slot: slots) {
+			if (!slot.isUsed()) slot.parkACar(car);
+		}
+	}
+}

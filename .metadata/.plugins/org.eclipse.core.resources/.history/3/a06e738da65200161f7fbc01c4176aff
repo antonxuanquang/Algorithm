@@ -1,0 +1,11 @@
+package four;
+
+public class Parking {
+	
+	private Level[] levels;
+	
+	public Parking (int levels) {
+		this.levels = new Level[levels];
+	}
+
+}

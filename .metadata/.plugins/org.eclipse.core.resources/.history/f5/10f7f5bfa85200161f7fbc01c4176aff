@@ -1,0 +1,17 @@
+package four;
+
+public class Car {
+	private long getInTime;
+	private String ticketNumber;
+	private Slot slot;
+	
+	public Car(Slot slot) {
+		this.slot = slot;
+		getInTime = System.currentTimeMillis();
+	}
+	
+	public double cost() {
+		slot.clear();
+		return (System.currentTimeMillis() - getInTime) / 100;
+	}
+}

@@ -1,5 +1,0 @@
-package one.BookApproach;
-
-public enum Suit {
-	HEART, DIAMONG, CLUB, SPADE
-}

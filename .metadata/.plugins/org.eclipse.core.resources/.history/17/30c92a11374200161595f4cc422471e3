@@ -1,6 +1,0 @@
-
-public class BitTasks {
-	public static boolean getBit(int num, int shift) {
-		return ((num & (1 << shift)) != 0);
-	}
-}

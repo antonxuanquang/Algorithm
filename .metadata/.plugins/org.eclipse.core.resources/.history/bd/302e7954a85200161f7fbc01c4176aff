@@ -1,0 +1,31 @@
+package four;
+
+public class Level {
+	private int capacity;
+	private String name;
+	private Slot[] slots;
+	
+	public Level(String name, int capacity) {
+		this.name = name;
+		this.capacity = capacity;
+		
+		slots = new Slot[capacity];
+		for (int i = 0; i < capacity; i++) {
+			slots[i] = new Slot();
+		}
+	}
+	
+	public Slot parkACar(Car car) throws Exception {
+		if (isEmpty()) throw new Exception("This level is full");
+		for (Slot slot: slots) {
+			if (!slot.isUsed()) {
+				slot.parkACar(car);
+				capacity--;
+			}
+		}
+	}
+	
+	public boolean isEmpty() {
+		return capacity == 0;
+	}
+}

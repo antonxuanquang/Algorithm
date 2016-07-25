@@ -1,7 +1,0 @@
-package creational.builder;
-
-public interface class Item {
-	public String name();
-	public Packing packing();
-	public float price();
-}

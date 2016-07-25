@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;four.Floor&apos; to &apos;Level&apos;&#x0A;- Original project: &apos;Chapter 7 - Object-Oriented Design&apos;&#x0A;- Original element: &apos;four.Floor&apos;&#x0A;- Renamed element: &apos;four.Level&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Floor&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;four{Floor.java[Floor" matchStrategy="1" name="Level" qualified="false" references="true" similarDeclarations="false" stamp="1469478458539" textual="false" version="1.0"/>
+</session>

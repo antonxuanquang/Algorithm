@@ -1,0 +1,28 @@
+package four;
+
+public class Parking {
+	
+	private Level[] levels;
+	
+	public Parking (int levels) {
+		this.levels = new Level[levels];
+		for (int i = 0; i < levels; i++) {
+			levels[i] = new Level("" + (i + 1), 50);
+		}
+	}
+	
+	public void parkACar(Car car) throws Exception{ 
+		if (isEmpry())throw new Exception("Parking is full"); 
+		for (Level level: levels) {
+			if (!level.isEmpty()) level.parkACar(car);
+		}
+	}
+	
+	boolean isEmpry() {
+		for (Level level: levels) {
+			if (!level.isEmpty()) return false;
+		}
+		return true;
+	}
+
+}

@@ -1,0 +1,6 @@
+package four;
+
+public class Floor {
+	int final CAPACITY = 50;
+	
+}

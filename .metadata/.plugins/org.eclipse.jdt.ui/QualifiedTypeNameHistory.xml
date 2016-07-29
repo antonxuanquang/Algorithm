@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.geom.CubicCurve2D"/>
-<fullyQualifiedTypeName name="MyStack.StackIterator"/>
-<fullyQualifiedTypeName name="MyStack"/>
-<fullyQualifiedTypeName name="MyStack.StackNode"/>
-<fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="java.util.EmptyStackException"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="One"/>
 <fullyQualifiedTypeName name="One.ThreeInOneStack"/>
 <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.FactoryProducer"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.AbstractFactory"/>
 <fullyQualifiedTypeName name="creational.singleton.SingleObject"/>
+<fullyQualifiedTypeName name="four.Floor"/>
+<fullyQualifiedTypeName name="four.Slot"/>
+<fullyQualifiedTypeName name="four.Parking"/>
+<fullyQualifiedTypeName name="four.Car"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="four.Level"/>
 </qualifiedTypeNameHistroy>

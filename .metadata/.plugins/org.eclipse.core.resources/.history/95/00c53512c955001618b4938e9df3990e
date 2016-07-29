@@ -1,0 +1,16 @@
+package five;
+
+public class Book {
+	
+	private String title, author, content;
+	private String[] topics;
+	private double price;
+	
+	public Book(String title, String author, String content, double price) {
+		this.title = title;
+		this.author = author;
+		this.content = content;
+		this.price = price;
+	}
+
+}

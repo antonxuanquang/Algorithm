@@ -1,0 +1,12 @@
+package seven;
+
+public class Puzzle {
+	
+	public static Piece getARandomPiece() {
+		Edge top = Edge.randomEdge();
+		Edge right = Edge.randomEdge();
+		Edge left = Edge.randomEdge();
+		Edge bottom = Edge.randomEdge();
+		return new Piece(top, right, bottom, left);
+	}
+}

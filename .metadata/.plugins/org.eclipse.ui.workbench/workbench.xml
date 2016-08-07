@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
 <window height="909" maximized="true" width="1413" x="0" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -30,39 +30,34 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="0"/>
 <part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Level.java" partName="Level.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/four/Level.java" title="Level.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Level.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/four/Level.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="719" selectionTopPixel="82"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Edge.java" partName="Edge.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/seven/Edge.java" title="Edge.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Edge.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/seven/Edge.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="493" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Slot.java" partName="Slot.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/four/Slot.java" title="Slot.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Slot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/four/Slot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="288" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Piece.java" partName="Piece.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/seven/Piece.java" title="Piece.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Piece.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/seven/Piece.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="897" selectionTopPixel="395"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Car.java" partName="Car.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/four/Car.java" title="Car.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Car.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/four/Car.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="299" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" partName="Seven.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/seven/Seven.java" title="Seven.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Seven.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/seven/Seven.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="421" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Four.java" partName="Four.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/four/Four.java" title="Four.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Four.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/four/Four.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="207" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Puzzle.java" partName="Puzzle.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/seven/Puzzle.java" title="Puzzle.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Puzzle.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/seven/Puzzle.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="968" selectionTopPixel="125"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Parking.java" partName="Parking.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/four/Parking.java" title="Parking.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Parking.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/four/Parking.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="687" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" partName="Five.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/five/Five.java" title="Five.java" tooltip="Chapter 7 - Object-Oriented Design/src/five/Five.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/five/Five.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="159" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WishPiece.java" partName="WishPiece.java" path="/home/quang/Summer 2016/Chapter 7 - Object-Oriented Design/src/seven/WishPiece.java" title="WishPiece.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/WishPiece.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 7 - Object-Oriented Design/src/seven/WishPiece.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -103,7 +98,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (79 items)"/>
+<category IMemento.internal.id="Warnings (81 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -399,162 +394,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/four/Slot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/four/Car.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/four/Four.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/four/Parking.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/four/Level.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/five/Five.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/seven/Piece.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/seven/Seven.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/seven/Puzzle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/seven/WishPiece.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 7 - Object-Oriented Design/src/seven/Edge.java"/>
 </editors>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="460" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="177" y="6"/>
 </item>
-<item historyLabel="Four.java" index="2">
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="819" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="864" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="819" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
 <position/>
 </item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="123" y="9"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="864" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="716" y="51"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="716" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="716" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="716" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="767" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="767" y="0"/>
+</item>
+<item historyLabel="Piece.java" index="0">
 <position/>
 </item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="284" y="0"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="368" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="177" y="6"/>
 </item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="249" y="0"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="368" y="0"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="951" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="320" y="0"/>
+<item historyLabel="Edge.java" index="4">
+<position info="not_deleted" x="496" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="361" y="0"/>
+<item historyLabel="Edge.java" index="4">
+<position info="not_deleted" x="425" y="0"/>
 </item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="121" y="7"/>
+<item historyLabel="Edge.java" index="4">
+<position info="not_deleted" x="493" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="1136" y="0"/>
 </item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="121" y="7"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="1020" y="0"/>
 </item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="178" y="0"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="1054" y="0"/>
 </item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="687" y="0"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="326" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="1123" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="544" y="0"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="618" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="1123" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="715" y="0"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="121" y="7"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="715" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="1179" y="0"/>
 </item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="178" y="0"/>
+<item historyLabel="WishPiece.java" index="3">
+<position info="not_deleted" x="14" y="0"/>
 </item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="121" y="7"/>
+<item historyLabel="Seven.java" index="1">
+<position info="not_deleted" x="421" y="0"/>
 </item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="288" y="0"/>
+<item historyLabel="Piece.java" index="0">
+<position info="not_deleted" x="897" y="0"/>
 </item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="178" y="0"/>
+<item historyLabel="WishPiece.java" index="3">
+<position info="not_deleted" x="14" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="361" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="1179" y="0"/>
 </item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="687" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="976" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="715" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="940" y="0"/>
 </item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="710" y="0"/>
+<item historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="904" y="0"/>
 </item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="361" y="0"/>
-</item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="288" y="0"/>
-</item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="249" y="0"/>
-</item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="710" y="0"/>
-</item>
-<item historyLabel="Level.java" index="4">
-<position info="not_deleted" x="719" y="0"/>
-</item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="687" y="0"/>
-</item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="599" y="0"/>
-</item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="678" y="0"/>
-</item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="391" y="0"/>
-</item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="208" y="0"/>
-</item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="249" y="0"/>
-</item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="288" y="0"/>
-</item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="299" y="0"/>
-</item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="64" y="0"/>
-</item>
-<item historyLabel="Four.java" index="2">
-<position info="not_deleted" x="207" y="0"/>
-</item>
-<item historyLabel="Slot.java" index="0">
-<position info="not_deleted" x="288" y="0"/>
-</item>
-<item historyLabel="Car.java" index="1">
-<position info="not_deleted" x="299" y="0"/>
-</item>
-<item historyLabel="Parking.java" index="3">
-<position info="not_deleted" x="687" y="0"/>
-</item>
-<item active="true" historyLabel="Five.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item active="true" historyLabel="Puzzle.java" index="2">
+<position info="not_deleted" x="909" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -573,6 +567,36 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WishingPiece.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/WishingPiece.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/WishingPiece.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Puzzle.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Puzzle.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/Puzzle.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Seven.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/Seven.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Piece.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Piece.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/Piece.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Edge.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Edge.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/Edge.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Type.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/Type.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/Type.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" tooltip="Chapter 7 - Object-Oriented Design/src/Seven.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/Seven.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Book.java" tooltip="Chapter 7 - Object-Oriented Design/src/five/Book.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/five/Book.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Database.java" tooltip="Chapter 7 - Object-Oriented Design/src/five/Database.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/five/Database.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" tooltip="Chapter 7 - Object-Oriented Design/src/five/User.java">
+<persistable path="/Chapter 7 - Object-Oriented Design/src/five/User.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" tooltip="Chapter 7 - Object-Oriented Design/src/five/Five.java">
 <persistable path="/Chapter 7 - Object-Oriented Design/src/five/Five.java"/>
 </file>
@@ -587,36 +611,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Slot.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Slot.java">
 <persistable path="/Chapter 7 - Object-Oriented Design/src/four/Slot.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BusinessDelegate.java" tooltip="Design Pattern/src/j2ee/businessDelegate/BusinessDelegate.java">
-<persistable path="/Design Pattern/src/j2ee/businessDelegate/BusinessDelegate.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Floor.java" tooltip="Chapter 7 - Object-Oriented Design/src/four/Floor.java">
-<persistable path="/Chapter 7 - Object-Oriented Design/src/four/Floor.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SingletonPatternDemo.java" tooltip="Design Pattern/src/creational/singleton/SingletonPatternDemo.java">
-<persistable path="/Design Pattern/src/creational/singleton/SingletonPatternDemo.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SingleObject.java" tooltip="Design Pattern/src/creational/singleton/SingleObject.java">
-<persistable path="/Design Pattern/src/creational/singleton/SingleObject.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractFactoryPatternDemo.java" tooltip="Design Pattern/src/creational/abstractFactoryPattern/AbstractFactoryPatternDemo.java">
-<persistable path="/Design Pattern/src/creational/abstractFactoryPattern/AbstractFactoryPatternDemo.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FactoryProducer.java" tooltip="Design Pattern/src/creational/abstractFactoryPattern/FactoryProducer.java">
-<persistable path="/Design Pattern/src/creational/abstractFactoryPattern/FactoryProducer.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ColorFactory.java" tooltip="Design Pattern/src/creational/abstractFactoryPattern/ColorFactory.java">
-<persistable path="/Design Pattern/src/creational/abstractFactoryPattern/ColorFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ShapeFactory.java" tooltip="Design Pattern/src/creational/abstractFactoryPattern/ShapeFactory.java">
-<persistable path="/Design Pattern/src/creational/abstractFactoryPattern/ShapeFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractFactory.java" tooltip="Design Pattern/src/creational/abstractFactoryPattern/AbstractFactory.java">
-<persistable path="/Design Pattern/src/creational/abstractFactoryPattern/AbstractFactory.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Blue.java" tooltip="Design Pattern/src/creational/abstractFactoryPattern/Blue.java">
-<persistable path="/Design Pattern/src/creational/abstractFactoryPattern/Blue.java"/>
 </file>
 </mruList>
 </workbench>

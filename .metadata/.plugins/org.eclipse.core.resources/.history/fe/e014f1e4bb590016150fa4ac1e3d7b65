@@ -1,0 +1,44 @@
+package seven;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Puzzle {
+	
+	private Piece [][] puzzle;
+	private LinkedList<Piece> wishList;
+	
+	private static Piece getARandomPiece() {
+		Edge top = Edge.randomEdge();
+		Edge right = Edge.randomEdge();
+		Edge left = Edge.randomEdge();
+		Edge bottom = Edge.randomEdge();
+		return new Piece(top, right, bottom, left);
+	}
+	
+	public Puzzle(int dimension) {
+		puzzle = new Piece[dimension][dimension];
+	}
+	
+	public void solve() {
+		while (!wishList.isEmpty()) {
+			Piece piece = getARandomPiece();
+			WishPiece wishPiece = matchWishList(piece, wishList);
+			if (wishPiece != null) {
+				addAPiece(piece, wishList, puzzle);
+			}
+		}
+	}
+
+	private void addAPiece(Piece piece, LinkedList<Piece> wishList,
+			Piece[][] puzzle) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private WishPiece matchWishList(Piece piece, LinkedList<Piece> wishList) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

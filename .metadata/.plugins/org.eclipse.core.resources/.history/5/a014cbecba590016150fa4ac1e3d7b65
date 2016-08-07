@@ -1,0 +1,27 @@
+package seven;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Puzzle {
+	
+	private Piece [][] puzzle;
+	private LinkedList<Piece> wishingList;
+	
+	private static Piece getARandomPiece() {
+		Edge top = Edge.randomEdge();
+		Edge right = Edge.randomEdge();
+		Edge left = Edge.randomEdge();
+		Edge bottom = Edge.randomEdge();
+		return new Piece(top, right, bottom, left);
+	}
+	
+	public Puzzle(int dimension) {
+		puzzle = new Piece[dimension][dimension];
+	}
+	
+	public static void solve() {
+		
+	}
+	
+}

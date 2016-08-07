@@ -1,0 +1,14 @@
+package seven;
+
+public class Piece {
+	
+	private Edge top, right, bottom, left;
+	
+	public Piece(Edge top, Edge right, Edge bottom, Edge left) {
+		this.bottom = bottom;
+		this.top = top;
+		this.right = right;
+		this.left = left;
+	}
+
+}

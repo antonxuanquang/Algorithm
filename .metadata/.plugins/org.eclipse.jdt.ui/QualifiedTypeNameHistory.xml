@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.EmptyStackException"/>
-<fullyQualifiedTypeName name="One"/>
-<fullyQualifiedTypeName name="One.ThreeInOneStack"/>
-<fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
-<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-<fullyQualifiedTypeName name="MultiStack.ThreeInOneStackNode"/>
-<fullyQualifiedTypeName name="MultiStack.MultiStackNode"/>
-<fullyQualifiedTypeName name="MultiStack"/>
-<fullyQualifiedTypeName name="java.util.Stack"/>
-<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="Three.SetOfStacks"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="Three.StackWithCapacity"/>
@@ -30,11 +20,7 @@
 <fullyQualifiedTypeName name="javax.swing.RootPaneContainer"/>
 <fullyQualifiedTypeName name="Eight.Result"/>
 <fullyQualifiedTypeName name="java.awt.Rectangle"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="Ten.Result"/>
 <fullyQualifiedTypeName name="BinaryTreeNode"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -60,4 +46,18 @@
 <fullyQualifiedTypeName name="four.Car"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="four.Level"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="five.Book"/>
+<fullyQualifiedTypeName name="five.Library"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="seven.WishPiece"/>
+<fullyQualifiedTypeName name="seven.Piece"/>
+<fullyQualifiedTypeName name="seven.Edge"/>
+<fullyQualifiedTypeName name="seven.Puzzle"/>
 </qualifiedTypeNameHistroy>

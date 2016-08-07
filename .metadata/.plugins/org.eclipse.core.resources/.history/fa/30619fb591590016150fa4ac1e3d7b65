@@ -1,0 +1,7 @@
+package seven;
+
+public enum Type {
+	
+	IN, OUT, STRAIGHT
+
+}

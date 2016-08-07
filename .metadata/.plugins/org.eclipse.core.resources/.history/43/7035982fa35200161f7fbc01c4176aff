@@ -1,8 +1,0 @@
-package four;
-
-public class Floor {
-	final int CAPACITY = 50;
-	int usedSlot = 0;
-	
-//	public void parkACar(
-}

@@ -1,0 +1,12 @@
+package seven;
+
+import java.util.Random;
+
+public class Puzzle {
+	
+	public static Piece getARandomPiece() {
+		Random random = new Random();
+		Edge top = Edge.randomEdge();
+		
+	}
+}

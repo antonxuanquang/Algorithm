@@ -1,0 +1,60 @@
+package introduction;
+
+import java.util.ArrayList;
+
+public class HeapSort extends Sort {
+
+//	public static <T extends Comparable<T>> void sort(ArrayList<T> array) {
+//		int size = array.size() - 1;
+//		for (int k = size / 2; k >= 0; k--) {
+//			heapify(array, k);
+//		}
+//		while (size > 0) {
+//			System.out.println(array);
+//			swap(array, 0, size--);
+//			heapify(array, 0);
+//		}
+//	}
+
+	public static void buildheap(int[] a) {
+		n = a.length - 1;
+		for (int i = n / 2; i >= 0; i--) {
+			maxheap(a, i);
+		}
+	}
+
+	public static <T extends Comparable<T>> void sort(ArrayList<T> array) {
+		a = myarray;
+		buildheap(a);
+		for (int i = n; i > 0; i--) {
+			exchange(0, i);
+			n = n - 1;
+			maxheap(a, 0);
+		}
+	}
+
+	private static <T extends Comparable<T>> void heapify(ArrayList<T> array,
+			int startPoint) {
+		int left = 2 * startPoint;
+		int right = 2 * startPoint + 1;
+		int size = array.size();
+		int largest;
+
+		if (left <= size
+				&& array.get(left).compareTo(array.get(startPoint)) > 0) {
+			largest = left;
+		} else {
+			largest = startPoint;
+		}
+
+		if (right <= size && array.get(right).compareTo(array.get(largest)) > 0) {
+			largest = right;
+		}
+
+		if (largest != startPoint) {
+			swap(array, startPoint, largest);
+			heapify(array, largest);
+		}
+	}
+
+}

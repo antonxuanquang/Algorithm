@@ -1,0 +1,11 @@
+package introduction;
+
+import java.util.ArrayList;
+
+public class Insertion {
+	
+	public static <T extends Comparable<T>> (ArrayList<T> array) {
+		
+	}
+
+}

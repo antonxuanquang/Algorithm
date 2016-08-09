@@ -1,0 +1,14 @@
+package introduction;
+
+import java.util.ArrayList;
+
+public abstract class Sort {
+	
+	public abstract static <T extends Comparable<T>> void sort(ArrayList<T> array);
+
+	
+	public static <T extends Comparable<T>> void swap(ArrayList<T> array, int from, int to) {
+		
+	}
+	
+}

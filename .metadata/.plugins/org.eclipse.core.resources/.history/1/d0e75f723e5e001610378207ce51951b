@@ -1,0 +1,28 @@
+package introduction;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Test {
+	
+	public static void main(String []args) {
+//		ArrayList<Integer> array = new ArrayList<Integer>();
+//		array.add(4);
+//		array.add(5);
+//		array.add(1);
+//		array.add(2);
+//		array.add(7);
+//		array.add(3);
+//		array.add(10);
+//		array.add(6);
+//		array.add(8);
+//		array.add(9);
+		
+		int[] array = {3,5,1,6,2,4,2,8,5,9,10};
+		
+		System.out.println(Arrays.toString(array));
+		HeapSort.sort(array);
+		System.out.println(Arrays.toString(array));
+	}
+
+}

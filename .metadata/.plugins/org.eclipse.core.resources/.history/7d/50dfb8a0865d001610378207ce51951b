@@ -1,0 +1,9 @@
+package introduction;
+
+public class Insertion {
+	
+	public static <T extends Comparable<T>>(T[] array) {
+		
+	}
+
+}

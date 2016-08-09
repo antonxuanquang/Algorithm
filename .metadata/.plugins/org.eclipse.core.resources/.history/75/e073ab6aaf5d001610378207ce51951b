@@ -1,0 +1,29 @@
+package introduction;
+
+import java.util.ArrayList;
+
+public class QuickSort extends Sort {
+	
+	public static <T extends Comparable<T>> void sort(ArrayList<T> array) {
+		quickSort(array, 0, array.size() - 1);
+	}
+	
+	private static <T extends Comparable<T>> void quickSort(
+			ArrayList<T> array, int left, int right) {
+		int pivot = partition(array, left, right);
+		quickSort(array, left, pivot);
+		quickSort(array, pivot + 1, right);
+	}
+	
+	private static <T extends Comparable<T>> int partition(
+			ArrayList<T> array, int left, int right) {
+		int leftRunner = left + 1;
+		int rightRunner = right;
+		
+		while (leftRunner < rightRunner) {
+			
+		}
+		swap(array, leftRunner, pivot);		
+		return leftRunner;
+	}
+}

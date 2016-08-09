@@ -1,0 +1,11 @@
+package introduction;
+
+import java.util.ArrayList;
+
+public class Merge extends Sort{
+	
+	public static <T extends Comparable<T>> void sort (ArrayList<T> array) {
+		
+	}
+	
+}

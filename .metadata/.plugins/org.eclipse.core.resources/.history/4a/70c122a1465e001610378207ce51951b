@@ -1,0 +1,32 @@
+
+public class One {
+	/*
+	 * 
+	 * Sorted Merge: You are given two sorted arrays, A and B, where A has 
+	 * a large enough buffer at the end to hold B. Write a method to merge B
+	 * into A in sorted order
+	 * 
+	 */
+	
+	public static <T extends Comparable<T>> void sortedMerge(
+			T[] longer, T [] shorter, int longRunner) {
+		int shortRunner = shorter.length;
+		int endPoint = longer.length;
+		
+		while (longRunner >= 0 && shortRunner >= 0) {
+			if (longer[longRunner].compareTo(shorter[shortRunner]) > 0) {
+				longer[endPoint] = longer[longRunner];
+				longRunner--;
+			} else {
+				longer[endPoint] = shorter[shortRunner];
+				shortRunner--;
+			}
+			endPoint--;
+		}
+		
+		while (shortRunner >= 0) {
+			
+		}
+	}
+	
+}

@@ -1,0 +1,34 @@
+package introduction;
+
+import java.util.ArrayList;
+
+public class HeapSort extends Sort {
+	
+	public static <T extends Comparable<T>> void sort(ArrayList<T> array) {
+		int size = array.size() - 1;
+		for (int k = size / 2; k >= 1; k--) {
+			heapify(array, k, size);
+		}
+		while (size > 1) {
+			swap(array, 1, size--);
+			heapify(array, 1, size);
+		}
+	}
+	
+	private static <T extends Comparable<T>> void heapify(
+			ArrayList<T> array, int startPoint, int size) {
+		while (2 * startPoint <= size) {
+			int leave = 2 * startPoint;
+			if (leave < size &&
+					array.get(leave).compareTo(array.get(leave + 1)) < 0) {
+				leave++;
+			}
+			if (!(array.get(leave).compareTo(array.get(leave + 1)) < 0)) break;
+			swap(array, startPoint, leave);
+			startPoint = leave;
+		}
+	}
+	
+	
+
+}

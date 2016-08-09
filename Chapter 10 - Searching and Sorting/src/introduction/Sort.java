@@ -10,4 +10,10 @@ public abstract class Sort {
 		array.set(to, temp);
 	}
 	
+	protected static <T extends Comparable<T>> void swap(T[] array, int from, int to) {
+		T temp = array[from];
+		array[from] = array[to]; 
+		array[to] = temp;
+	}
+	
 }

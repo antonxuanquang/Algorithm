@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+
+import introduction.HeapSort;
+import introduction.Sort;
+
+
+public class Two extends Sort{
+	
+	/*
+	 * 
+	 * Group Anagrams: Write a method to sort an array of strings so that
+	 * all the anagrams are next to each other
+	 * 
+	 */
+	
+	public static void groupAnagrams(String[] array) {
+		sort(array, 0, array.length - 1);
+	}
+	
+	private static void sort(String[] array, int left, int right) {
+		int pivot = partition(array, left, right);
+		if (left < pivot - 1) sort(array, left, pivot - 1);
+		if (pivot < right) sort(array, pivot, right);
+	}
+
+	private static int partition(String[] array, int left, int right) {
+		String mid = sortAString(array[(left + right) / 2]);
+		while (left <= right) {
+			while (sortAString(array[left]).compareTo(mid) < 0) left++;
+			while (sortAString(array[right]).compareTo(mid) > 0) right--;
+			if (left <= right) swap(array, left++, right--);
+		}
+		return left;
+	}
+
+	private static String sortAString(String string) { 
+		char[] content = string.toCharArray();
+		Arrays.sort(content);
+		return new String(content);
+	}
+	
+	/*
+	 * 
+	 * Book's 1st approach
+	 * 
+	 */
+	
+	private class AnagramComprator implements Comparator<String> {
+		
+		public int compare(String s1, String s2) {
+			
+		}
+	}
+	
+	public static void main (String[] args) {
+		String[] array = {"hello", "apt", "arches", "chaser",   "ales",
+				"leas",  "dealing", "alerted", "altered", "antler", "seal", "aligned","rental",  "gallery", 
+				"largely", "pat", "wean", "angel", "tap", "regally", "amen", "anew", "wane",
+				"mane", "mean", "related", "treadle", "leading", "allergy", "name", "learnt", 
+				"sale",  "angle", "glean"};
+		groupAnagrams(array);
+		for (String string: array) {
+			System.out.println(string);
+		}
+	}
+
+}

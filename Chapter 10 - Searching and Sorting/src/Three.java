@@ -39,7 +39,7 @@ public class Three {
 			}
 		// too many duplicate
 		} else if (array[left].compareTo(array[mid]) == 0){
-			if (array[mid] != array[right]) {
+			if (array[mid].compareTo(array[right]) == 0) {
 				return rotatedArraySearch(array, mid + 1, right, searchItem);
 			} else {
 				// search left

@@ -1,0 +1,35 @@
+
+public class Three {
+	
+	/*
+	 * 
+	 * Search in Rotated Array: Given a sorted array of n integers that
+	 * has been rotated an unknown number of times, write code to find an element
+	 * in the array. You may assume that the array was originally sorted in 
+	 * increasing order.
+	 * 
+	 */
+	
+	
+	public static <T extends Comparable<T>> int rotatedArraySearch(
+			T[] array, int left, int right, T searchItem) {
+		int mid = (left + right) / 2;
+		if (array[mid] == searchItem) return mid;
+		if (left < right) return -1;
+		
+		//left half is sorted
+		if (array[left].compareTo(array[mid]) < 0) {
+			
+			
+		// right half is sorted
+		} else if (array[left].compareTo(array[mid]) > 0) {
+			
+		
+		// too many duplicate
+		} else if (array[left].compareTo(array[mid]) == 0){
+			
+		}
+		return -1;
+	}
+
+}

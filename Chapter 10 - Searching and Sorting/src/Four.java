@@ -80,5 +80,15 @@ public class Four {
 	public static void main(String[] args) {
 		Integer[] array = {1,3,4,6,7,8,9,22,53,74,172};
 		System.out.println(noSizeSearch(array, 53));
+		System.out.println(noSizeSearch(array, 2));
+		System.out.println(noSizeSearch(array, 22));
+		System.out.println(noSizeSearch(array, 1));
+		
+		System.out.println(noSizeSearch2(array, 53));
+		System.out.println(noSizeSearch2(array, 2));
+		System.out.println(noSizeSearch2(array, 22));
+		System.out.println(noSizeSearch2(array, 1));
+		
+		
 	}
 }

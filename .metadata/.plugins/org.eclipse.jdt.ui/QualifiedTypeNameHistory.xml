@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Three.SetOfStacks"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="Three.StackWithCapacity"/>
 <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="MyQueue"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="MyQueue.QueueNode"/>
@@ -12,7 +8,6 @@
 <fullyQualifiedTypeName name="T"/>
 <fullyQualifiedTypeName name="BinarySearchTreeNode"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="Node"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.lang.SecurityException"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="seven.Piece"/>
 <fullyQualifiedTypeName name="seven.Edge"/>
 <fullyQualifiedTypeName name="seven.Puzzle"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="Three"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="javax.print.attribute.standard.Sides"/>
 </qualifiedTypeNameHistroy>

@@ -1,9 +1,0 @@
-package five;
-
-public class Book {
-	
-	private String title, author, content;
-	private String[] topics;
-	private double price;
-
-}

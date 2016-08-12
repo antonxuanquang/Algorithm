@@ -1,0 +1,79 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Scanner;
+
+import javax.xml.validation.Validator;
+
+public class Seven {
+
+	/*
+	 * 
+	 * Missing Int: Given an input file with four billion non-negative integers,
+	 * provide an algorithm to generate an integer that is not contained in the
+	 * file. Assume you have 1 GB of memory available for this task
+	 * 
+	 * FOLLOW UP: What if you have only 10 MB of memory?? Assume that all values
+	 * are distinct and we now have no more than one billion non-negative
+	 * integers.
+	 */
+
+	public static int findOpenNumber(String filename)
+			throws FileNotFoundException {
+		int rangeSize = (1 << 20);
+
+		/* Get count of number of values within each block */
+		int[] blocks = getCountPerBlock(filename, rangeSize);
+
+		/* Find a block with a missing value */
+		int blockIndex = findBlockWithMissing(blocks, rangeSize);
+		if (blockIndex < 0)
+			return -1;
+
+		/* Create bit vector for items within this range */
+		byte[] bitVector = getBitVectorForRange(filename, blockIndex, rangeSize);
+
+		/* Find a zero in the bit vector */
+		int offset = findZero(bitVector);
+		if (offset < 0)
+			return -1;
+
+		/* Compute missing value */
+		return blockIndex * rangeSize + offset;
+	}
+
+	private static int[] getCountPerBlock(String filename, int rangeSize)
+			throws FileNotFoundException {
+		int arraySize = Integer.MAX_VALUE / rangeSize + 1;
+		int[] blocks = new int[arraySize];
+
+		Scanner in = new Scanner(new FileReader(filename));
+		while (in.hasNextInt()) {
+			int value = in.nextInt();
+			blocks[value / rangeSize]++;
+		}
+		in.close();
+		return blocks;
+	}
+
+	private static int findBlockWithMissing(int[] blocks, int rangeSize)
+			throws FileNotFoundException {
+		for (int i = 0; i < blocks.length; i++) {
+			if (blocks[i] < rangeSize) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	private static byte[] getBitVectorForRange(String filename, int blockIndex,
+			int rangeSize) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static int findZero(byte[] bitVector) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -110,9 +110,10 @@ public class Seven {
 	public static void main(String[] args) throws FileNotFoundException {
 		String filename = "input.txt";
 		int max = 10000000;
+		int missing = 253164;
 		System.out.println("Generating file...");
 		generateFile(filename, max);
-		System.out.println("Generated file from 0 to " + max);
+		System.out.println("Generated file from 0 to " + max + " with " + missing + " missing.");
 		System.out.println("Searching for missing number...");
 		System.out.println("Missing value: " + findOpenNumber(filename));
 	}

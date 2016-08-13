@@ -91,14 +91,15 @@ public class Seven {
 		return -1;
 	}
 		
-	public static void generateFile(String filename, int max) throws FileNotFoundException {
+	public static void generateFile(String filename, int max, int missing) throws FileNotFoundException {
 		PrintWriter writer = new PrintWriter(filename);
 		Random random = new Random();
 		
 		for (int i = 0; i < max && i >= 0; i++) {
 			int next = random.nextInt(max);
-			writer.println(next);
-			
+			if (i != missing) {
+				writer.println(i);
+			}
 			if (i % 10000 == 0) {
 				System.out.println("Now at location: " + i);
 			}
@@ -110,9 +111,10 @@ public class Seven {
 	public static void main(String[] args) throws FileNotFoundException {
 		String filename = "input.txt";
 		int max = 10000000;
+		int missing = 253164;
 		System.out.println("Generating file...");
-		generateFile(filename, max);
-		System.out.println("Generated file from 0 to " + max);
+		generateFile(filename, max, missing);
+		System.out.println("Generated file from 0 to " + max + " with " + missing + " missing.");
 		System.out.println("Searching for missing number...");
 		System.out.println("Missing value: " + findOpenNumber(filename));
 	}

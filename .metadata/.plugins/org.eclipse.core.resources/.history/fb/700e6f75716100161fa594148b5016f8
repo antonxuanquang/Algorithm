@@ -109,7 +109,7 @@ public class Seven {
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		String filename = "input.txt";
-		int max = 10000000;
+		int max = 3000;
 		System.out.println("Generating file...");
 		generateFile(filename, max);
 		System.out.println("Generated file from 0 to " + max);

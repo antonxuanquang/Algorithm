@@ -1,9 +1,0 @@
-package introduction;
-
-public class Insertion {
-	
-	public void static sort(T[] array) {
-		
-	}
-
-}

@@ -4,7 +4,7 @@ import java.util.*;
 public class Seven {
 
 	public static int findOpenNumber(String filename) throws FileNotFoundException {
-		int rangeSize = (1 << 20); // 2^20 bits (2^17 bytes)
+		int rangeSize = (1 << 17); // 2^20 bits (2^17 bytes)
 		
 		/* Get count of number of values within each block. */
 		int[] blocks = getCountPerBlock(filename, rangeSize);

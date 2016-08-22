@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.SecondaryLoop"/>
-<fullyQualifiedTypeName name="javax.swing.RootPaneContainer"/>
-<fullyQualifiedTypeName name="Eight.Result"/>
-<fullyQualifiedTypeName name="java.awt.Rectangle"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="Ten.Result"/>
-<fullyQualifiedTypeName name="BinaryTreeNode"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="creational.factoryPattern.Circle"/>
 <fullyQualifiedTypeName name="creational.factoryPattern.Rectangle"/>
@@ -34,7 +27,6 @@
 <fullyQualifiedTypeName name="five.Book"/>
 <fullyQualifiedTypeName name="five.Library"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="seven.WishPiece"/>
 <fullyQualifiedTypeName name="seven.Piece"/>
@@ -45,12 +37,10 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.Sides"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="javax.xml.validation.Validator"/>
 <fullyQualifiedTypeName name="java.lang.Byte"/>
 <fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="externalSort.ExternalSort"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -60,4 +50,14 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.util.BitSet"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="Eight.BitSet"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicBorders.MarginBorder"/>
+<fullyQualifiedTypeName name="java.net.CookieHandler"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Nine.Coordinate"/>
 </qualifiedTypeNameHistroy>

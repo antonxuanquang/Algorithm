@@ -2,17 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="System" key="selection"/>
+		<item value="tree." key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="tree."/>
+			<item value="root."/>
+			<item value="root"/>
+			<item value="tree"/>
 			<item value="system"/>
 			<item value="T"/>
 			<item value="MyStack"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="root"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

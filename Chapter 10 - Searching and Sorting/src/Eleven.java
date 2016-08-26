@@ -18,6 +18,11 @@ public class Eleven {
 	 * 
 	 */
 	
+	/*
+	 * 
+	 * Book's approach
+	 * 
+	 */
 	public static void peaksAndValleys(int[] array) {
 		for (int i = 1; i < array.length; i += 2) {
 			int maxIndex = maxIndex(i - 1, i, i + 1, array);
@@ -46,7 +51,9 @@ public class Eleven {
 	}
 	
 	public static void main (String[] args) {
-		int[] array = {5, 3, 2, 1, 2, 2, 3, 4};
+//		int[] array = {5, 3, 2, 1, 2, 2, 3, 4};
+//		int[] array = {1,2,3,4,5,6,7,8,9};
+		int[] array = {9,8,7,6,5,4,3,2,1};
 		peaksAndValleys(array);
 		System.out.println(Arrays.toString(array));
 	}

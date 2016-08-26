@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="909" maximized="true" width="1413" x="0" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -37,7 +37,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eleven.java" partName="Eleven.java" path="/home/quang/Summer 2016/Chapter 10 - Searching and Sorting/src/Eleven.java" title="Eleven.java" tooltip="Chapter 10 - Searching and Sorting/src/Eleven.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 10 - Searching and Sorting/src/Eleven.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1070" selectionTopPixel="151"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="596" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -79,7 +79,7 @@
 <expanded>
 <category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (98 items)"/>
+<category IMemento.internal.id="Warnings (95 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -373,88 +373,9 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 10 - Searching and Sorting/src/Ten.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/BTNode.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/DiGraph.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 4 - Tree and Graph/src/Eight.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 10 - Searching and Sorting/src/Eleven.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 10 - Searching and Sorting/src/Seven.java"/>
 </editors>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="2047" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="2071" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="4475" y="0"/>
-</item>
-<item historyLabel="BinaryTreeNode.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BTNode.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DiGraph.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Eight.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="4475" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="2668" y="34"/>
-</item>
-<item historyLabel="BTNode.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="2940" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="1600" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="1623" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="2916" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="2381" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3152" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3167" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3253" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3277" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3296" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3333" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3386" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3406" y="0"/>
-</item>
 <item historyLabel="Ten.java" index="0">
 <position info="not_deleted" x="3489" y="0"/>
 </item>
@@ -494,41 +415,116 @@
 <item historyLabel="Ten.java" index="0">
 <position info="not_deleted" x="4743" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Seven.java" index="6">
+<item historyLabel="Seven.java" index="2">
 <position info="not_deleted" x="3238" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position info="not_deleted" x="529" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position info="not_deleted" x="582" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position info="not_deleted" x="1142" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position info="not_deleted" x="728" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position/>
 </item>
-<item active="true" historyLabel="Eleven.java" index="5">
+<item historyLabel="Eleven.java" index="1">
 <position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="776" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="953" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="965" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="983" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1002" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1173" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1389" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1408" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1420" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1421" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1446" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1487" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1560" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1566" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1578" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1713" y="0"/>
+</item>
+<item historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1758" y="0"/>
+</item>
+<item active="true" historyLabel="Eleven.java" index="1">
+<position info="not_deleted" x="1759" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

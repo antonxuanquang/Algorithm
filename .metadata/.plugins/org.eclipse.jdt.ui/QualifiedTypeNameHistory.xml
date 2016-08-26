@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="creational.factoryPattern.ShapeFactory"/>
-<fullyQualifiedTypeName name="creational.factoryPattern.Shape"/>
-<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Color"/>
-<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Red"/>
-<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Green"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.Circle"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.Rectangle"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.Triangle"/>
@@ -23,7 +18,6 @@
 <fullyQualifiedTypeName name="five.Book"/>
 <fullyQualifiedTypeName name="five.Library"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="seven.WishPiece"/>
 <fullyQualifiedTypeName name="seven.Piece"/>
 <fullyQualifiedTypeName name="seven.Edge"/>
@@ -57,7 +51,13 @@
 <fullyQualifiedTypeName name="Ten.StreamTree"/>
 <fullyQualifiedTypeName name="Ten.BSTNode"/>
 <fullyQualifiedTypeName name="Ten.RankNode"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="Two.LinkNode"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="javax.swing.RowFilter"/>
+<fullyQualifiedTypeName name="Two.Coordinator"/>
 </qualifiedTypeNameHistroy>

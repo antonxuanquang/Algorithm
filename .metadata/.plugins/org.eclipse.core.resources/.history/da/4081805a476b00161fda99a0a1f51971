@@ -1,0 +1,51 @@
+import java.util.Stack;
+
+public class Two {
+
+	/*
+	 * 
+	 * Robot in Grid: Imagine a robot sitting on the upper left corner of grid
+	 * with r rows and c columns. The robot can only move in two directions,
+	 * right and down, but certain cells are "off limits" such that the robot
+	 * cannot step on them. Design an algorithm to find a path for the robot
+	 * from the top left to the bottom right.
+	 */
+
+	private static class Coordinator {
+		public int row;
+		public int column;
+
+		public Coordinator(int row, int column) {
+			this.row = row;
+			this.column = column;
+		}
+	}
+
+	public static void path(Coordinator[] offGrids, Stack<Coordinator> stack, 
+			int row, int column) {
+		path(offGrids, new Coordinator(0, 0), stack,
+				row, column);
+	}
+
+	private static Coordinator path(Coordinator[] offGrids,
+			Coordinator startPoint, Stack<Coordinator> stack, int row, int column) {
+		if (startPoint.row == row && startPoint.column == column) {
+			stack.push(startPoint);
+			return startPoint;
+		}
+		Coordinator rightCoordinator = new Coordinator(startPoint.row + 1, startPoint.column);
+		rightCoordinator = path(offGrids, rightCoordinator, stack, row, column);
+		if (rightCoordinator != null) {
+			stack.push(rightCoordinator);
+			return rightCoordinator;
+		}
+		Coordinator downCoordinator = new Coordinator(startPoint.row, startPoint.column + 1);
+		rightCoordinator = path(offGrids, rightCoordinator, stack, row, column);
+		if (rightCoordinator != null) {
+			stack.push(rightCoordinator);
+			return rightCoordinator;
+		}
+		return null;	
+	}
+
+}

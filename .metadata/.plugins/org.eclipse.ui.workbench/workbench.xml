@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="909" maximized="true" width="1413" x="0" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -31,13 +31,28 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eleven.java" partName="Eleven.java" path="/home/quang/Summer 2016/Chapter 10 - Searching and Sorting/src/Eleven.java" title="Eleven.java" tooltip="Chapter 10 - Searching and Sorting/src/Eleven.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eleven.java" partName="Eleven.java" path="/home/quang/Summer 2016/Chapter 10 - Searching and Sorting/src/Eleven.java" title="Eleven.java" tooltip="Chapter 10 - Searching and Sorting/src/Eleven.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 10 - Searching and Sorting/src/Eleven.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="596" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="One.java" partName="One.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/One.java" title="One.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/One.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/One.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1401" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Two.java" partName="Two.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Two.java" title="Two.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Two.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Two.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2130" selectionTopPixel="623"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SinglyLinkedList.java" partName="SinglyLinkedList.java" path="/home/quang/Summer 2016/Chapter 2 - Linked List/src/SinglyLinkedList.java" title="SinglyLinkedList.java" tooltip="Chapter 2 - Linked List/src/SinglyLinkedList.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 2 - Linked List/src/SinglyLinkedList.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -238,6 +253,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
@@ -268,7 +284,7 @@
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -277,6 +293,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -372,159 +389,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 10 - Searching and Sorting/src/Ten.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 10 - Searching and Sorting/src/Eleven.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 10 - Searching and Sorting/src/Seven.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/One.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Two.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 2 - Linked List/src/SinglyLinkedList.java"/>
 </editors>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3489" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="919" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3513" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="934" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3566" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="955" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3590" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="974" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3637" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="999" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3713" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="1029" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3740" y="0"/>
+<item historyLabel="One.java" index="0">
+<position info="not_deleted" x="1401" y="0"/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3847" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3869" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position/>
 </item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3902" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3937" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="3994" y="0"/>
-</item>
-<item historyLabel="Ten.java" index="0">
-<position info="not_deleted" x="4743" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="SinglyLinkedList.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Seven.java" index="2">
-<position info="not_deleted" x="3238" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="582" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1142" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="728" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="646" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="669" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="879" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="882" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1036" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="929" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1023" y="8"/>
+</item>
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="Eleven.java" index="1">
+<item historyLabel="Two.java" index="1">
 <position/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="776" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1238" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="953" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1237" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="965" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1868" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="983" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="669" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1002" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1894" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1173" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1901" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1389" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1507" y="10"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1408" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1519" y="8"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1420" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1528" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1421" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1974" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1446" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="1982" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1487" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2005" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1560" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2202" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1566" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2203" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1578" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2205" y="5"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1713" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2213" y="0"/>
 </item>
-<item historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1758" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2216" y="0"/>
 </item>
-<item active="true" historyLabel="Eleven.java" index="1">
-<position info="not_deleted" x="1759" y="0"/>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2078" y="0"/>
+</item>
+<item historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2289" y="0"/>
+</item>
+<item active="true" historyLabel="Two.java" index="1">
+<position info="not_deleted" x="2093" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -543,6 +560,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SinglyLinkedList.java" tooltip="Chapter 2 - Linked List/src/SinglyLinkedList.java">
+<persistable path="/Chapter 2 - Linked List/src/SinglyLinkedList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Two.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Two.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Two.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="One.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/One.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/One.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eleven.java" tooltip="Chapter 10 - Searching and Sorting/src/Eleven.java">
 <persistable path="/Chapter 10 - Searching and Sorting/src/Eleven.java"/>
 </file>
@@ -578,15 +604,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" tooltip="Chapter 10 - Searching and Sorting/src/Five.java">
 <persistable path="/Chapter 10 - Searching and Sorting/src/Five.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Four.java" tooltip="Chapter 10 - Searching and Sorting/src/Four.java">
-<persistable path="/Chapter 10 - Searching and Sorting/src/Four.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Three.java" tooltip="Chapter 10 - Searching and Sorting/src/Three.java">
-<persistable path="/Chapter 10 - Searching and Sorting/src/Three.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WishingPiece.java" tooltip="Chapter 7 - Object-Oriented Design/src/seven/WishingPiece.java">
-<persistable path="/Chapter 7 - Object-Oriented Design/src/seven/WishingPiece.java"/>
 </file>
 </mruList>
 </workbench>

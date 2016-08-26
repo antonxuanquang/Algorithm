@@ -1,0 +1,91 @@
+import java.util.HashMap;
+import java.util.Stack;
+
+import javax.swing.RowFilter;
+
+public class Two {
+
+	/*
+	 * 
+	 * Robot in Grid: Imagine a robot sitting on the upper left corner of grid
+	 * with r rows and c columns. The robot can only move in two directions,
+	 * right and down, but certain cells are "off limits" such that the robot
+	 * cannot step on them. Design an algorithm to find a path for the robot
+	 * from the top left to the bottom right.
+	 */
+
+	private static class Coordinator {
+		public int row;
+		public int column;
+
+		public Coordinator(int row, int column) {
+			this.row = row;
+			this.column = column;
+		}
+		
+		public boolean equal(Coordinator that) {
+			return this.row == that.row && this.column == that.column;
+		}
+		
+		public String toString() {
+			return "(" + row + ", " + column + ")";
+		}
+	}
+
+	public static void path(Coordinator[] offGrids, Stack<Coordinator> stack, 
+			int row, int column) {
+		path(offGrids, new Coordinator(0, 0), stack,
+				row, column);
+	}
+
+	private static void path(Coordinator[] offGrids,
+			Coordinator startPoint, Stack<Coordinator> stack, int row, int column) {
+//		System.out.println(startPoint);
+		if (startPoint.row == row && startPoint.column == column) {
+			stack.push(startPoint);
+			return;
+		}
+		Coordinator nextCoordinator;
+		if (startPoint.row < row && !inTheGrids(startPoint, offGrids)) {
+			nextCoordinator = new Coordinator(startPoint.row + 1, startPoint.column);
+			path(offGrids, nextCoordinator, stack, row, column);
+			if (!stack.isEmpty()) {
+				stack.push(startPoint);
+				return;
+			}
+		}
+		
+		if (startPoint.column < column && !inTheGrids(startPoint, offGrids)) {
+			nextCoordinator = new Coordinator(startPoint.row, startPoint.column + 1);
+			path(offGrids, nextCoordinator, stack, row, column);
+			if (!stack.isEmpty()) {
+				stack.push(startPoint);
+				return;
+			}
+		}
+	}
+
+	private static boolean inTheGrids(Coordinator startPoint, Coordinator[] offGrids) {
+		for (Coordinator coor: offGrids) {
+			if (coor.equal(startPoint)) return true;
+		}
+		return false;
+	}
+	
+	public static void main (String[]strings) {
+		Stack<Coordinator> stack = new Stack<Two.Coordinator>();
+		Coordinator[] offGrids = {
+				new Coordinator(1, 1),
+				new Coordinator(1, 3),
+				new Coordinator(2, 0),
+				new Coordinator(2, 4),
+				new Coordinator(3, 2),
+//				new Coordinator(3, 4),
+				new Coordinator(4, 3)};
+		path(offGrids, stack, 5, 4);
+		for (Coordinator coor: stack) {
+			System.out.println(coor);
+		}
+	}
+
+}

@@ -24,7 +24,6 @@
 <fullyQualifiedTypeName name="seven.Puzzle"/>
 <fullyQualifiedTypeName name="Three"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.Sides"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="javax.xml.validation.Validator"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="javax.swing.RowFilter"/>
 <fullyQualifiedTypeName name="Two.Coordinator"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

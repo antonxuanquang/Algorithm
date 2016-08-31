@@ -1,0 +1,34 @@
+
+public class HW1_1 {
+	public static void main (String[] args) {
+		double operations = Math.pow(10, 12);
+		double firstLimit = Math.pow(10, 15);
+		double secondLimit = Math.pow(10, 18);
+		double secondInAYear = 1 * 60 * 60 * 24 * 365.25;
+		
+		System.out.println(operations);
+		System.out.println(firstLimit);
+		System.out.println(secondLimit);
+		System.out.println(secondInAYear);
+		
+		long second = 0;
+		double rate = 0.25 / secondInAYear + 1;
+		
+		while (operations < firstLimit) {
+			operations *= rate;
+			second++;
+		}
+		
+		System.out.println("First Limit takes: " + second / (60 * 60 * 24 * 365.25) + "years");
+		
+		operations = Math.pow(10, 12);
+		second = 0;
+		
+		while (operations < firstLimit) {
+			operations *= rate;
+			second++;
+		}
+		
+		System.out.println("Second Limit takes: " + second / (60 * 60 * 24 * 365.25) + "years");
+	}
+}

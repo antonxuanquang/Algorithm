@@ -1,0 +1,7 @@
+
+public class HW1_1 {
+	public static void main (String[] args) {
+		long operations = (long)Math.pow(10, 12);
+		System.out.println(operations);
+	}
+}

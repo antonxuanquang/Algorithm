@@ -1,0 +1,16 @@
+
+public class HW1_1 {
+	public static void main (String[] args) {
+		long operations = (long)Math.pow(10, 12);
+		long firstLimit = (long)Math.pow(10, 15);
+		long secondLimit = (long)Math.pow(10, 15);
+		
+//		while (operations < firstLimit) {
+//			
+//		}
+		
+		System.out.println(operations);
+		System.out.println(firstLimit);
+		System.out.println(secondLimit);
+	}
+}

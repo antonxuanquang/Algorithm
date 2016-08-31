@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Stack;
+import java.util.ArrayList;
 
 import javax.swing.RowFilter;
 
@@ -34,18 +34,18 @@ public class Two {
 		}
 	}
 
-	public static void path(Point[] offGrids, Stack<Point> stack, 
+	public static void path(Point[] offGrids, ArrayList<Point> stack, 
 			int row, int column) {
 		path(offGrids, new Point(0, 0), stack,
 				row, column);
 	}
 
 	private static void path(Point[] offGrids,
-			Point startPoint, Stack<Point> stack, int row, int column) {
+			Point startPoint, ArrayList<Point> stack, int row, int column) {
 //		System.out.println(startPoint);
 		if (inTheGrids(startPoint, offGrids)) return;
 		if (startPoint.row == row && startPoint.column == column) {
-			stack.push(startPoint);
+			stack.add(startPoint);
 			return;
 		}
 		
@@ -54,7 +54,7 @@ public class Two {
 			nextCoordinator = new Point(startPoint.row + 1, startPoint.column);
 			path(offGrids, nextCoordinator, stack, row, column);
 			if (!stack.isEmpty()) {
-				stack.push(startPoint);
+				stack.add(startPoint);
 				return;
 			}
 		}
@@ -63,7 +63,7 @@ public class Two {
 			nextCoordinator = new Point(startPoint.row, startPoint.column + 1);
 			path(offGrids, nextCoordinator, stack, row, column);
 			if (!stack.isEmpty()) {
-				stack.push(startPoint);
+				stack.add(startPoint);
 				return;
 			}
 		}
@@ -112,7 +112,7 @@ public class Two {
 	}
 
 	public static void main (String[]strings) {
-		Stack<Point> stack = new Stack<Two.Point>();
+		ArrayList<Point> stack = new ArrayList<Two.Point>();
 		Point[] offGrids = {
 				new Point(1, 1),
 				new Point(1, 3),

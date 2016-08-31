@@ -1,0 +1,87 @@
+import java.text.DecimalFormat;
+
+
+public class HW1_1 {
+	public static void main (String[] args) {
+		
+		DecimalFormat df = new DecimalFormat("#.####");
+		
+		double operations = Math.pow(10, 12);
+		double firstLimit = Math.pow(10, 15);
+		double secondLimit = Math.pow(10, 18);
+		double secondInAYear = 1 * 60 * 60 * 24 * 365.25;
+		
+		double rateInYear = 0.25;
+		double rateInDay = rateInYear / 365.25;
+		double rateInHour = rateInDay / 24;
+		double rateInMinute = rateInHour / 60;
+		double rateInSecond = rateInMinute / 60;
+		
+		int year = 0, day = 0, hour = 0, minute = 0, second = 0;
+		
+		while ((operations + operations * rateInYear) < firstLimit) {
+			operations += operations * rateInYear;
+			year++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInDay) < firstLimit) {
+			operations += operations * rateInDay;
+			day++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInHour) < firstLimit) {
+			operations += operations * rateInHour;
+			hour++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInMinute) < firstLimit) {
+			operations += operations * rateInMinute;
+			minute++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInSecond) < firstLimit) {
+			operations += operations * rateInSecond;
+			second++;
+		}
+		
+		System.out.println(df.format(operations));
+		System.out.println(year);
+		
+		
+//		while (second < secondInAYear) {
+//			operations *= rate;
+//			second++;
+//		}
+//		
+//		System.out.println(operations / Math.pow(10, 12));
+//		
+//		while (operations < firstLimit) {
+//			if (second % secondInAYear == 0) System.out.println(operations);
+//			operations *= rate;
+//			second++;
+//		}
+//		
+//		int year = (int) (second / secondInAYear);
+//		
+//		System.out.println("First Limit takes: " + second / (60 * 60 * 24 * 365.25) + " years");
+//		
+//		operations = Math.pow(10, 12);
+//		second = 0;
+//		
+//		while (operations < secondLimit) {
+//			if (second % secondInAYear == 0) System.out.println(operations);
+//			operations *= rate;
+//			second++;
+//		}
+//		
+//		System.out.println("Second Limit takes: " + second / (60 * 60 * 24 * 365.25) + " years");
+	}
+}

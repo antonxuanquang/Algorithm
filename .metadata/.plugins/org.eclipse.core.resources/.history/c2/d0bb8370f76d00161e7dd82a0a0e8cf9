@@ -1,0 +1,61 @@
+import java.text.DecimalFormat;
+
+
+public class HW1_1 {
+	public static void main (String[] args) {
+		
+		
+		double operations = Math.pow(10, 12);
+		double firstLimit = Math.pow(10, 15);
+		double secondLimit = Math.pow(10, 18);
+		
+	}
+	
+	public static void calculateRate(double rateInYear, double startPoint, double limit) {
+
+		DecimalFormat df = new DecimalFormat("#.####");
+		double rateInDay = rateInYear / 365.25;
+		double rateInHour = rateInDay / 24;
+		double rateInMinute = rateInHour / 60;
+		double rateInSecond = rateInMinute / 60;
+		double operations = startPoint;
+		
+		int year = 0, day = 0, hour = 0, minute = 0, second = 0;
+		
+		while ((operations + operations * rateInYear) < limit) {
+			operations += operations * rateInYear;
+			year++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInDay) < limit) {
+			operations += operations * rateInDay;
+			day++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInHour) < limit) {
+			operations += operations * rateInHour;
+			hour++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations + operations * rateInMinute) < limit) {
+			operations += operations * rateInMinute;
+			minute++;
+		}
+		
+		System.out.println(df.format(operations));
+		
+		while ((operations += operations * rateInSecond) < limit) {
+			second++;
+		}
+		
+		System.out.println(df.format(operations));
+		System.out.println("Takes: " + year + " years, " + day + " days, " + hour + " hours, " 
+					+ minute + " minutes, " + second + " seconds to reach " + limit + " operations");
+	}
+}

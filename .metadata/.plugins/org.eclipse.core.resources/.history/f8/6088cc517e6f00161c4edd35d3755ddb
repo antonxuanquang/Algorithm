@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+
+public class Four<T> {
+	
+	/*
+	 * 
+	 * Power Set: write a method to return all subsets of a set
+	 * 
+	 */
+	
+	public static <T> T[][] powerSet(T[] array) {
+		
+		
+		return null;
+	}
+
+}

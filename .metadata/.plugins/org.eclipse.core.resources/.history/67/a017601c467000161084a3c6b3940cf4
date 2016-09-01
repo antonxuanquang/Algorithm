@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+public class Four<T> {
+	
+	/*
+	 * 
+	 * Power Set: write a method to return all subsets of a set
+	 * 
+	 */
+	
+	public static <T> ArrayList<ArrayList<T>> powerSet(ArrayList<T> array) {
+		ArrayList<ArrayList<T>> result = new ArrayList<ArrayList<T>>();
+		result.add(new ArrayList<T>());
+		powerSet(array, result, -1);
+		return result;
+	}
+	
+	private static <T> void powerSet(ArrayList<T> array,
+			ArrayList<ArrayList<T>> result, int hidePosition) {
+		if (hidePosition >= 0) array.remove(hidePosition);
+		if (array.size() == 0) return;
+		result.add(array);
+		
+		for (int i = 0; i < array.size(); i++) {
+			powerSet(new ArrayList<T>(array), result, i);
+		}
+	}
+	
+	public static void main (String[]strings) {
+		ArrayList<Integer> array = new ArrayList<Integer>();
+		array.add(3);
+		array.add(1);
+		array.add(2);
+		
+		ArrayList<ArrayList<Integer>> result = powerSet(array);
+		for (ArrayList<Integer> list: result) {
+			System.out.println(list);
+		}
+	}
+}

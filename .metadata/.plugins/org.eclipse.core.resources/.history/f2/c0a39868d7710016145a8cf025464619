@@ -1,0 +1,21 @@
+
+public class Five {
+	
+	/*
+	 * 
+	 * Recursive Multiply: Write a recursive function to multiply two positive
+	 * integers without using the * operator. You can use addition, subtraction,
+	 * and bit shifting, but you should minimize the number of those operations.
+	 * 
+	 */
+	
+	public static int recursiveMultiply(int number, int product) {
+		if (product == 0) return 0;
+		return recursiveMultiply(number, product, 0);
+	}
+	
+	public static void main (String[]strings) {
+		System.out.println(recursiveMultiply(8, 3));
+	}
+
+}

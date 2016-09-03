@@ -1,0 +1,80 @@
+
+public class Five {
+	
+	/*
+	 * 
+	 * Recursive Multiply: Write a recursive function to multiply two positive
+	 * integers without using the * operator. You can use addition, subtraction,
+	 * and bit shifting, but you should minimize the number of those operations.
+	 * 
+	 */
+	
+	public static int iterativeMultiply(int number, int product) {
+		if (product == 0) return 0;
+		int shift = 0;
+		int result = 0;
+		while (shift < Integer.SIZE) {
+			int mask = 1 << shift;
+			result += (product & mask) != 0 ? (number << shift) : 0;
+			shift++;
+		}
+		return result;
+	}
+	
+	public static int recursiveMultiply(int number, int product) {
+		if (product == 0) return 0;
+		return recursiveMultiply(number, product, 0);
+	}
+	
+	private static int recursiveMultiply(int number, int product, int shift) {
+		if (shift == Integer.SIZE) return 0;
+		int mask = 1 << shift;
+		return ((product & mask) != 0 ? (number << shift) : 0) + 
+				recursiveMultiply(number, product, ++shift);
+	}
+	
+	/*
+	 * 
+	 * Book's approach:
+	 * 
+	 */
+	public static int minProduct(int a, int b) {
+		int bigger = a < b ? b : a;
+		int smaller = a < b ? a : b;
+		
+		return minProductHelper(smaller, bigger);
+	}
+	
+	
+	
+
+	private static int minProductHelper(int smaller, int bigger) {
+		if (smaller == 0) return 0;
+		else if (bigger == 1) return smaller;
+		
+		int half = smaller >> 1;
+		int halfProduct = minProduct(half, bigger);
+		
+		if (half % 2 == 0) {
+			return halfProduct + halfProduct;
+		} else {
+			return halfProduct + halfProduct + bigger;
+		}
+	}
+
+	public static void main (String[]strings) {
+		System.out.println(iterativeMultiply(8, 1324879));
+		System.out.println(iterativeMultiply(8, -1324879));
+		System.out.println(recursiveMultiply(8, 1324879));
+		System.out.println(recursiveMultiply(8, -1324879));
+		System.out.println(iterativeMultiply(234123421, 1324879));
+		System.out.println(iterativeMultiply(234123421, -1324879));
+		System.out.println(recursiveMultiply(234123421, 1324879));
+		System.out.println(recursiveMultiply(234123421, -1324879));
+		System.out.println(minProduct(8, 1324879));
+		System.out.println(minProduct(8, -1324879));
+		System.out.println(minProduct(8, 1324879));
+		System.out.println(minProduct(8, -1324879));
+	}
+
+}

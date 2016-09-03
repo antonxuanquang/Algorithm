@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ArrayList&lt;ArrayList&lt;T&gt;&gt;"/>
 			<item value="rightCoordinator"/>
 			<item value="tripleStep"/>
 			<item value="memmo"/>
@@ -15,7 +16,6 @@
 			<item value="root."/>
 			<item value="root"/>
 			<item value="tree"/>
-			<item value="system"/>
 		</list>
 		<list key="replacehistory">
 			<item value="nextCoordinator"/>

@@ -1,0 +1,13 @@
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Lab1 extends JApplet {
+
+	public JButton btnStop = new JButton("Stop");
+	
+	public void init() {
+		setLayout(new FlowLayout());
+		add(btnStop);
+	}
+}

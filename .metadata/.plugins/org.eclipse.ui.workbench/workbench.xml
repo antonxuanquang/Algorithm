@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
-<window height="1053" maximized="true" width="1440" x="263" y="27">
+<window height="1045" maximized="true" width="1440" x="263" y="27">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -31,18 +31,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Four.java" partName="Four.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Four.java" title="Four.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Four.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Four.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1935" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendsExample.java" partName="ExtendsExample.java" path="/home/quang/Summer 2016/Parallel/src/ExtendsExample.java" title="ExtendsExample.java" tooltip="Parallel/src/ExtendsExample.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Parallel/src/ExtendsExample.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="41" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lab1.java" partName="Lab1.java" path="/home/quang/Summer 2016/Example/src/Lab1.java" title="Lab1.java" tooltip="Example/src/Lab1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Example/src/Lab1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="120" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -82,6 +77,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings (100 of 103 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -375,158 +371,13 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Four.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Parallel/src/ExtendsExample.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Example/src/Lab1.java"/>
 </editors>
-<item historyLabel="Four.java" index="0">
-<position/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="955" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="49" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="160" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="168" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="308" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="529" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="556" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="625" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="496" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="580" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="641" y="5"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="648" y="6"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="663" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="702" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="710" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="733" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="782" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="874" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="902" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="916" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="946" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="688" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="548" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="549" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="567" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="805" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="806" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="830" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="837" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="869" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="986" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="987" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1026" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1113" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1154" y="3"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1168" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1223" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1224" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1290" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1310" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1390" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1367" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1447" y="0"/>
-</item>
-<item historyLabel="Four.java" index="0">
-<position info="not_deleted" x="1487" y="0"/>
-</item>
-<item active="true" historyLabel="ExtendsExample.java" index="1">
+<item historyLabel="Lab1.java" index="0">
 <position info="not_deleted" x="42" y="0"/>
+</item>
+<item active="true" historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="108" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -545,6 +396,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lab1.java" tooltip="Example/src/Lab1.java">
+<persistable path="/Example/src/Lab1.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lab1_Extended.java" tooltip="Example/src/Lab1_Extended.java">
+<persistable path="/Example/src/Lab1_Extended.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendsExample.java" tooltip="Parallel/src/ExtendsExample.java">
 <persistable path="/Parallel/src/ExtendsExample.java"/>
 </file>
@@ -583,12 +440,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTreeNode.java" tooltip="Chapter 4 - Tree and Graph/src/BinaryTreeNode.java">
 <persistable path="/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ten.java" tooltip="Chapter 10 - Searching and Sorting/src/Ten.java">
-<persistable path="/Chapter 10 - Searching and Sorting/src/Ten.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Nine.java" tooltip="Chapter 10 - Searching and Sorting/src/Nine.java">
-<persistable path="/Chapter 10 - Searching and Sorting/src/Nine.java"/>
 </file>
 </mruList>
 </workbench>

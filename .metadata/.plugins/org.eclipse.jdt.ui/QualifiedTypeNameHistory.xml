@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="creational.abstractFactoryPattern.Rectangle"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.Triangle"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.ShapeFactory"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.ColorFactory"/>
@@ -41,7 +40,6 @@
 <fullyQualifiedTypeName name="java.net.CookieHandler"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="Nine.Coordinate"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Ten.StreamTree"/>
 <fullyQualifiedTypeName name="Ten.BSTNode"/>
 <fullyQualifiedTypeName name="Ten.RankNode"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="T"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Lab1"/>
 </qualifiedTypeNameHistroy>

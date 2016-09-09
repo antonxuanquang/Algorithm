@@ -1,0 +1,12 @@
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Lab1 extends JApplet {
+
+
+	
+	public static void init() {
+		
+	}
+}

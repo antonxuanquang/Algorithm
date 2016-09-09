@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="1045" maximized="true" width="1440" x="263" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -31,13 +31,23 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lab1.java" partName="Lab1.java" path="/home/quang/Summer 2016/Example/src/Lab1.java" title="Lab1.java" tooltip="Example/src/Lab1.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Example/src/Lab1.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="120" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" partName="Five.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Five.java" title="Five.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Five.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Five.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="556" selectionTopPixel="692"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Six.java" partName="Six.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Six.java" title="Six.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Six.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Six.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1127" selectionTopPixel="237"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" partName="Seven.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java" title="Seven.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Seven.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="330" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -78,7 +88,6 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (100 of 103 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -261,7 +270,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.18805657" ratioLeft="359" ratioRight="1550" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6636971" ratioLeft="596" ratioRight="302" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.73608017" ratioLeft="661" ratioRight="237" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -372,12 +381,99 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Example/src/Lab1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Five.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Six.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
 </editors>
 <item historyLabel="Lab1.java" index="0">
 <position info="not_deleted" x="42" y="0"/>
 </item>
-<item active="true" historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="108" y="0"/>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="376" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="123" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="124" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="290" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="274" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="218" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="219" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="319" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="352" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="368" y="0"/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="Five.java" index="1">
+<position info="not_deleted" x="556" y="0"/>
+</item>
+<item historyLabel="Six.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Six.java" index="2">
+<position info="not_deleted" x="1070" y="0"/>
+</item>
+<item historyLabel="Six.java" index="2">
+<position/>
+</item>
+<item historyLabel="Six.java" index="2">
+<position/>
+</item>
+<item historyLabel="Lab1.java" index="0">
+<position info="not_deleted" x="376" y="0"/>
+</item>
+<item historyLabel="Six.java" index="2">
+<position info="not_deleted" x="1192" y="0"/>
+</item>
+<item historyLabel="Six.java" index="2">
+<position info="not_deleted" x="1127" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="29" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="215" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="264" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="328" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="456" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Seven.java" index="3">
+<position info="not_deleted" x="614" y="0"/>
+</item>
+<item active="true" historyLabel="Seven.java" index="3">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -396,6 +492,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Seven.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Six.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Six.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Six.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Five.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Five.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lab1.java" tooltip="Example/src/Lab1.java">
 <persistable path="/Example/src/Lab1.java"/>
 </file>
@@ -431,15 +536,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eight.java" tooltip="Chapter 4 - Tree and Graph/src/Eight.java">
 <persistable path="/Chapter 4 - Tree and Graph/src/Eight.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DiGraph.java" tooltip="Chapter 4 - Tree and Graph/src/DiGraph.java">
-<persistable path="/Chapter 4 - Tree and Graph/src/DiGraph.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BTNode.java" tooltip="Chapter 4 - Tree and Graph/src/BTNode.java">
-<persistable path="/Chapter 4 - Tree and Graph/src/BTNode.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BinaryTreeNode.java" tooltip="Chapter 4 - Tree and Graph/src/BinaryTreeNode.java">
-<persistable path="/Chapter 4 - Tree and Graph/src/BinaryTreeNode.java"/>
 </file>
 </mruList>
 </workbench>

@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+
+public class Seven {
+	
+	/*
+	 * 
+	 * Permutations without Dups: Write a method to compute all permutation
+	 * of a string of unique characters
+	 * 
+	 */
+	
+	public static ArrayList<String> permutation(String string) {
+		ArrayList<String> result = new ArrayList<String>();
+		permutation(string, result);
+		return result;
+	}
+
+	private static void permutation(String string, ArrayList<String> result) {
+		if (string.length() == 0) 
+	}
+
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="1045" maximized="true" width="1440" x="263" y="27">
+<window height="789" maximized="true" width="1434" x="204" y="27">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -32,7 +32,6 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
@@ -41,13 +40,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Five.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="556" selectionTopPixel="692"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Six.java" partName="Six.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Six.java" title="Six.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Six.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Six.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1127" selectionTopPixel="237"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" partName="Seven.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java" title="Seven.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Seven.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="330" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Intersection.java" partName="Intersection.java" path="/home/quang/Summer 2016/Practice/src/Intersection.java" title="Intersection.java" tooltip="Practice/src/Intersection.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Practice/src/Intersection.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="228" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -87,7 +82,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (100 of 106 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -246,6 +241,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
@@ -270,13 +266,13 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.18805657" ratioLeft="359" ratioRight="1550" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.73608017" ratioLeft="661" ratioRight="237" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.75946546" ratioLeft="682" ratioRight="216" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -285,6 +281,7 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -380,99 +377,157 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Example/src/Lab1.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Five.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Six.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Practice/src/Anagram.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Practice/src/Intersection.java"/>
 </editors>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="42" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="578" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="376" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="625" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="123" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="626" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="124" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="659" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="290" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="704" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="274" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="705" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="218" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="712" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="219" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1442" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="319" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1485" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="352" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1493" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="368" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1494" y="0"/>
 </item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="373" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1605" y="0"/>
 </item>
-<item historyLabel="Five.java" index="1">
-<position info="not_deleted" x="556" y="0"/>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="478" y="0"/>
 </item>
-<item historyLabel="Six.java" index="2">
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="807" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1095" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="899" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="891" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="981" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="982" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1012" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1605" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1605" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="986" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="986" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="986" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="811" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1157" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1187" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1594" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1602" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1603" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1167" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1187" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1228" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1251" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1252" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1302" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1325" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1326" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1354" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1355" y="0"/>
+</item>
+<item historyLabel="Anagram.java" index="0">
+<position info="not_deleted" x="1224" y="0"/>
+</item>
+<item historyLabel="Intersection.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Six.java" index="2">
-<position info="not_deleted" x="1070" y="0"/>
+<item historyLabel="Intersection.java" index="1">
+<position info="not_deleted" x="116" y="0"/>
 </item>
-<item historyLabel="Six.java" index="2">
-<position/>
-</item>
-<item historyLabel="Six.java" index="2">
-<position/>
-</item>
-<item historyLabel="Lab1.java" index="0">
-<position info="not_deleted" x="376" y="0"/>
-</item>
-<item historyLabel="Six.java" index="2">
-<position info="not_deleted" x="1192" y="0"/>
-</item>
-<item historyLabel="Six.java" index="2">
-<position info="not_deleted" x="1127" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="215" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="264" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="328" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="456" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="500" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="545" y="0"/>
-</item>
-<item historyLabel="Seven.java" index="3">
-<position info="not_deleted" x="614" y="0"/>
-</item>
-<item active="true" historyLabel="Seven.java" index="3">
+<item active="true" historyLabel="Intersection.java" index="1">
 <position/>
 </item>
 </navigationHistory>
@@ -492,6 +547,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Intersection.java" tooltip="Practice/src/Intersection.java">
+<persistable path="/Practice/src/Intersection.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Anagram.java" tooltip="Practice/src/Anagram.java">
+<persistable path="/Practice/src/Anagram.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eight.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Eight.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Eight.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Seven.java">
 <persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
 </file>
@@ -527,15 +591,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Two.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Two.java">
 <persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Two.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="One.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/One.java">
-<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/One.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eleven.java" tooltip="Chapter 10 - Searching and Sorting/src/Eleven.java">
-<persistable path="/Chapter 10 - Searching and Sorting/src/Eleven.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eight.java" tooltip="Chapter 4 - Tree and Graph/src/Eight.java">
-<persistable path="/Chapter 4 - Tree and Graph/src/Eight.java"/>
 </file>
 </mruList>
 </workbench>

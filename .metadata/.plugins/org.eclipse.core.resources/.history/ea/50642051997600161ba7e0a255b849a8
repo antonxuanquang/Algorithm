@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Eight {
+	
+	/*
+	 * 
+	 * Permutations with Dups: Write a method to compute all permutation
+	 * of a string of characters
+	 * 
+	 */
+	
+	public static HashMap<String,Integer> permutation(String string) {
+		HashMap<String,Integer> result = new HashMap<String,Integer>();
+		if (string.length() == 0) {
+			result.put("", 1);
+			return result;
+		}else {
+			for (int i = 0; i < string.length(); i++) {
+				char firstChar = string.charAt(i);
+				String subString = string.substring(0, i) + string.substring(i + 1, string.length());
+				HashMap<String,Integer> permutations = permutation(subString);
+				for (String sub: permutations.keySet()) {
+					String s = firstChar + subString;
+					if (!permutations.containsKey(s)) permutations.put(s, 1);
+				}
+			}
+		}
+		return result;
+	}
+	
+	public static void main(String args[]) {
+		HashMap<String,Integer> permutation = permutation("abcde");
+		for (String string: permutation) System.out.println(string);
+	}
+
+}

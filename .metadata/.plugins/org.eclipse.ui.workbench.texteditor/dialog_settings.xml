@@ -2,22 +2,25 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="nextCoordinator" key="selection"/>
+		<item value="double" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="int"/>
+			<item value="HashMap&lt;String,Integer&gt;"/>
+			<item value="ArrayList&lt;String&gt;"/>
 			<item value="ArrayList&lt;ArrayList&lt;T&gt;&gt;"/>
 			<item value="rightCoordinator"/>
 			<item value="tripleStep"/>
 			<item value="memmo"/>
 			<item value="tree."/>
-			<item value="root."/>
-			<item value="root"/>
-			<item value="tree"/>
 		</list>
 		<list key="replacehistory">
+			<item value="double"/>
+			<item value="ArrayList&lt;String&gt;"/>
+			<item value="HashMap&lt;String,Integer&gt;"/>
 			<item value="nextCoordinator"/>
 			<item value="countWays"/>
 			<item value="memo"/>

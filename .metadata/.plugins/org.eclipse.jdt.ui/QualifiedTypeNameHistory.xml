@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="creational.abstractFactoryPattern.ShapeFactory"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.ColorFactory"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.FactoryProducer"/>
 <fullyQualifiedTypeName name="creational.abstractFactoryPattern.AbstractFactory"/>
@@ -45,7 +44,6 @@
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="Two.LinkNode"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="javax.swing.RowFilter"/>
 <fullyQualifiedTypeName name="Two.Coordinator"/>
@@ -58,6 +56,8 @@
 <fullyQualifiedTypeName name="Lab1"/>
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Intersection.Point"/>
 </qualifiedTypeNameHistroy>

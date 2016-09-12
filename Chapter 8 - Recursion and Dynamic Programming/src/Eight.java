@@ -38,5 +38,4 @@ public class Eight {
 		ArrayList<String> permutation = permutation("aeeaeaeaeaeae");
 		for (String string: permutation) System.out.println(string);
 	}
-
 }

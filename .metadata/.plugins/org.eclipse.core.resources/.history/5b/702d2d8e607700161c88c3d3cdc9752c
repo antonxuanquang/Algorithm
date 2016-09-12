@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+
+public class Nine {
+	
+	/*
+	 * 
+	 * Parens: Implement an algorithm to print all valid (e.g., properly opened and closed)
+	 * combinations of n pairs of parentheses
+	 * 
+	 * Input: 3
+	 * Output: ((())), (()()), (())(), ()()()
+	 * 
+	 */
+	
+	public static ArrayList<String> parens(int input) {
+		ArrayList<String> result = new ArrayList<String>();
+		return result;
+	}
+	
+	public static void parens(ArrayList<String> result, StringBuilder current, int input) {
+		if (input == 0) {
+			result.add(current.toString());
+			return;
+		} else if (input == 1) {
+			current.append("(");
+			return;
+		}
+		parens(result, current, input--);
+		current.append(")");
+	}
+	
+	public static void main (String[] args) {
+		ArrayList<String> parens = parens(3);
+		for (String paren: parens) System.out.println(paren);
+	}
+
+}

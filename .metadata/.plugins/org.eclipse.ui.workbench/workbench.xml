@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="789" maximized="true" width="1434" x="204" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -31,37 +31,19 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Five.java" partName="Five.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Five.java" title="Five.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Five.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Five.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="556" selectionTopPixel="692"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Intersection.java" partName="Intersection.java" path="/home/quang/Summer 2016/Practice/src/Intersection.java" title="Intersection.java" tooltip="Practice/src/Intersection.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Practice/src/Intersection.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="228" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Seven.java" partName="Seven.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java" title="Seven.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Seven.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Seven.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="888" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Eight.java" partName="Eight.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Eight.java" title="Eight.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Eight.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Eight.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1148" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Nine.java" partName="Nine.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Nine.java" title="Nine.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Nine.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Nine.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1044" selectionTopPixel="111"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ten.java" partName="Ten.java" path="/home/quang/Summer 2016/Chapter 8 - Recursion and Dynamic Programming/src/Ten.java" title="Ten.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Ten.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Chapter 8 - Recursion and Dynamic Programming/src/Ten.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="342" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
@@ -96,11 +78,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (100 of 110 items)"/>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="844" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -395,100 +372,8 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Nine.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Chapter 8 - Recursion and Dynamic Programming/src/Ten.java"/>
 </editors>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="482" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="506" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="521" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="584" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="668" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="715" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="750" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="750" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="584" y="0"/>
-</item>
-<item historyLabel="Nine.java" index="0">
-<position/>
-</item>
 <item historyLabel="Nine.java" index="0">
 <position info="not_deleted" x="967" y="0"/>
 </item>
@@ -543,8 +428,101 @@
 <item historyLabel="Nine.java" index="0">
 <position/>
 </item>
-<item active="true" historyLabel="Nine.java" index="0">
-<position info="not_deleted" x="917" y="0"/>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1831" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1104" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1123" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1872" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="545" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="606" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="407" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1189" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1135" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1168" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1344" y="1"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1354" y="1"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1392" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1426" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1468" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1509" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1540" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1546" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1559" y="4"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1573" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1575" y="5"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1582" y="10"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1603" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1629" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1635" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1648" y="4"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1654" y="4"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1669" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1671" y="10"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1692" y="0"/>
+</item>
+<item historyLabel="Nine.java" index="0">
+<position info="not_deleted" x="1831" y="0"/>
+</item>
+<item active="true" historyLabel="Ten.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -563,6 +541,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ten.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Ten.java">
+<persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Ten.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Nine.java" tooltip="Chapter 8 - Recursion and Dynamic Programming/src/Nine.java">
 <persistable path="/Chapter 8 - Recursion and Dynamic Programming/src/Nine.java"/>
 </file>
@@ -604,9 +585,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HW1_2.java" tooltip="Parallel/src/HW1_2.java">
 <persistable path="/Parallel/src/HW1_2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SinglyLinkedList.java" tooltip="Chapter 2 - Linked List/src/SinglyLinkedList.java">
-<persistable path="/Chapter 2 - Linked List/src/SinglyLinkedList.java"/>
 </file>
 </mruList>
 </workbench>

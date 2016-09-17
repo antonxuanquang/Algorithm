@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="HashSet&lt;String&gt;" key="selection"/>
+		<item value="paintFillBruteForce" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="paintFill"/>
 			<item value="HashMap&lt;String, Integer&gt;"/>
 			<item value="StringBuilder"/>
 			<item value="ArrayList&lt;String&gt;"/>
@@ -15,9 +16,9 @@
 			<item value="int"/>
 			<item value="HashMap&lt;String,Integer&gt;"/>
 			<item value="ArrayList&lt;ArrayList&lt;T&gt;&gt;"/>
-			<item value="rightCoordinator"/>
 		</list>
 		<list key="replacehistory">
+			<item value="paintFillBruteForce"/>
 			<item value="HashSet&lt;String&gt;"/>
 			<item value="String"/>
 			<item value="Hashtable&lt;String, Integer&gt;"/>
@@ -25,7 +26,6 @@
 			<item value="Hash"/>
 			<item value="double"/>
 			<item value="ArrayList&lt;String&gt;"/>
-			<item value="HashMap&lt;String,Integer&gt;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

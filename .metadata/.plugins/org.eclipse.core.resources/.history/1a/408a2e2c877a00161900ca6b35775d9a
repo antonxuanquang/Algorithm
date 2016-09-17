@@ -1,0 +1,40 @@
+import java.util.HashMap;
+
+
+public class Eleven {
+	
+	/*
+	 * 
+	 * Coins: given an infinite number of quarters (25 cents), dimes (10 cents), 
+	 * nickels (5 cents), and pennies (1 cent), write code to calculate the 
+	 * number of ways of representing n cents.
+	 * 
+	 */
+	
+	public static int coins(int n) {
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		return coins(n, map);
+	}
+	
+	private static int coins(int n, HashMap<Integer, Integer> map) {
+		map.toString();
+		if (n == 0) return 1;
+		if (map.containsKey(n)) return map.get(n);
+		
+		int quarters = 0, dimes = 0, nickels = 0, pennies = 0;
+		if (n >= 25) 	quarters 	= coins(n - 25);
+		if (n >= 10) 	dimes 		= coins(n - 10);
+		if (n >= 5) 	nickels 	= coins(n - 5);
+		pennies 	= coins(n - 1);
+		int total = quarters + dimes + nickels + pennies;
+		map.put(n, total);
+		return total;
+	}
+
+
+
+	public static void main (String[]args) {
+		System.out.println(coins(100));
+	}
+
+}

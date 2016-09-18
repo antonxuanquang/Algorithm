@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+
+
+public class Twelve {
+	
+	/*
+	 * 
+	 * Eight Queens: Write an algorithm to print all ways of arranging eight
+	 * queens on an 8x8 chess board so that none of them share the same row,
+	 * column, or diagonal. In this case, "diagonal means all diagonals, not
+	 * just the two that bisect the board.
+	 * 
+	 */
+	
+	private static class Position {
+		int row, column;
+		public Position(int row, int column) {
+			this.row = row;
+			this.column = column;
+		}
+		
+		public boolean isIntersect(Position point) {
+			if (row == point.row || column == point.column) return true;
+			double slope = Math.abs((row - point.row) / (column - point.column));
+			return slope == 1 ? true : false; 
+		}
+		
+		public boolean isIntersect(ArrayList<Position> queens) {
+			for (Position queen: queens) {
+				if (queen.isIntersect(this)) return true;
+			}
+			return false;
+		}
+		
+		public String toString() {
+			return "(" + row + ", " + column + ")";
+		}
+	}
+	
+	
+	public static int eightQueens(int size) {
+		ArrayList<Position> queens = new ArrayList<Position>();		
+		return eightQueens(size, 0, queens);
+	}
+
+	private static int eightQueens(int size, int column, ArrayList<Position> queens) {
+		if (queens.size() == size) return 1;
+		int ways = 0;
+		for (int row = 0; row <= size; row++) {
+			Position myPosition = new Position(row, column);
+			System.out.println(myPosition);
+			if (!myPosition.isIntersect(queens)) {
+				queens.add(myPosition);
+				System.out.println(queens);
+				ways += eightQueens(size, column + 1, queens);
+				queens.remove(myPosition);
+			}
+		}
+		return ways;
+	}
+	
+	public static void main (String[]args) {
+		System.out.println(eightQueens(8));
+	}
+}

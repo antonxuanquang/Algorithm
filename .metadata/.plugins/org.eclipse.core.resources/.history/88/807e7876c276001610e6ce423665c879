@@ -1,8 +1,0 @@
-
-public class Anagram {
-	
-	public static void anagram(String string) {
-		
-	}
-
-}

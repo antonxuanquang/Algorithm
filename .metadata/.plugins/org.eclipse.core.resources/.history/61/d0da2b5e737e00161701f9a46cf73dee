@@ -1,0 +1,56 @@
+import java.util.Stack;
+
+
+public class Thirdteen {
+	
+	/*
+	 * 
+	 * Stack of Boxes: You have a stack of n boxes, with width w[i], height h[i],
+	 * and depth d[i]. The boxes cannot be rotated and can only be stacked on top
+	 * of one another if each box in the stack is strictly larger than the box 
+	 * above it in width, height, and depth. Implement a method to compute the 
+	 * height of the tallest possible stack. The height of a stack is the sum of
+	 * the heights of each box.
+	 * 
+	 */
+	
+	private static class Box implements Comparable<Box>{
+		int w,h,d;
+		public Box(int width, int height, int depth) {
+			w = width;
+			h = height;
+			d = depth;
+		}
+		
+		public boolean isLarger(Box that) {
+			return w >= that.w && h >= that.h && d >= that.d;
+		}
+
+		public int compareTo(Box that) {
+			if (w >= that.w && h >= that.h && d >= that.d) return 1;
+			else if (w == that.w && h == that.h && d == that.d) return 0;
+			else return -1;
+		}
+	}
+	
+	public static int stackBoxes(Stack<Box> stack) {
+		
+		
+		return 0;
+	}
+	
+	public static void main (String[]args) {
+		Stack<Box> stack = new Stack<Box>();
+		stack.push(new Box(5, 10, 20));
+		stack.push(new Box(5, 8, 17));
+		stack.push(new Box(6, 11, 15));
+		stack.push(new Box(4, 7, 25));
+		stack.push(new Box(3, 15, 15));
+		stack.push(new Box(3, 20, 15));
+		
+		Box box1 = stack.pop();
+		Box box2 = stack.pop();
+		Box[] array = (Box[]) stack.toArray();
+	}
+
+}

@@ -1,0 +1,28 @@
+
+public class Thirdteen {
+	
+	/*
+	 * 
+	 * Stack of Boxes: You have a stack of n boxes, with width w[i], height h[i],
+	 * and depth d[i]. The boxes cannot be rotated and can only be stacked on top
+	 * of one another if each box in the stack is strictly larger than the box 
+	 * above it in width, height, and depth. Implement a method to compute the 
+	 * height of the tallest possible stack. The height of a stack is the sum of
+	 * the heights of each box.
+	 * 
+	 */
+	
+	private static class Box {
+		int w,h,d;
+		public Box(int width, int height, int depth) {
+			w = width;
+			h = height;
+			d = depth;
+		}
+		
+		public boolean isLarger(Box that) {
+			return w >= that.w && h >= that.h && d >= that.depth;
+		}
+	}
+
+}

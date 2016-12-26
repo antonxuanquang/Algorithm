@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 
 public class SinglyLinkedList {
 	Node head = null;
@@ -74,4 +76,29 @@ public class SinglyLinkedList {
 	public void debug() {
 		System.out.println(this);
 	}
+	
+	public static void  main (String[]args) {
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

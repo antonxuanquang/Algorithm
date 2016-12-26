@@ -1,0 +1,51 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Test {
+	private static class Node {
+		Node next;
+		int data;
+	}
+	
+	static Node maxLength(Node head) {
+		Stack<Node> stack = new Stack<Node>();
+	    Node runner = head;
+	    while (runner != null) {
+	        stack.push(runner);
+	        runner = runner.next;
+	    }
+	    
+	    Node tail = null;
+	    Node newHead = null;
+	    
+	    while (!stack.isEmpty()) {
+	        if (newHead == null) {
+	            newHead = stack.pop();
+	            tail = head;
+	        } else {
+	            Node node = stack.pop();
+	            tail.next = node;
+	            tail = node;
+	        }
+	    }
+	    return newHead;
+    }
+	
+	public static void main(String[] args) throws IOException{
+        Node node1 = new Node();
+        node1.data = 3;
+        
+        Node node2 = new Node();
+        node2.data = 2;
+        
+        Node node3 = new Node();
+        node3.data = 1;
+        
+        node1.next = node2;
+        node2.next = node3;
+        
+    }
+}

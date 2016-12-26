@@ -1,0 +1,43 @@
+public class GoldmanSach {
+	static void StairCase(int n) {
+		for (int i = 0; i <= n; i++) {
+			String space = append(' ', n - i);
+			String pow = append('#', i);
+			System.out.println(space + pow);
+		}
+	}
+	
+	static String append(char character, int number) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < number; i++) {
+			sb.append(character);
+		}
+		return sb.toString();
+	}
+	
+	static String runLengthEncode(String input) {
+		if (input.length() == 0) return "";
+		
+        StringBuilder sb = new StringBuilder();
+        char current_char = input.charAt(0);
+        int count = 1;
+        for (int i = 1; i < input.length(); i++) {
+            if (current_char != input.charAt(i)) {
+            	sb.append(count);
+            	sb.append(current_char);
+                current_char = input.charAt(i);
+                count = 1;
+            } else {
+                count++;
+            }
+        }
+        sb.append(count);
+        sb.append(current_char);
+        return sb.toString();
+    }
+	
+	public static void main (String[]args) {
+		StairCase(10);
+		System.out.println(runLengthEncode(""));
+	}
+}

@@ -1,0 +1,56 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Test {
+	private static class Node {
+		Node next;
+		int data;
+	}
+	
+	static Node maxLength(Node head) {
+		Queue<Node> queue = new LinkedList<Node>();
+	    Node runner = head;
+	    while (runner != null) {
+	        queue.add(runner);
+	        runner = runner.next;
+	    }
+	    
+	    Node tail = null;
+	    Node newHead = null;
+	    
+	    while (!queue.isEmpty()) {
+	    	Node node = queue.poll();
+	        if (newHead == null) {
+	            tail = head;
+	        } else {
+	            
+	            tail.next = node;
+	            tail = node;
+	        }
+	    }
+	    return newHead;
+    }
+	
+	public static void main(String[] args) {
+        Node node1 = new Node();
+        node1.data = 3;
+        
+        Node node2 = new Node();
+        node2.data = 2;
+        
+        Node node3 = new Node();
+        node3.data = 1;
+        
+        node1.next = node2;
+        node2.next = node3;
+        
+        node1 = maxLength(node1);
+        System.out.println(node1.data);
+        System.out.println(node2.data);
+        System.out.println(node3.data);
+        
+    }
+}

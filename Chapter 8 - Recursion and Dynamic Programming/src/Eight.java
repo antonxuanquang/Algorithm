@@ -35,7 +35,7 @@ public class Eight {
 	}
 	
 	public static void main(String args[]) {
-		ArrayList<String> permutation = permutation("aeeaeaeaeaeae");
+		ArrayList<String> permutation = permutation("lalala");
 		for (String string: permutation) System.out.println(string);
 	}
 }

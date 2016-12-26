@@ -2,30 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ArrayList&lt;Position&gt;" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Position []"/>
-			<item value="paintFill"/>
-			<item value="HashMap&lt;String, Integer&gt;"/>
-			<item value="StringBuilder"/>
-			<item value="ArrayList&lt;String&gt;"/>
-			<item value="ArrayList"/>
-			<item value="int"/>
-			<item value="HashMap&lt;String,Integer&gt;"/>
+			<item value="tree"/>
+			<item value="citeList"/>
+			<item value="firstZeroIndex"/>
+			<item value="574972390"/>
+			<item value="E"/>
+			<item value="Node"/>
+			<item value="SinglyLinkedList"/>
+			<item value="UndirectedGraph"/>
 		</list>
 		<list key="replacehistory">
-			<item value="ArrayList&lt;Position&gt;"/>
-			<item value="paintFillBruteForce"/>
-			<item value="HashSet&lt;String&gt;"/>
-			<item value="String"/>
-			<item value="Hashtable&lt;String, Integer&gt;"/>
-			<item value="Hashtable"/>
-			<item value="Hash"/>
-			<item value="double"/>
+			<item value="siteList"/>
+			<item value="firstZero"/>
+			<item value="Node&lt;E&gt;"/>
+			<item value="Node"/>
+			<item value="E"/>
+			<item value="MyLinkedList"/>
+			<item value="Edge"/>
+			<item value="graph"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

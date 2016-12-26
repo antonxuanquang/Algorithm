@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Test {
+	public static void main(String[]strings) {
+//		System.out.println(add(5, 40));
+//		System.out.println(add(20, 30));
+//		System.out.println(add(4, 30));
+		
+		findTheDifference("abcd", "abcde");
+	}
+	
+	private static int add(int a, int b) {
+		if (b == 0) return a;
+		int carry = (a & b) << 1;
+		int sum = a ^ b;
+		return add(sum, carry);
+	}
+	
+	public static char findTheDifference(String s, String t) {
+        int [] map = new int[256];
+        for (int i = 0; i < t.length(); i++) {
+            map[t.charAt(i)]++;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            map[s.charAt(i)]--;
+        }
+        for (int i = 0; i < map.length; i++) {
+            if (map[i] != 0) return (char) map[i];
+        }
+        return '\0';
+    }
+}

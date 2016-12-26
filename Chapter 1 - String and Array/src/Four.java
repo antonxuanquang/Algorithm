@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 
 public class Four {
 	public static void main(String[] args) {
@@ -40,6 +43,8 @@ public class Four {
  * 
  */
 	static boolean isPermutationOfPalindrome(String phrase) {
+		Set set = new HashSet<Integer>();
+		
 		int [] table = buildCharFrequencyTable(phrase.toLowerCase());
 		return checkMaxOneOdd(table);
 	}

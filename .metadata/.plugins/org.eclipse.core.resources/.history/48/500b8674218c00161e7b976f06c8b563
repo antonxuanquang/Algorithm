@@ -1,0 +1,45 @@
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+import javax.swing.JApplet;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+public class FrameDemo extends JApplet {
+	
+	JPanel top, center, bottom;
+	
+	public void init() {
+		setLayout(new BorderLayout());
+//		top = top();
+		add(top, BorderLayout.NORTH);
+		center();
+		bottom();
+	}
+
+	private void bottom() {
+		// TODO Auto-generated method stub
+		JPanel bottom = new JPanel(new BorderLayout());
+		
+		
+	}
+
+	private void center() {
+		// TODO Auto-generated method stub
+		JPanel center = new JPanel(new FlowLayout());
+	}
+
+	private JPanel top() {
+		JPanel top = new JPanel(new FlowLayout());
+		top.add(new JButton("top button"));
+		top.add(new JLabel("nice top"));
+		return top;
+	}
+	
+	
+	
+}

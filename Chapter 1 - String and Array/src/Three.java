@@ -10,14 +10,14 @@ public class Three {
 		int string_counter = 0; 
 		int array_counter = 0;
 		while (string_counter < length) {
-			int val = string.charAt(string_counter);
+			char val = string.charAt(string_counter);
 			if (val == ' ') {
 				char_array[array_counter++] = '%';
 				char_array[array_counter++] = '2';
 				char_array[array_counter++] = '0';
 				length -= 2;
 			} else {
-				char_array[array_counter++] = (char)val;
+				char_array[array_counter++] = val;
 			}
 			string_counter++;
 		}

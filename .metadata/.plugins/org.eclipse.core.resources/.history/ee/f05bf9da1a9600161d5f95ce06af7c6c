@@ -1,0 +1,88 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Test {
+	private static class Node {
+		Node next;
+		int data;
+	}
+	
+	static Node maxLength(Node headA, Node headB) {
+		Node newHead = null;
+	    Node tail = null;
+	    Node runnerA = headA;
+	    Node runnerB = headB;
+	    while (runnerA != null && runnerB != null) {
+	        // compare two node and take out the smaller one
+	        Node node;
+	        if (runnerA.data < runnerB.data) {
+	            // add first node of B to A
+	            node = runnerA;
+	            runnerA = runnerA.next;
+	        } else {
+	            node = runnerB;
+	            runnerB = runnerB.next;
+	        }
+	        
+	        // add the node to newly created linked list
+	        if (newHead == null) {
+	            newHead = node;
+	            tail = newHead;
+	        } else {
+	            tail.next = node;
+	            tail = node;
+	        }
+	    }
+	    
+	    // add remaining node in link A
+	    if (runnerA != null) tail.next = runnerA;
+	    
+	    // add remain node in link B
+	    if (runnerB != null) tail.next = runnerB;
+	    
+	    return newHead;
+    }
+	
+	public static void main(String[] args) {
+        Node node1 = new Node();
+        node1.data = 0;
+        
+        Node node2 = new Node();
+        node2.data = 2;
+        
+        Node node3 = new Node();
+        node3.data = 5;
+        
+        Node node4 = new Node();
+        node4.data = 7;
+        
+        Node node5 = new Node();
+        node1.data = 1;
+        
+        Node node6 = new Node();
+        node2.data = 3;
+        
+        Node node7 = new Node();
+        node3.data = 4;
+        
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        
+        node5.next = node6;
+        node6.next = node7;
+        
+        
+        
+        node1 = maxLength(node1, node5);
+        Node runner = node1;
+        while (runner != null) {
+        	System.out.println(runner.data);
+        	runner = runner.next;
+        }
+        
+    }
+}

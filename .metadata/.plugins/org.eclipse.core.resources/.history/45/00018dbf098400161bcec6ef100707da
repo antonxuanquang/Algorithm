@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+
+
+public class OmegaNetwork {
+	
+	public static ArrayList<String> permutation(String string) {
+		ArrayList<String> result = new ArrayList<String>();
+		if (string.length() == 0) {
+			result.add("");
+			return result;
+		}else {
+			for (int i = 0; i < string.length(); i++) {
+				char firstChar = string.charAt(i);
+				String subString = string.substring(0, i) + string.substring(i + 1, string.length());
+				ArrayList<String> permutations = permutation(subString);
+				for (String sub: permutations) {
+					result.add(firstChar + sub);
+				}
+			}
+		}
+		return result;
+	}
+	
+	public static ArrayList<String> permutationNonBlocking(String string, String original) {
+		ArrayList<String> result = new ArrayList<String>();
+		if (string.length() == 0) {
+			result.add("");
+			return result;
+		}else {
+			for (int i = 0; i < string.length(); i++) {
+				char firstChar = string.charAt(i);
+				if (firstChar == original.charAt(original.length() - string.length())) {
+					System.out.println("from original: " + original.charAt(original.length() - string.length()));
+					System.out.println("first char: " + firstChar);
+					continue;
+				}
+				String subString = string.substring(0, i) + string.substring(i + 1, string.length());
+				ArrayList<String> permutations = permutationNonBlocking(subString, original);
+				for (String sub: permutations) {
+					result.add(firstChar + sub);
+				}
+			}
+		}
+		return result;
+	}
+	
+	public static void main(String args[]) {
+		ArrayList<String> permutation = permutationNonBlocking("abcde", "abcde");
+//		for (String string: permutation) System.out.println(string);
+	}
+}

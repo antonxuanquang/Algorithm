@@ -32,7 +32,7 @@ public class Five {
 		linkedList2.addToTail(3);
 		linkedList2.addToTail(7);
 		
-		SinglyLinkedList sum = sumTwoLinkedList2(linkedList, linkedList2);
+		SinglyLinkedList sum = sumTwoLinkedList(linkedList, linkedList2);
 		System.out.println(linkedList);
 		System.out.println(linkedList2);
 		System.out.println(sum);

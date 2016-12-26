@@ -39,7 +39,6 @@ public class Ten {
 			paintFill(picture, new Point(x - 1, y), oldColor, newColor);
 			paintFill(picture, new Point(x, y + 1), oldColor, newColor);
 			paintFill(picture, new Point(x, y - 1), oldColor, newColor);
-			
 		}
 	}
 
@@ -56,7 +55,7 @@ public class Ten {
 			System.out.println(Arrays.toString(array));
 		}
 		System.out.println();
-		paintFill(picture, new Point(3,4), 1);
+		paintFill(picture, new Point(3,4), 5);
 		for (int[] array: picture) {
 			System.out.println(Arrays.toString(array));
 		}

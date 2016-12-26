@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="506" key="DIALOG_X_ORIGIN"/>
-		<item value="115" key="DIALOG_Y_ORIGIN"/>
+		<item value="609" key="DIALOG_X_ORIGIN"/>
+		<item value="120" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 		<item value="true" key="actionSetFilter"/>
@@ -15,5 +15,11 @@
 		<item value="475" key="DIALOG_HEIGHT"/>
 		<item value="778" key="DIALOG_X_ORIGIN"/>
 		<item value="289" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.jdt.internal.ui.fatjarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
 	</section>
 </section>

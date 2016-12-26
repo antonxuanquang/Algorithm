@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
+		<item value="613" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="532" key="DIALOG_HEIGHT"/>
+		<item value="534" key="DIALOG_X_ORIGIN"/>
+		<item value="259" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
 		<item value="322" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="379" key="DIALOG_HEIGHT"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
+		<item value="301" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="463" key="DIALOG_HEIGHT"/>
 	</section>
 </section>
